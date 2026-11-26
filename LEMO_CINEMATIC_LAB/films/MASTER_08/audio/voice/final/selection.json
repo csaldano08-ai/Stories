@@ -1,0 +1,74 @@
+{
+ "A1": {
+  "take": "takes/aki_heart__A1b_miss_gasp_s1.wav",
+  "text": "[gasp] Oh, no... I'm going to miss it.",
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_af_heart.wav",
+  "params": {
+   "temperature": 0.75,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  },
+  "seed": 1,
+  "sim": 0.877,
+  "asr": "Oh no, I'm going to miss it.",
+  "asr_logprob": -0.393,
+  "dur": 2.76,
+  "f0_median": 242.276,
+  "pause_floor_db": -76.45
+ },
+ "A2": {
+  "take": "takes/aki_heart__A2b_alone_soft_s1.wav",
+  "text": "Hey... little one. Are you all alone?",
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_af_heart.wav",
+  "params": {
+   "temperature": 0.75,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  },
+  "seed": 1,
+  "sim": 0.851,
+  "asr": "Hey, little one, are you all alone?",
+  "asr_logprob": -0.302,
+  "dur": 2.72,
+  "f0_median": 191.226,
+  "pause_floor_db": -79.702
+ },
+ "D1": {
+  "take": "takes/drv_michael__D12_full_s3.wav",
+  "text": "Come on, I've got a minute.",
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_am_michael.wav",
+  "params": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  },
+  "seed": 3,
+  "sim": 0.872,
+  "asr": "Come on, I've got a minute.",
+  "asr_logprob": -0.354,
+  "dur": 2.12,
+  "f0_median": 131.392,
+  "pause_floor_db": -78.996
+ },
+ "A3": {
+  "take": "takes/aki_heart__A3b_thanks_breath_s2.wav",
+  "text": "[sigh] Thank you.",
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_af_heart.wav",
+  "params": {
+   "temperature": 0.75,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  },
+  "seed": 2,
+  "sim": 0.708,
+  "asr": "Thank you.",
+  "asr_logprob": -0.655,
+  "dur": 1.28,
+  "f0_median": 177.237,
+  "pause_floor_db": -76.967
+ }
+}

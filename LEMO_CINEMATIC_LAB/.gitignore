@@ -1,0 +1,17 @@
+# heavy / regenerable
+tools/venvs/
+tools/bin/
+**/out/frames/
+**/out/*.lock
+**/out/.*_segs-*/
+**/.cache/
+**/stills/
+**/__pycache__/
+*.pyc
+node_modules/
+# regenerable audio intermediates (float32): rebuilt by build.sh
+films/*/audio/music/stems/
+films/*/audio/music/score.wav
+films/*/audio/stems/
+films/*/audio/mix.wav
+films/*/out/

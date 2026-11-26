@@ -1,0 +1,58 @@
+{
+ "drv_am_michael": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_michael.wav",
+  "f0_range": [
+   60,
+   300
+  ]
+ },
+ "drv_am_fenrir": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav",
+  "f0_range": [
+   60,
+   300
+  ]
+ },
+ "drv_bm_george": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "f0_range": [
+   60,
+   300
+  ]
+ },
+ "drv_bm_lewis": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_lewis.wav",
+  "f0_range": [
+   60,
+   300
+  ]
+ },
+ "drv_LS": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/user/LS_narrator_it.wav",
+  "f0_range": [
+   55,
+   300
+  ]
+ },
+ "drvT_bm_george": {
+  "model": "turbo",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "f0_range": [
+   60,
+   300
+  ]
+ },
+ "drvT_am_fenrir": {
+  "model": "turbo",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav",
+  "f0_range": [
+   60,
+   300
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+Last Train Home — LEMO_CINEMATIC_LAB MASTER 08 (original film: story, characters, drawings, animation, score, sound design)
+
+Code adapted (MIT License, © 2026 Lemomo / LemoLab, Lemo-Opuscar, https://github.com/lemomo-ai/lemo-opuscar):
+  src/lib/cel.js (Catmull-Rom cel paths, colour helpers; + bounding boxes), src/lib/post.js (videotape/CRT WebGL pass),
+  audio/music/synth80.py (synth voices: FM electric piano, slap bass, gated snare, drums, synth brass, pad, Karplus-Strong guitar, bell).
+  Render/mux tools used from the library: core/render/{still,video,events}.mjs, core/render/mux.sh.
+Font: Barlow Semi Condensed (SemiBold, Bold) — Jeremy Tribby / The Barlow Project Authors — SIL Open Font License 1.1 (src/fonts/OFL-Barlow.txt).
+Voice engine: Chatterbox Nano (ResembleAI/chatterbox-nano, MIT License, Resemble AI), chatterbox-tts git ab55923; outputs carry
+  Resemble's Perth implicit watermark (resemble-perth, MIT).
+Speaker prompts (timbre references only, not heard in the film): Kokoro v1.0 voices af_heart, am_michael (hexgrad/Kokoro-82M, Apache-2.0),
+  rendered from original text with kokoro-onnx via Lemo-Opuscar core/tts/tts.py.
+Speech checks: faster-whisper (MIT) with Whisper small.en (MIT, OpenAI) — analysis only.
+No samples, stock footage, stock images or third-party music. All signs use generic words; the train livery and the station are invented.

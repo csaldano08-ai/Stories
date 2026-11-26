@@ -1,0 +1,1300 @@
+{
+ "drv_am_michael__comeon": {
+  "character": "drv_am_michael",
+  "text": "Come on.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_michael.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_am_michael__comeon_s1.wav",
+    "gen_s": 1.9,
+    "rtf": 2.49,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.664,
+    "pass": false,
+    "score": 11.993,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on.",
+      0.22,
+      0.44
+     ]
+    ],
+    "dur": 0.76,
+    "peak_db": -15.846,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -29.779,
+    "pause_floor_db": -79.876,
+    "pause_hf_ratio": 0.012,
+    "speech_t0": 0.09,
+    "speech_t1": 0.51,
+    "tail_db": -104.811,
+    "truncated": false,
+    "f0_median": 285.41,
+    "f0_spread_st": 0.0
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_am_michael__comeon_s2.wav",
+    "gen_s": 2.08,
+    "rtf": 2.74,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.663,
+    "pass": false,
+    "score": 11.988,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on.",
+      0.22,
+      0.42
+     ]
+    ],
+    "dur": 0.76,
+    "peak_db": -15.789,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -28.569,
+    "pause_floor_db": -79.764,
+    "pause_hf_ratio": 0.009,
+    "speech_t0": 0.09,
+    "speech_t1": 0.44,
+    "tail_db": -104.835,
+    "truncated": false,
+    "f0_median": 285.41,
+    "f0_spread_st": 0.0
+   }
+  ]
+ },
+ "drv_am_michael__minute": {
+  "character": "drv_am_michael",
+  "text": "I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_michael.wav",
+  "params": {},
+  "chosen": 2,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_am_michael__minute_s1.wav",
+    "gen_s": 2.71,
+    "rtf": 2.34,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.846,
+    "pass": true,
+    "score": 13.537,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.3
+     ],
+     [
+      " got",
+      0.3,
+      0.4
+     ],
+     [
+      " a",
+      0.4,
+      0.54
+     ],
+     [
+      " minute.",
+      0.54,
+      0.68
+     ]
+    ],
+    "dur": 1.16,
+    "peak_db": -12.041,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -23.905,
+    "pause_floor_db": -79.961,
+    "pause_hf_ratio": 0.016,
+    "speech_t0": 0.09,
+    "speech_t1": 0.85,
+    "tail_db": -104.833,
+    "truncated": false,
+    "f0_median": 119.309,
+    "f0_spread_st": 18.6
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_am_michael__minute_s2.wav",
+    "gen_s": 2.57,
+    "rtf": 2.07,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.849,
+    "pass": true,
+    "score": 13.546,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.3
+     ],
+     [
+      " got",
+      0.3,
+      0.42
+     ],
+     [
+      " a",
+      0.42,
+      0.56
+     ],
+     [
+      " minute.",
+      0.56,
+      0.7
+     ]
+    ],
+    "dur": 1.24,
+    "peak_db": -9.003,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -23.146,
+    "pause_floor_db": -79.238,
+    "pause_hf_ratio": 0.028,
+    "speech_t0": 0.09,
+    "speech_t1": 0.9,
+    "tail_db": -78.664,
+    "truncated": false,
+    "f0_median": 98.603,
+    "f0_spread_st": 12.84
+   }
+  ]
+ },
+ "drv_am_fenrir__comeon": {
+  "character": "drv_am_fenrir",
+  "text": "Come on.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_am_fenrir__comeon_s1.wav",
+    "gen_s": 1.96,
+    "rtf": 2.65,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.642,
+    "pass": false,
+    "score": 12.529,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on.",
+      0.2,
+      0.42
+     ]
+    ],
+    "dur": 0.74,
+    "peak_db": -13.565,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -28.786,
+    "pause_floor_db": -81.002,
+    "pause_hf_ratio": 0.005,
+    "speech_t0": 0.07,
+    "speech_t1": 0.49,
+    "tail_db": -103.081,
+    "truncated": false,
+    "f0_median": 103.266,
+    "f0_spread_st": 4.82
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_am_fenrir__comeon_s2.wav",
+    "gen_s": 2.01,
+    "rtf": 2.87,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.661,
+    "pass": false,
+    "score": 11.982,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.18
+     ],
+     [
+      " on.",
+      0.18,
+      0.44
+     ]
+    ],
+    "dur": 0.7,
+    "peak_db": -11.155,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.046,
+    "pause_floor_db": -101.149,
+    "pause_hf_ratio": 0.003,
+    "speech_t0": 0.04,
+    "speech_t1": 0.53,
+    "tail_db": -103.642,
+    "truncated": false
+   }
+  ]
+ },
+ "drv_am_fenrir__minute": {
+  "character": "drv_am_fenrir",
+  "text": "I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_am_fenrir__minute_s1.wav",
+    "gen_s": 2.17,
+    "rtf": 2.13,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.678,
+    "pass": false,
+    "score": 12.034,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.26
+     ],
+     [
+      " got",
+      0.26,
+      0.36
+     ],
+     [
+      " a",
+      0.36,
+      0.48
+     ],
+     [
+      " minute.",
+      0.48,
+      0.62
+     ]
+    ],
+    "dur": 1.02,
+    "peak_db": -7.402,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -25.224,
+    "pause_floor_db": -80.325,
+    "pause_hf_ratio": 0.031,
+    "speech_t0": 0.07,
+    "speech_t1": 0.7,
+    "tail_db": -104.821,
+    "truncated": false,
+    "f0_median": 285.41,
+    "f0_spread_st": 0.0
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_am_fenrir__minute_s2.wav",
+    "gen_s": 2.14,
+    "rtf": 2.18,
+    "asr": "I got a minute.",
+    "word_match": 0.75,
+    "sim": 0.702,
+    "pass": false,
+    "score": 2.451,
+    "words": [
+     [
+      " I",
+      0.0,
+      0.2
+     ],
+     [
+      " got",
+      0.2,
+      0.36
+     ],
+     [
+      " a",
+      0.36,
+      0.52
+     ],
+     [
+      " minute.",
+      0.52,
+      0.66
+     ]
+    ],
+    "dur": 0.98,
+    "peak_db": -9.484,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -26.634,
+    "pause_floor_db": -80.504,
+    "pause_hf_ratio": 0.003,
+    "speech_t0": 0.06,
+    "speech_t1": 0.73,
+    "tail_db": -102.898,
+    "truncated": false,
+    "f0_median": 89.64,
+    "f0_spread_st": 2.75
+   }
+  ]
+ },
+ "drv_bm_george__comeon": {
+  "character": "drv_bm_george",
+  "text": "Come on.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "params": {},
+  "chosen": 2,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_bm_george__comeon_s1.wav",
+    "gen_s": 2.34,
+    "rtf": 2.79,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.67,
+    "pass": false,
+    "score": 13.009,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on.",
+      0.22,
+      0.46
+     ]
+    ],
+    "dur": 0.84,
+    "peak_db": -13.319,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -20.782,
+    "pause_floor_db": -80.028,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.09,
+    "speech_t1": 0.55,
+    "tail_db": -104.817,
+    "truncated": false,
+    "f0_median": 138.642,
+    "f0_spread_st": 16.5
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_bm_george__comeon_s2.wav",
+    "gen_s": 1.94,
+    "rtf": 2.56,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.696,
+    "pass": false,
+    "score": 13.088,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on.",
+      0.2,
+      0.42
+     ]
+    ],
+    "dur": 0.76,
+    "peak_db": -12.098,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.401,
+    "pause_floor_db": -79.789,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.04,
+    "speech_t1": 0.48,
+    "tail_db": -104.802,
+    "truncated": false,
+    "f0_median": 88.354,
+    "f0_spread_st": 10.6
+   }
+  ]
+ },
+ "drv_bm_george__minute": {
+  "character": "drv_bm_george",
+  "text": "I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_bm_george__minute_s1.wav",
+    "gen_s": 2.19,
+    "rtf": 2.11,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.815,
+    "pass": true,
+    "score": 13.446,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.24
+     ],
+     [
+      " got",
+      0.24,
+      0.34
+     ],
+     [
+      " a",
+      0.34,
+      0.46
+     ],
+     [
+      " minute.",
+      0.46,
+      0.62
+     ]
+    ],
+    "dur": 1.04,
+    "peak_db": -12.432,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.121,
+    "pause_floor_db": -79.295,
+    "pause_hf_ratio": 0.006,
+    "speech_t0": 0.09,
+    "speech_t1": 0.76,
+    "tail_db": -104.712,
+    "truncated": false,
+    "f0_median": 130.107,
+    "f0_spread_st": 10.74
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_bm_george__minute_s2.wav",
+    "gen_s": 2.26,
+    "rtf": 1.94,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.818,
+    "pass": true,
+    "score": 12.878,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.26
+     ],
+     [
+      " got",
+      0.26,
+      0.38
+     ],
+     [
+      " a",
+      0.38,
+      0.52
+     ],
+     [
+      " minute.",
+      0.52,
+      0.68
+     ]
+    ],
+    "dur": 1.16,
+    "peak_db": -7.991,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.155,
+    "pause_floor_db": -80.667,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.09,
+    "speech_t1": 0.85,
+    "tail_db": -100.641,
+    "truncated": false,
+    "f0_median": 139.445,
+    "f0_spread_st": 3.4
+   }
+  ]
+ },
+ "drv_bm_lewis__comeon": {
+  "character": "drv_bm_lewis",
+  "text": "Come on.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_lewis.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_bm_lewis__comeon_s1.wav",
+    "gen_s": 2.01,
+    "rtf": 2.51,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.705,
+    "pass": false,
+    "score": 12.116,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on.",
+      0.24,
+      0.48
+     ]
+    ],
+    "dur": 0.8,
+    "peak_db": -11.896,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -25.447,
+    "pause_floor_db": -79.196,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.09,
+    "speech_t1": 0.48,
+    "tail_db": -104.819,
+    "truncated": false,
+    "f0_median": 285.41,
+    "f0_spread_st": 0.0
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_bm_lewis__comeon_s2.wav",
+    "gen_s": 2.04,
+    "rtf": 2.55,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.635,
+    "pass": false,
+    "score": 11.905,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.26
+     ],
+     [
+      " on.",
+      0.26,
+      0.44
+     ]
+    ],
+    "dur": 0.8,
+    "peak_db": -11.895,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -26.611,
+    "pause_floor_db": -79.867,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.1,
+    "speech_t1": 0.48,
+    "tail_db": -104.503,
+    "truncated": false,
+    "f0_median": 285.41,
+    "f0_spread_st": 0.0
+   }
+  ]
+ },
+ "drv_bm_lewis__minute": {
+  "character": "drv_bm_lewis",
+  "text": "I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_lewis.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_bm_lewis__minute_s1.wav",
+    "gen_s": 2.16,
+    "rtf": 2.16,
+    "asr": "I've got a minute",
+    "word_match": 1.0,
+    "sim": 0.792,
+    "pass": false,
+    "score": 12.375,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.26
+     ],
+     [
+      " got",
+      0.26,
+      0.34
+     ],
+     [
+      " a",
+      0.34,
+      0.44
+     ],
+     [
+      " minute",
+      0.44,
+      0.6
+     ]
+    ],
+    "dur": 1.0,
+    "peak_db": -12.286,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -26.535,
+    "pause_floor_db": -97.772,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.1,
+    "speech_t1": 0.66,
+    "tail_db": -104.693,
+    "truncated": false,
+    "f0_median": 285.41,
+    "f0_spread_st": 0.0
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_bm_lewis__minute_s2.wav",
+    "gen_s": 2.74,
+    "rtf": 2.54,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.781,
+    "pass": false,
+    "score": 12.342,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.26
+     ],
+     [
+      " got",
+      0.26,
+      0.4
+     ],
+     [
+      " a",
+      0.4,
+      0.52
+     ],
+     [
+      " minute.",
+      0.52,
+      0.68
+     ]
+    ],
+    "dur": 1.08,
+    "peak_db": -9.647,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -23.813,
+    "pause_floor_db": -84.747,
+    "pause_hf_ratio": 0.006,
+    "speech_t0": 0.09,
+    "speech_t1": 0.76,
+    "tail_db": -104.727,
+    "truncated": false,
+    "f0_median": 285.41,
+    "f0_spread_st": 0.0
+   }
+  ]
+ },
+ "drv_LS__comeon": {
+  "character": "drv_LS",
+  "text": "Come on.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/user/LS_narrator_it.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_LS__comeon_s1.wav",
+    "gen_s": 2.35,
+    "rtf": 3.09,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.635,
+    "pass": false,
+    "score": 11.905,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on.",
+      0.24,
+      0.46
+     ]
+    ],
+    "dur": 0.76,
+    "peak_db": -13.256,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.749,
+    "pause_floor_db": -105.032,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.09,
+    "speech_t1": 0.52,
+    "tail_db": -104.819,
+    "truncated": false,
+    "f0_median": 285.305,
+    "f0_spread_st": 0.0
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_LS__comeon_s2.wav",
+    "gen_s": 2.19,
+    "rtf": 3.05,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.59,
+    "pass": false,
+    "score": 11.769,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on.",
+      0.22,
+      0.38
+     ]
+    ],
+    "dur": 0.72,
+    "peak_db": -12.077,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.539,
+    "pause_floor_db": -81.504,
+    "pause_hf_ratio": 0.0,
+    "speech_t0": 0.1,
+    "speech_t1": 0.42,
+    "tail_db": -104.821,
+    "truncated": false,
+    "f0_median": 285.305,
+    "f0_spread_st": 0.0
+   }
+  ]
+ },
+ "drv_LS__minute": {
+  "character": "drv_LS",
+  "text": "I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/user/LS_narrator_it.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_LS__minute_s1.wav",
+    "gen_s": 2.97,
+    "rtf": 2.4,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.711,
+    "pass": false,
+    "score": 13.134,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.3
+     ],
+     [
+      " got",
+      0.3,
+      0.44
+     ],
+     [
+      " a",
+      0.44,
+      0.6
+     ],
+     [
+      " minute.",
+      0.6,
+      0.74
+     ]
+    ],
+    "dur": 1.24,
+    "peak_db": -10.778,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.215,
+    "pause_floor_db": -81.017,
+    "pause_hf_ratio": 0.008,
+    "speech_t0": 0.1,
+    "speech_t1": 0.91,
+    "tail_db": -104.83,
+    "truncated": false,
+    "f0_median": 96.594,
+    "f0_spread_st": 22.4
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_LS__minute_s2.wav",
+    "gen_s": 2.77,
+    "rtf": 2.47,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.708,
+    "pass": false,
+    "score": 13.123,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.26
+     ],
+     [
+      " got",
+      0.26,
+      0.4
+     ],
+     [
+      " a",
+      0.4,
+      0.5
+     ],
+     [
+      " minute.",
+      0.5,
+      0.68
+     ]
+    ],
+    "dur": 1.12,
+    "peak_db": -11.562,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.015,
+    "pause_floor_db": -82.278,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.11,
+    "speech_t1": 0.82,
+    "tail_db": -104.831,
+    "truncated": false,
+    "f0_median": 93.573,
+    "f0_spread_st": 22.0
+   }
+  ]
+ },
+ "drvT_bm_george__comeon": {
+  "character": "drvT_bm_george",
+  "text": "Come on.",
+  "model": "turbo",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "params": {},
+  "chosen": 2,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drvT_bm_george__comeon_s1.wav",
+    "gen_s": 3.05,
+    "rtf": 5.44,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.674,
+    "pass": false,
+    "score": 12.382,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on.",
+      0.2,
+      0.34
+     ]
+    ],
+    "dur": 0.56,
+    "peak_db": -10.638,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.28,
+    "pause_floor_db": -78.866,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.06,
+    "speech_t1": 0.4,
+    "tail_db": -100.266,
+    "truncated": false,
+    "f0_median": 98.035,
+    "f0_spread_st": 2.88
+   },
+   {
+    "seed": 2,
+    "file": "takes/drvT_bm_george__comeon_s2.wav",
+    "gen_s": 3.21,
+    "rtf": 4.45,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.689,
+    "pass": false,
+    "score": 13.067,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on.",
+      0.2,
+      0.42
+     ]
+    ],
+    "dur": 0.72,
+    "peak_db": -10.977,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.629,
+    "pause_floor_db": -91.042,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.06,
+    "speech_t1": 0.52,
+    "tail_db": -103.227,
+    "truncated": false,
+    "f0_median": 95.244,
+    "f0_spread_st": 11.5
+   }
+  ]
+ },
+ "drvT_bm_george__minute": {
+  "character": "drvT_bm_george",
+  "text": "I've got a minute.",
+  "model": "turbo",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drvT_bm_george__minute_s1.wav",
+    "gen_s": 3.47,
+    "rtf": 2.99,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.835,
+    "pass": true,
+    "score": 13.504,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.24
+     ],
+     [
+      " got",
+      0.24,
+      0.4
+     ],
+     [
+      " a",
+      0.4,
+      0.56
+     ],
+     [
+      " minute.",
+      0.56,
+      0.72
+     ]
+    ],
+    "dur": 1.16,
+    "peak_db": -13.539,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.828,
+    "pause_floor_db": -81.178,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.02,
+    "speech_t1": 0.92,
+    "tail_db": -102.836,
+    "truncated": false,
+    "f0_median": 135.476,
+    "f0_spread_st": 9.94
+   },
+   {
+    "seed": 2,
+    "file": "takes/drvT_bm_george__minute_s2.wav",
+    "gen_s": 3.83,
+    "rtf": 3.3,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.796,
+    "pass": false,
+    "score": 13.387,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.26
+     ],
+     [
+      " got",
+      0.26,
+      0.38
+     ],
+     [
+      " a",
+      0.38,
+      0.5
+     ],
+     [
+      " minute.",
+      0.5,
+      0.68
+     ]
+    ],
+    "dur": 1.16,
+    "peak_db": -9.773,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.74,
+    "pause_floor_db": -79.889,
+    "pause_hf_ratio": 0.003,
+    "speech_t0": 0.05,
+    "speech_t1": 0.9,
+    "tail_db": -100.506,
+    "truncated": false,
+    "f0_median": 142.294,
+    "f0_spread_st": 11.77
+   }
+  ]
+ },
+ "drvT_am_fenrir__comeon": {
+  "character": "drvT_am_fenrir",
+  "text": "Come on.",
+  "model": "turbo",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drvT_am_fenrir__comeon_s1.wav",
+    "gen_s": 3.15,
+    "rtf": 3.67,
+    "asr": "Come on.",
+    "word_match": 1.0,
+    "sim": 0.695,
+    "pass": false,
+    "score": 12.22,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on.",
+      0.2,
+      0.46
+     ]
+    ],
+    "dur": 0.86,
+    "peak_db": -10.842,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.781,
+    "pause_floor_db": -80.887,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.09,
+    "speech_t1": 0.57,
+    "tail_db": -103.222,
+    "truncated": false,
+    "f0_median": 121.045,
+    "f0_spread_st": 1.09
+   },
+   {
+    "seed": 2,
+    "file": "takes/drvT_am_fenrir__comeon_s2.wav",
+    "gen_s": 3.09,
+    "rtf": 3.96,
+    "asr": "Come on!",
+    "word_match": 1.0,
+    "sim": 0.665,
+    "pass": false,
+    "score": 11.994,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on!",
+      0.2,
+      0.48
+     ]
+    ],
+    "dur": 0.78,
+    "peak_db": -9.191,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -19.343,
+    "pause_floor_db": -80.486,
+    "pause_hf_ratio": 0.0,
+    "speech_t0": 0.05,
+    "speech_t1": 0.5,
+    "tail_db": -99.422,
+    "truncated": false
+   }
+  ]
+ },
+ "drvT_am_fenrir__minute": {
+  "character": "drvT_am_fenrir",
+  "text": "I've got a minute.",
+  "model": "turbo",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drvT_am_fenrir__minute_s1.wav",
+    "gen_s": 4.28,
+    "rtf": 3.76,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.763,
+    "pass": false,
+    "score": 13.289,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.28
+     ],
+     [
+      " got",
+      0.28,
+      0.42
+     ],
+     [
+      " a",
+      0.42,
+      0.56
+     ],
+     [
+      " minute.",
+      0.56,
+      0.72
+     ]
+    ],
+    "dur": 1.14,
+    "peak_db": -5.866,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.79,
+    "pause_floor_db": -85.941,
+    "pause_hf_ratio": 0.005,
+    "speech_t0": 0.11,
+    "speech_t1": 0.83,
+    "tail_db": -104.804,
+    "truncated": false,
+    "f0_median": 126.039,
+    "f0_spread_st": 15.2
+   },
+   {
+    "seed": 2,
+    "file": "takes/drvT_am_fenrir__minute_s2.wav",
+    "gen_s": 3.69,
+    "rtf": 3.24,
+    "asr": "I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.747,
+    "pass": false,
+    "score": 12.872,
+    "words": [
+     [
+      " I've",
+      0.0,
+      0.24
+     ],
+     [
+      " got",
+      0.24,
+      0.38
+     ],
+     [
+      " a",
+      0.38,
+      0.52
+     ],
+     [
+      " minute.",
+      0.52,
+      0.68
+     ]
+    ],
+    "dur": 1.14,
+    "peak_db": -8.399,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.316,
+    "pause_floor_db": -80.966,
+    "pause_hf_ratio": 0.005,
+    "speech_t0": 0.07,
+    "speech_t1": 0.78,
+    "tail_db": -100.262,
+    "truncated": false,
+    "f0_median": 106.292,
+    "f0_spread_st": 5.05
+   }
+  ]
+ }
+}

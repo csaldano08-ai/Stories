@@ -1,0 +1,30 @@
+[
+ {
+  "id": "A1",
+  "t": 13.425,
+  "who": "aki",
+  "text": "Oh, no\u2026 I\u2019m going to miss it.",
+  "dur": 2.76
+ },
+ {
+  "id": "A2",
+  "t": 27.425,
+  "who": "aki",
+  "text": "Hey, little one. Are you all alone?",
+  "dur": 2.72
+ },
+ {
+  "id": "D1",
+  "t": 47.95,
+  "who": "driver",
+  "text": "Come on. I\u2019ve got a minute.",
+  "dur": 2.12
+ },
+ {
+  "id": "A3",
+  "t": 50.975,
+  "who": "aki",
+  "text": "Thank you.",
+  "dur": 1.28
+ }
+]

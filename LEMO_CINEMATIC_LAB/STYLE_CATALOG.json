@@ -1,0 +1,992 @@
+[
+ {
+  "id": "MASTER_01",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "City Symphony",
+  "slug": "city-symphony",
+  "title": "The City That Never Woke Up",
+  "official_demo": "One Day in New York",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_016",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "Caption News",
+  "slug": "caption-news",
+  "title": "The Missing Hour",
+  "official_demo": "The Bee Ledger",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_017",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "1920s Newsreel",
+  "slug": "newsreel",
+  "title": "The Flying Bicycle",
+  "official_demo": "Knock-Knee Alert",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_018",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "Live Countdown Split-screen",
+  "slug": "countdown",
+  "title": "Ten Seconds Left",
+  "official_demo": "Counting Itself Down",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_019",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "Visual Investigation",
+  "slug": "visual-investigation",
+  "title": "The Empty Platform",
+  "official_demo": "The Hindenburg: Four Minutes, 32 Seconds",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_020",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "Constructivist Montage",
+  "slug": "kino-montage",
+  "title": "The Workers of Tomorrow",
+  "official_demo": "410 Days",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_021",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "Sports Telestrator",
+  "slug": "telestrator",
+  "title": "The Impossible Pass",
+  "official_demo": "Freeze Frame",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_022",
+  "cat": "01",
+  "category": "Edit & Documentary",
+  "style": "Broadcast News Package",
+  "slug": "news-package",
+  "title": "A City Beneath the Sea",
+  "official_demo": "The Week in AI",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_02",
+  "cat": "02",
+  "category": "Painting & Illustration",
+  "style": "Watercolor Brush",
+  "slug": "watercolor",
+  "title": "The Last Drop",
+  "official_demo": "Follow the Rain",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_023",
+  "cat": "02",
+  "category": "Painting & Illustration",
+  "style": "Crayon Picture Book",
+  "slug": "crayon-book",
+  "title": "The Star Under the Bed",
+  "official_demo": "The Moon Can't Sleep",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_024",
+  "cat": "02",
+  "category": "Painting & Illustration",
+  "style": "Impasto Oil Painting",
+  "slug": "impasto",
+  "title": "The Painter's Window",
+  "official_demo": "The Colour of Rain",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_025",
+  "cat": "02",
+  "category": "Painting & Illustration",
+  "style": "Urban Sketch · Pen & Wash",
+  "slug": "urban-sketch",
+  "title": "The Forgotten Café",
+  "official_demo": "Where the Wind Went",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_026",
+  "cat": "02",
+  "category": "Painting & Illustration",
+  "style": "Colored-Pencil Science Illustration",
+  "slug": "colored-pencil",
+  "title": "The Seed's Journey",
+  "official_demo": "The Other Half",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_03",
+  "cat": "03",
+  "category": "Sketch & Board",
+  "style": "Stick-figure Explainer",
+  "slug": "stick-explainer",
+  "title": "The Man Who Sold His Time",
+  "official_demo": "Six Hands Away",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_027",
+  "cat": "03",
+  "category": "Sketch & Board",
+  "style": "One-line Drawing",
+  "slug": "one-line",
+  "title": "A Line Between Us",
+  "official_demo": "The Line That Never Lifted",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_028",
+  "cat": "03",
+  "category": "Sketch & Board",
+  "style": "Whiteboard Explainer",
+  "slug": "whiteboard",
+  "title": "The Price of a Sandwich",
+  "official_demo": "Einstein in Your Pocket",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_029",
+  "cat": "03",
+  "category": "Sketch & Board",
+  "style": "Chalkboard",
+  "slug": "chalkboard",
+  "title": "Falling Up",
+  "official_demo": "The Story of Chinese Characters",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_030",
+  "cat": "03",
+  "category": "Sketch & Board",
+  "style": "Sketchnote",
+  "slug": "sketchnote",
+  "title": "A Day Without Decisions",
+  "official_demo": "How Bees Make Honey",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_031",
+  "cat": "03",
+  "category": "Sketch & Board",
+  "style": "Tablet Sketch Explainer",
+  "slug": "ipad-sketch",
+  "title": "How Memory Works",
+  "official_demo": "From Cherry to Cup",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_032",
+  "cat": "03",
+  "category": "Sketch & Board",
+  "style": "Marker on Paper",
+  "slug": "marker-paper",
+  "title": "One Small Habit",
+  "official_demo": "How Far Can You See?",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_04",
+  "cat": "04",
+  "category": "Traditional Crafts",
+  "style": "Chinese Ink Wash",
+  "slug": "ink-wash",
+  "title": "The Fox and the Moon",
+  "official_demo": "The Swordsman and the River",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_033",
+  "cat": "04",
+  "category": "Traditional Crafts",
+  "style": "Shadow Puppetry",
+  "slug": "shadow-puppet",
+  "title": "The Lantern Keeper",
+  "official_demo": "Hou Yi Shoots the Suns",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_034",
+  "cat": "04",
+  "category": "Traditional Crafts",
+  "style": "Ukiyo-e",
+  "slug": "ukiyoe",
+  "title": "The Fisherman's Promise",
+  "official_demo": "Toward the Mountain",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_035",
+  "cat": "04",
+  "category": "Traditional Crafts",
+  "style": "Red Paper-cut",
+  "slug": "papercut-red",
+  "title": "The Paper Dragon",
+  "official_demo": "Nian Comes to Town",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_036",
+  "cat": "04",
+  "category": "Traditional Crafts",
+  "style": "Paper-cut Lightbox",
+  "slug": "paper-lantern",
+  "title": "Beneath the Forest",
+  "official_demo": "The Last Night Train",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_037",
+  "cat": "04",
+  "category": "Traditional Crafts",
+  "style": "Stained Glass",
+  "slug": "stained-glass",
+  "title": "The Broken Sun",
+  "official_demo": "The Dragon of the East Window",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_038",
+  "cat": "04",
+  "category": "Traditional Crafts",
+  "style": "Gilded Illumination",
+  "slug": "gilded-illumination",
+  "title": "The Golden Library",
+  "official_demo": "Borrowed Light",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_05",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Risograph Print",
+  "slug": "risograph",
+  "title": "The Last Letter",
+  "official_demo": "Sunday Ride",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_039",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Halftone Dossier",
+  "slug": "halftone-dossier",
+  "title": "The Clockmaker's Secret",
+  "official_demo": "Case File: Chubby",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_040",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Woodcut Print",
+  "slug": "woodcut",
+  "title": "Against the Mountain",
+  "official_demo": "The Bell Founder",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_041",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Copperplate Engraving",
+  "slug": "engraving",
+  "title": "The Mechanical Bird",
+  "official_demo": "The Honeybee, Plate VII",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_042",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Silkscreen Travel Poster",
+  "slug": "silkscreen-poster",
+  "title": "Somewhere Beyond the Sea",
+  "official_demo": "The Long Way Home",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_043",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Scratchboard Long Take",
+  "slug": "printed-long-take",
+  "title": "Into the Woods",
+  "official_demo": "Thirty-Three Cranes",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_044",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Pop Art",
+  "slug": "pop-art",
+  "title": "The Most Expensive Coffee",
+  "official_demo": "The Same Banana",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_045",
+  "cat": "05",
+  "category": "Print & Printmaking",
+  "style": "Vintage Engraving Collage",
+  "slug": "vintage-collage",
+  "title": "The Whale in the Sky",
+  "official_demo": "The Inverted Jenny",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_06",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "Swiss Motion Graphics",
+  "slug": "swiss-motion",
+  "title": "One Second",
+  "official_demo": "Five Rules for a Poster",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_046",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "60s Spy Title Sequence",
+  "slug": "spy-titles",
+  "title": "The Missing Briefcase",
+  "official_demo": "The Velvet Cipher",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_047",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "Art Deco",
+  "slug": "art-deco",
+  "title": "Midnight at the Grand Hotel",
+  "official_demo": "Midnight at the Starlight Hotel",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_048",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "Pictogram Motion",
+  "slug": "pictogram-motion",
+  "title": "Crossing Paths",
+  "official_demo": "Left Behind",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_049",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "Bauhaus Shapes",
+  "slug": "bauhaus-shapes",
+  "title": "The Shape That Didn't Fit",
+  "official_demo": "COMPOUND",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_050",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "Scale Zoom Explainer",
+  "slug": "flat-space-explainer",
+  "title": "From Dust to Stars",
+  "official_demo": "The Long Way Down",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_051",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "Text Flash Cuts",
+  "slug": "text-flash-cuts",
+  "title": "The Words We Never Said",
+  "official_demo": "Behind You",
+  "needs": "✦ image generator"
+ },
+ {
+  "id": "STYLE_052",
+  "cat": "06",
+  "category": "Graphic & Type",
+  "style": "Silhouette Rhythm",
+  "slug": "silhouette-rhythm",
+  "title": "The Night Dancer",
+  "official_demo": "Half a Beat",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_07",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Exploded Teardown",
+  "slug": "teardown",
+  "title": "Inside the Broken Watch",
+  "official_demo": "21 Keys, Opened",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_053",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Blueprint",
+  "slug": "blueprint",
+  "title": "The Bridge That Almost Wasn't",
+  "official_demo": "Patent Pending: The Cloud Catcher",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_054",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Isometric Infographic",
+  "slug": "iso-infographic",
+  "title": "A Parcel's Journey",
+  "official_demo": "From Bean to Cup",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_055",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Line-Art Cutaway",
+  "slug": "hardcore-info",
+  "title": "The House That Breathes",
+  "official_demo": "Where Is Your Phone's Antenna?",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_056",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Color-Coded Mechanism",
+  "slug": "precise-mechanism",
+  "title": "The Elevator",
+  "official_demo": "Three Systems Keep the Time",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_057",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Instruction Manual Art",
+  "slug": "instruction-manual",
+  "title": "The Missing Screw",
+  "official_demo": "Step Ten",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_058",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Pen Plotter",
+  "slug": "pen-plotter",
+  "title": "A Machine Draws a Dream",
+  "official_demo": "8848.86",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_059",
+  "cat": "07",
+  "category": "Line Diagrams",
+  "style": "Assembly-Line Diagram",
+  "slug": "assembly-line-diagram",
+  "title": "The Journey of a Pencil",
+  "official_demo": "The Disassembly Line",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_08",
+  "cat": "08",
+  "category": "Cartoons",
+  "style": "80s Cel Anime",
+  "slug": "cel-anime-80s",
+  "title": "Last Train Home",
+  "official_demo": "City Lights, 1987",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_060",
+  "cat": "08",
+  "category": "Cartoons",
+  "style": "1930s Rubber Hose Cartoon",
+  "slug": "rubber-hose",
+  "title": "The Runaway Pancake",
+  "official_demo": "Coffee Cup Chase",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_061",
+  "cat": "08",
+  "category": "Cartoons",
+  "style": "Sci-Fi Sitcom Toon",
+  "slug": "scifi-toon",
+  "title": "Alien Roommate",
+  "official_demo": "Coffee Run",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_062",
+  "cat": "08",
+  "category": "Cartoons",
+  "style": "Mid-century Cartoon",
+  "slug": "midcentury-toon",
+  "title": "The Lazy Robot",
+  "official_demo": "Meet Pip",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_063",
+  "cat": "08",
+  "category": "Cartoons",
+  "style": "Comic History Cartoon",
+  "slug": "comic-history",
+  "title": "The First Photograph",
+  "official_demo": "One Piece of Paper",
+  "needs": "✦ image generator"
+ },
+ {
+  "id": "STYLE_064",
+  "cat": "08",
+  "category": "Cartoons",
+  "style": "Manga Panels",
+  "slug": "manga-panels",
+  "title": "The Final Delivery",
+  "official_demo": "KOMA ONE: Thirty Frames a Second",
+  "needs": "✦ image generator"
+ },
+ {
+  "id": "MASTER_09",
+  "cat": "09",
+  "category": "Games",
+  "style": "2.5D Pixel Art",
+  "slug": "hd-2d",
+  "title": "The Forgotten Save Point",
+  "official_demo": "The Lampbearer",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_065",
+  "cat": "09",
+  "category": "Games",
+  "style": "16-bit Pixel RPG",
+  "slug": "pixel-rpg",
+  "title": "The Shopkeeper's Quest",
+  "official_demo": "The Last Save Point",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_066",
+  "cat": "09",
+  "category": "Games",
+  "style": "Microgame Frenzy",
+  "slug": "microgame",
+  "title": "The Worst Morning Ever",
+  "official_demo": "Five-Second Astronaut",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_067",
+  "cat": "09",
+  "category": "Games",
+  "style": "Rhythm Game Show",
+  "slug": "game-show",
+  "title": "Beat the Machine",
+  "official_demo": "Rhythm of AI, 1997 → 2026",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_10",
+  "cat": "10",
+  "category": "Film & Tape",
+  "style": "Liminal Found Footage",
+  "slug": "backrooms",
+  "title": "Floor Zero",
+  "official_demo": "Night Shift Orientation",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_068",
+  "cat": "10",
+  "category": "Film & Tape",
+  "style": "CRT ASCII Terminal",
+  "slug": "ascii-crt",
+  "title": "A Message From Tomorrow",
+  "official_demo": "Tranquility.log",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_069",
+  "cat": "10",
+  "category": "Film & Tape",
+  "style": "1920s Silent Film",
+  "slug": "silent-film",
+  "title": "The Wrong Hat",
+  "official_demo": "The Runaway Loaf",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_070",
+  "cat": "10",
+  "category": "Film & Tape",
+  "style": "Scratch Film",
+  "slug": "scratch-film",
+  "title": "The Shadow That Stayed",
+  "official_demo": "The Night Climb",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_071",
+  "cat": "10",
+  "category": "Film & Tape",
+  "style": "Double Exposure",
+  "slug": "double-exposure",
+  "title": "Two Lives, One City",
+  "official_demo": "Mountains and Seas",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_11",
+  "cat": "11",
+  "category": "Screens & Interfaces",
+  "style": "Sci-fi Hologram HUD",
+  "slug": "hologram-hud",
+  "title": "The Last Signal",
+  "official_demo": "Volt · Spec Scan",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_072",
+  "cat": "11",
+  "category": "Screens & Interfaces",
+  "style": "Dark Tech Keynote",
+  "slug": "dark-keynote",
+  "title": "The Pocket Observatory",
+  "official_demo": "Room to Think",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_073",
+  "cat": "11",
+  "category": "Screens & Interfaces",
+  "style": "Mascot Screencast",
+  "slug": "living-screencast",
+  "title": "The Messy Desktop",
+  "official_demo": "Clawd Moves In",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_074",
+  "cat": "11",
+  "category": "Screens & Interfaces",
+  "style": "Tabletop App Flythrough",
+  "slug": "desktop-flythrough",
+  "title": "The Dinner Problem",
+  "official_demo": "Before the Ding",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_075",
+  "cat": "11",
+  "category": "Screens & Interfaces",
+  "style": "Spreadsheet Film",
+  "slug": "spreadsheet",
+  "title": "The Missing Penny",
+  "official_demo": "The Hidden Column",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_076",
+  "cat": "11",
+  "category": "Screens & Interfaces",
+  "style": "1-bit Dither",
+  "slug": "one-bit-dither",
+  "title": "The Last Computer",
+  "official_demo": "The Moon's Fax",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_12",
+  "cat": "12",
+  "category": "Light & Lines",
+  "style": "Neon Tubes",
+  "slug": "neon-tubes",
+  "title": "A World Made of Light",
+  "official_demo": "Midnight Snack",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_077",
+  "cat": "12",
+  "category": "Light & Lines",
+  "style": "Circuit Board",
+  "slug": "circuit-board",
+  "title": "The Signal That Found Home",
+  "official_demo": "Seven Milliseconds",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_078",
+  "cat": "12",
+  "category": "Light & Lines",
+  "style": "Firefly Pointillism",
+  "slug": "firefly-pointillism",
+  "title": "The Lost Firefly",
+  "official_demo": "Shine Back",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_079",
+  "cat": "12",
+  "category": "Light & Lines",
+  "style": "Flow-field Wind Lines",
+  "slug": "flow-field",
+  "title": "The Invisible Ocean",
+  "official_demo": "Typhoon Yagi over Qiongzhou",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_080",
+  "cat": "12",
+  "category": "Light & Lines",
+  "style": "Oscilloscope Math",
+  "slug": "oscilloscope-math",
+  "title": "When Waves Meet",
+  "official_demo": "The Gibbs Phenomenon",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_13",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Brick Toy",
+  "slug": "brick-toy",
+  "title": "The Little Repair Robot",
+  "official_demo": "Rocket from Spare Parts",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_081",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Paper Pop-up Book",
+  "slug": "paper-popup",
+  "title": "The Island Between Pages",
+  "official_demo": "Pip's Paper Adventure",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_082",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Tilt-Shift Miniature",
+  "slug": "tilt-shift",
+  "title": "The Town's First Snow",
+  "official_demo": "Toy Town Rush Hour",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_083",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Low-poly Isometric Island",
+  "slug": "lowpoly-island",
+  "title": "The Floating Village",
+  "official_demo": "The Island That Grew",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_084",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Glass Product Render",
+  "slug": "glass-product",
+  "title": "The Bottle of Tomorrow",
+  "official_demo": "Aura — Hear the Light",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_085",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Memphis Diorama",
+  "slug": "memphis-diorama",
+  "title": "The Apartment of Shapes",
+  "official_demo": "Four Seasons in Pomelo Town",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_086",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Isometric People Scene",
+  "slug": "isometric-picture-book",
+  "title": "The Office Mix-up",
+  "official_demo": "Seventy-Two Seats",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_087",
+  "cat": "13",
+  "category": "3D & Miniature",
+  "style": "Crayon World 3D",
+  "slug": "crayon-world",
+  "title": "The Boy Who Drew a Door",
+  "official_demo": "The Butterfly",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_14",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "Under the Microscope",
+  "slug": "microscope",
+  "title": "The Invisible World",
+  "official_demo": "Measured Blue",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_088",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "Satellite Briefing",
+  "slug": "satellite-briefing",
+  "title": "The River That Changed Course",
+  "official_demo": "The Map Still Says Sea",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_089",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "Engineering Briefing Board",
+  "slug": "briefing-board",
+  "title": "Why the Bridge Moves",
+  "official_demo": "The Ship Decides",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_090",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "LiDAR Survey",
+  "slug": "lidar-survey",
+  "title": "The Village Beneath the Trees",
+  "official_demo": "The Fields Under the Forest",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_091",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "Archive Light Table",
+  "slug": "archive-lighttable",
+  "title": "The Photograph's Journey",
+  "official_demo": "Two Seconds Short",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_092",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "Security X-ray",
+  "slug": "security-xray",
+  "title": "Inside the Suitcase",
+  "official_demo": "Night Shift at Lane 3",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_093",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "Radar Sweep Documentary",
+  "slug": "dark-documentary",
+  "title": "Following the Storm",
+  "official_demo": "Catching the Moon",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_094",
+  "cat": "14",
+  "category": "Instruments & Evidence",
+  "style": "Thermal Camera",
+  "slug": "thermal-camera",
+  "title": "Where the Heat Escapes",
+  "official_demo": "A Building on a Winter Night",
+  "needs": ""
+ },
+ {
+  "id": "MASTER_15",
+  "cat": "15",
+  "category": "Data & Maps",
+  "style": "Data Storytelling",
+  "slug": "dataviz",
+  "title": "A World Without Bees",
+  "official_demo": "A Hundred Summers",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_095",
+  "cat": "15",
+  "category": "Data & Maps",
+  "style": "Projection-Mapped Model",
+  "slug": "white-model",
+  "title": "The Growing City",
+  "official_demo": "How a Flattened City Grew Back",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_096",
+  "cat": "15",
+  "category": "Data & Maps",
+  "style": "Data Physicalization",
+  "slug": "data-physical",
+  "title": "A Thousand Small Choices",
+  "official_demo": "Two Spirals",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_097",
+  "cat": "15",
+  "category": "Data & Maps",
+  "style": "Transit Map",
+  "slug": "transit-map",
+  "title": "The Long Way Home",
+  "official_demo": "6 Kilometres",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_098",
+  "cat": "15",
+  "category": "Data & Maps",
+  "style": "3D Map Explainer",
+  "slug": "map-explainer",
+  "title": "From Mountain to Ocean",
+  "official_demo": "Strait of Hormuz",
+  "needs": ""
+ },
+ {
+  "id": "STYLE_099",
+  "cat": "15",
+  "category": "Data & Maps",
+  "style": "Blob Simulation",
+  "slug": "pip-simulation",
+  "title": "One Drop Becomes Many",
+  "official_demo": "Is Faster Better?",
+  "needs": ""
+ }
+]

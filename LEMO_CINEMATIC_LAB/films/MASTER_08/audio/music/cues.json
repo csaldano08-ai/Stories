@@ -1,0 +1,18 @@
+{
+ "bpm": 96,
+ "cuts": {
+  "splash_stab": 0.9375,
+  "groove": 2.5,
+  "watch_hit": 7.5,
+  "tape_stop": [
+   15.875,
+   16.25
+  ],
+  "ep_in": 23.75,
+  "clock": 40.0,
+  "hum_chord": 43.325,
+  "return": 43.75,
+  "chorus": 56.25,
+  "resolve": 68.75
+ }
+}

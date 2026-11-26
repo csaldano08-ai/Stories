@@ -1,0 +1,28 @@
+{
+ "in": "D1_raw.wav",
+ "out": "D1.wav",
+ "trim_s": [
+  0.0,
+  2.12
+ ],
+ "clicks_repaired": 0,
+ "before": {
+  "dur": 2.12,
+  "peak_dbfs": -8.36,
+  "dc": -4.360304922802643e-05,
+  "speech_db": -22.5,
+  "pause_floor_db": -78.9,
+  "clip_samples": 0,
+  "hf_above_10k_pct": 0.021
+ },
+ "after": {
+  "dur": 2.12,
+  "peak_dbfs": -8.2,
+  "dc": 4.4065224466128267e-10,
+  "speech_db": -22.9,
+  "pause_floor_db": -93.2,
+  "clip_samples": 0,
+  "hf_above_10k_pct": 0.022
+ },
+ "chain": "DC removal; HP 75 Hz (Butterworth 2, zero-phase); click repair; trim pre 0.12s / post 0.3s; fades 8/60 ms; soxr VHQ \u2192 48 kHz"
+}

@@ -1,0 +1,86 @@
+[
+ {
+  "id": "drv_am_michael__comeon",
+  "character": "drv_am_michael",
+  "text": "Come on.",
+  "takes": 2
+ },
+ {
+  "id": "drv_am_michael__minute",
+  "character": "drv_am_michael",
+  "text": "I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_am_fenrir__comeon",
+  "character": "drv_am_fenrir",
+  "text": "Come on.",
+  "takes": 2
+ },
+ {
+  "id": "drv_am_fenrir__minute",
+  "character": "drv_am_fenrir",
+  "text": "I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_bm_george__comeon",
+  "character": "drv_bm_george",
+  "text": "Come on.",
+  "takes": 2
+ },
+ {
+  "id": "drv_bm_george__minute",
+  "character": "drv_bm_george",
+  "text": "I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_bm_lewis__comeon",
+  "character": "drv_bm_lewis",
+  "text": "Come on.",
+  "takes": 2
+ },
+ {
+  "id": "drv_bm_lewis__minute",
+  "character": "drv_bm_lewis",
+  "text": "I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_LS__comeon",
+  "character": "drv_LS",
+  "text": "Come on.",
+  "takes": 2
+ },
+ {
+  "id": "drv_LS__minute",
+  "character": "drv_LS",
+  "text": "I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drvT_bm_george__comeon",
+  "character": "drvT_bm_george",
+  "text": "Come on.",
+  "takes": 2
+ },
+ {
+  "id": "drvT_bm_george__minute",
+  "character": "drvT_bm_george",
+  "text": "I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drvT_am_fenrir__comeon",
+  "character": "drvT_am_fenrir",
+  "text": "Come on.",
+  "takes": 2
+ },
+ {
+  "id": "drvT_am_fenrir__minute",
+  "character": "drvT_am_fenrir",
+  "text": "I've got a minute.",
+  "takes": 2
+ }
+]

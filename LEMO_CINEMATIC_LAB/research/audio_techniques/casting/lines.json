@@ -1,0 +1,98 @@
+[
+ {
+  "id": "girl_builtin__miss",
+  "character": "girl_builtin",
+  "text": "Oh, no... I'm going to miss it.",
+  "takes": 2
+ },
+ {
+  "id": "girl_builtin__alone",
+  "character": "girl_builtin",
+  "text": "Hey, little one. Are you all alone?",
+  "takes": 2
+ },
+ {
+  "id": "girl_af_heart__miss",
+  "character": "girl_af_heart",
+  "text": "Oh, no... I'm going to miss it.",
+  "takes": 2
+ },
+ {
+  "id": "girl_af_heart__alone",
+  "character": "girl_af_heart",
+  "text": "Hey, little one. Are you all alone?",
+  "takes": 2
+ },
+ {
+  "id": "girl_af_bella__miss",
+  "character": "girl_af_bella",
+  "text": "Oh, no... I'm going to miss it.",
+  "takes": 2
+ },
+ {
+  "id": "girl_af_bella__alone",
+  "character": "girl_af_bella",
+  "text": "Hey, little one. Are you all alone?",
+  "takes": 2
+ },
+ {
+  "id": "girl_af_nicole__miss",
+  "character": "girl_af_nicole",
+  "text": "Oh, no... I'm going to miss it.",
+  "takes": 2
+ },
+ {
+  "id": "girl_af_nicole__alone",
+  "character": "girl_af_nicole",
+  "text": "Hey, little one. Are you all alone?",
+  "takes": 2
+ },
+ {
+  "id": "girl_bf_emma__miss",
+  "character": "girl_bf_emma",
+  "text": "Oh, no... I'm going to miss it.",
+  "takes": 2
+ },
+ {
+  "id": "girl_bf_emma__alone",
+  "character": "girl_bf_emma",
+  "text": "Hey, little one. Are you all alone?",
+  "takes": 2
+ },
+ {
+  "id": "drv_am_michael__minute",
+  "character": "drv_am_michael",
+  "text": "Come on. I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_am_fenrir__minute",
+  "character": "drv_am_fenrir",
+  "text": "Come on. I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_bm_george__minute",
+  "character": "drv_bm_george",
+  "text": "Come on. I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_bm_lewis__minute",
+  "character": "drv_bm_lewis",
+  "text": "Come on. I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_am_puck__minute",
+  "character": "drv_am_puck",
+  "text": "Come on. I've got a minute.",
+  "takes": 2
+ },
+ {
+  "id": "drv_LS__minute",
+  "character": "drv_LS",
+  "text": "Come on. I've got a minute.",
+  "takes": 2
+ }
+]

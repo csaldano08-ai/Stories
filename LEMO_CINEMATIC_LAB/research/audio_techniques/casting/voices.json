@@ -1,0 +1,46 @@
+{
+ "girl_builtin": {
+  "model": "nano",
+  "ref": "builtin"
+ },
+ "girl_af_heart": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_heart.wav"
+ },
+ "girl_af_bella": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_bella.wav"
+ },
+ "girl_af_nicole": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_nicole.wav"
+ },
+ "girl_bf_emma": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bf_emma.wav"
+ },
+ "drv_am_michael": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_michael.wav"
+ },
+ "drv_am_fenrir": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav"
+ },
+ "drv_bm_george": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav"
+ },
+ "drv_bm_lewis": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_lewis.wav"
+ },
+ "drv_am_puck": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_puck.wav"
+ },
+ "drv_LS": {
+  "model": "nano",
+  "ref": "../../../shared/audio_references/user/LS_narrator_it.wav"
+ }
+}

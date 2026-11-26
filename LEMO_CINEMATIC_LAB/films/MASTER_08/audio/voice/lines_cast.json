@@ -1,0 +1,110 @@
+[
+ {
+  "id": "aki_heart__A1_miss",
+  "character": "aki_heart",
+  "text": "Oh, no... I'm going to miss it.",
+  "takes": 4
+ },
+ {
+  "id": "aki_heart__A1b_miss_gasp",
+  "character": "aki_heart",
+  "text": "[gasp] Oh, no... I'm going to miss it.",
+  "takes": 3
+ },
+ {
+  "id": "aki_heart__A2_alone",
+  "character": "aki_heart",
+  "text": "Hey, little one. Are you all alone?",
+  "takes": 4
+ },
+ {
+  "id": "aki_heart__A2b_alone_soft",
+  "character": "aki_heart",
+  "text": "Hey... little one. Are you all alone?",
+  "takes": 3
+ },
+ {
+  "id": "aki_heart__A3_thanks",
+  "character": "aki_heart",
+  "text": "Thank you.",
+  "takes": 4
+ },
+ {
+  "id": "aki_heart__A3b_thanks_breath",
+  "character": "aki_heart",
+  "text": "[sigh] Thank you.",
+  "takes": 3
+ },
+ {
+  "id": "aki_bella__A1_miss",
+  "character": "aki_bella",
+  "text": "Oh, no... I'm going to miss it.",
+  "takes": 4
+ },
+ {
+  "id": "aki_bella__A1b_miss_gasp",
+  "character": "aki_bella",
+  "text": "[gasp] Oh, no... I'm going to miss it.",
+  "takes": 3
+ },
+ {
+  "id": "aki_bella__A2_alone",
+  "character": "aki_bella",
+  "text": "Hey, little one. Are you all alone?",
+  "takes": 4
+ },
+ {
+  "id": "aki_bella__A2b_alone_soft",
+  "character": "aki_bella",
+  "text": "Hey... little one. Are you all alone?",
+  "takes": 3
+ },
+ {
+  "id": "aki_bella__A3_thanks",
+  "character": "aki_bella",
+  "text": "Thank you.",
+  "takes": 4
+ },
+ {
+  "id": "aki_bella__A3b_thanks_breath",
+  "character": "aki_bella",
+  "text": "[sigh] Thank you.",
+  "takes": 3
+ },
+ {
+  "id": "drv_michael__D1_comeon",
+  "character": "drv_michael",
+  "text": "Come on.",
+  "takes": 4
+ },
+ {
+  "id": "drv_michael__D2_minute",
+  "character": "drv_michael",
+  "text": "I've got a minute.",
+  "takes": 4
+ },
+ {
+  "id": "drv_michael__D12_full",
+  "character": "drv_michael",
+  "text": "Come on, I've got a minute.",
+  "takes": 3
+ },
+ {
+  "id": "drv_george__D1_comeon",
+  "character": "drv_george",
+  "text": "Come on.",
+  "takes": 4
+ },
+ {
+  "id": "drv_george__D2_minute",
+  "character": "drv_george",
+  "text": "I've got a minute.",
+  "takes": 4
+ },
+ {
+  "id": "drv_george__D12_full",
+  "character": "drv_george",
+  "text": "Come on, I've got a minute.",
+  "takes": 3
+ }
+]

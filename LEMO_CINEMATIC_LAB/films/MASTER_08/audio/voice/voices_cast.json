@@ -1,0 +1,54 @@
+{
+ "aki_heart": {
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_af_heart.wav",
+  "f0_range": [
+   120,
+   450
+  ],
+  "params": {
+   "temperature": 0.75,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  }
+ },
+ "aki_bella": {
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_af_bella.wav",
+  "f0_range": [
+   120,
+   450
+  ],
+  "params": {
+   "temperature": 0.75,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  }
+ },
+ "drv_michael": {
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_am_michael.wav",
+  "f0_range": [
+   60,
+   300
+  ],
+  "params": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  }
+ },
+ "drv_george": {
+  "model": "nano",
+  "ref": "../../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "f0_range": [
+   60,
+   300
+  ],
+  "params": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "repetition_penalty": 1.2
+  }
+ }
+}

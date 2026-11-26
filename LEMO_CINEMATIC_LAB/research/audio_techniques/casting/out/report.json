@@ -1,0 +1,1890 @@
+{
+ "girl_builtin__miss": {
+  "character": "girl_builtin",
+  "text": "Oh, no... I'm going to miss it.",
+  "model": "nano",
+  "ref": "builtin",
+  "params": {},
+  "chosen": 2,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_builtin__miss_s1.wav",
+    "gen_s": 2.14,
+    "rtf": 1.07,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.687,
+    "pass": false,
+    "score": 13.062,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.28
+     ],
+     [
+      " no,",
+      0.28,
+      0.54
+     ],
+     [
+      " I'm",
+      0.8,
+      1.0
+     ],
+     [
+      " going",
+      1.0,
+      1.1
+     ],
+     [
+      " to",
+      1.1,
+      1.24
+     ],
+     [
+      " miss",
+      1.24,
+      1.4
+     ],
+     [
+      " it.",
+      1.4,
+      1.7
+     ]
+    ],
+    "dur": 2.0,
+    "peak_db": -1.873,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.508,
+    "pause_floor_db": -71.802,
+    "pause_hf_ratio": 0.007,
+    "speech_t0": 0.09,
+    "speech_t1": 1.73,
+    "tail_db": -77.466,
+    "truncated": false,
+    "f0_median": 254.062,
+    "f0_spread_st": 26.66
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_builtin__miss_s2.wav",
+    "gen_s": 3.26,
+    "rtf": 1.85,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.785,
+    "pass": false,
+    "score": 13.356,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.2
+     ],
+     [
+      " no,",
+      0.2,
+      0.44
+     ],
+     [
+      " I'm",
+      0.58,
+      0.72
+     ],
+     [
+      " going",
+      0.72,
+      0.86
+     ],
+     [
+      " to",
+      0.86,
+      1.04
+     ],
+     [
+      " miss",
+      1.04,
+      1.24
+     ],
+     [
+      " it.",
+      1.24,
+      1.48
+     ]
+    ],
+    "dur": 1.76,
+    "peak_db": -10.594,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.112,
+    "pause_floor_db": -80.255,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.04,
+    "speech_t1": 1.54,
+    "tail_db": -79.842,
+    "truncated": false,
+    "f0_median": 228.314,
+    "f0_spread_st": 9.67
+   }
+  ]
+ },
+ "girl_builtin__alone": {
+  "character": "girl_builtin",
+  "text": "Hey, little one. Are you all alone?",
+  "model": "nano",
+  "ref": "builtin",
+  "params": {},
+  "chosen": 2,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_builtin__alone_s1.wav",
+    "gen_s": 3.94,
+    "rtf": 1.54,
+    "asr": "Hey, little one. Are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.757,
+    "pass": false,
+    "score": 13.27,
+    "words": [
+     [
+      " Hey,",
+      0.0,
+      0.3
+     ],
+     [
+      " little",
+      0.34,
+      0.52
+     ],
+     [
+      " one.",
+      0.52,
+      0.86
+     ],
+     [
+      " Are",
+      1.3,
+      1.44
+     ],
+     [
+      " you",
+      1.44,
+      1.62
+     ],
+     [
+      " all",
+      1.62,
+      1.8
+     ],
+     [
+      " alone?",
+      1.8,
+      2.12
+     ]
+    ],
+    "dur": 2.56,
+    "peak_db": -7.974,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.112,
+    "pause_floor_db": -69.459,
+    "pause_hf_ratio": 0.003,
+    "speech_t0": 0.12,
+    "speech_t1": 2.36,
+    "tail_db": -77.774,
+    "truncated": false,
+    "f0_median": 223.743,
+    "f0_spread_st": 9.8
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_builtin__alone_s2.wav",
+    "gen_s": 3.26,
+    "rtf": 1.54,
+    "asr": "Hey, little one. Are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.757,
+    "pass": false,
+    "score": 13.272,
+    "words": [
+     [
+      " Hey,",
+      0.0,
+      0.26
+     ],
+     [
+      " little",
+      0.3,
+      0.44
+     ],
+     [
+      " one.",
+      0.44,
+      0.72
+     ],
+     [
+      " Are",
+      1.04,
+      1.12
+     ],
+     [
+      " you",
+      1.12,
+      1.24
+     ],
+     [
+      " all",
+      1.24,
+      1.4
+     ],
+     [
+      " alone?",
+      1.4,
+      1.66
+     ]
+    ],
+    "dur": 2.12,
+    "peak_db": -9.99,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -23.131,
+    "pause_floor_db": -71.613,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.1,
+    "speech_t1": 1.86,
+    "tail_db": -74.059,
+    "truncated": false,
+    "f0_median": 225.04,
+    "f0_spread_st": 8.1
+   }
+  ]
+ },
+ "girl_af_heart__miss": {
+  "character": "girl_af_heart",
+  "text": "Oh, no... I'm going to miss it.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_heart.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_af_heart__miss_s1.wav",
+    "gen_s": 3.36,
+    "rtf": 1.58,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.875,
+    "pass": true,
+    "score": 13.626,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.28
+     ],
+     [
+      " no,",
+      0.28,
+      0.58
+     ],
+     [
+      " I'm",
+      0.94,
+      1.16
+     ],
+     [
+      " going",
+      1.16,
+      1.3
+     ],
+     [
+      " to",
+      1.3,
+      1.48
+     ],
+     [
+      " miss",
+      1.48,
+      1.66
+     ],
+     [
+      " it.",
+      1.66,
+      1.92
+     ]
+    ],
+    "dur": 2.12,
+    "peak_db": -3.28,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.079,
+    "pause_floor_db": -79.22,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.09,
+    "speech_t1": 1.95,
+    "tail_db": -79.155,
+    "truncated": false,
+    "f0_median": 218.633,
+    "f0_spread_st": 9.7
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_af_heart__miss_s2.wav",
+    "gen_s": 3.07,
+    "rtf": 1.45,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.878,
+    "pass": true,
+    "score": 13.172,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.22
+     ],
+     [
+      " no,",
+      0.22,
+      0.48
+     ],
+     [
+      " I'm",
+      0.8,
+      1.04
+     ],
+     [
+      " going",
+      1.04,
+      1.18
+     ],
+     [
+      " to",
+      1.18,
+      1.36
+     ],
+     [
+      " miss",
+      1.36,
+      1.54
+     ],
+     [
+      " it.",
+      1.54,
+      1.88
+     ]
+    ],
+    "dur": 2.12,
+    "peak_db": -10.156,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -23.575,
+    "pause_floor_db": -78.642,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.06,
+    "speech_t1": 1.9,
+    "tail_db": -78.127,
+    "truncated": false,
+    "f0_median": 174.534,
+    "f0_spread_st": 4.3
+   }
+  ]
+ },
+ "girl_af_heart__alone": {
+  "character": "girl_af_heart",
+  "text": "Hey, little one. Are you all alone?",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_heart.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_af_heart__alone_s1.wav",
+    "gen_s": 3.9,
+    "rtf": 1.5,
+    "asr": "Hey, little one, are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.845,
+    "pass": true,
+    "score": 13.334,
+    "words": [
+     [
+      " Hey,",
+      0.0,
+      0.36
+     ],
+     [
+      " little",
+      0.58,
+      0.78
+     ],
+     [
+      " one,",
+      0.78,
+      1.08
+     ],
+     [
+      " are",
+      1.52,
+      1.64
+     ],
+     [
+      " you",
+      1.64,
+      1.8
+     ],
+     [
+      " all",
+      1.8,
+      1.96
+     ],
+     [
+      " alone?",
+      1.96,
+      2.24
+     ]
+    ],
+    "dur": 2.6,
+    "peak_db": -4.289,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.811,
+    "pause_floor_db": -73.352,
+    "pause_hf_ratio": 0.003,
+    "speech_t0": 0.13,
+    "speech_t1": 2.41,
+    "tail_db": -78.728,
+    "truncated": false,
+    "f0_median": 195.908,
+    "f0_spread_st": 6.4
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_af_heart__alone_s2.wav",
+    "gen_s": 3.38,
+    "rtf": 1.59,
+    "asr": "Hey little one, are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.793,
+    "pass": false,
+    "score": 13.292,
+    "words": [
+     [
+      " Hey",
+      0.0,
+      0.18
+     ],
+     [
+      " little",
+      0.18,
+      0.38
+     ],
+     [
+      " one,",
+      0.38,
+      0.7
+     ],
+     [
+      " are",
+      1.0,
+      1.08
+     ],
+     [
+      " you",
+      1.08,
+      1.2
+     ],
+     [
+      " all",
+      1.2,
+      1.34
+     ],
+     [
+      " alone?",
+      1.34,
+      1.64
+     ]
+    ],
+    "dur": 2.12,
+    "peak_db": -10.02,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.236,
+    "pause_floor_db": -77.469,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.04,
+    "speech_t1": 1.82,
+    "tail_db": -78.261,
+    "truncated": false,
+    "f0_median": 173.529,
+    "f0_spread_st": 7.3
+   }
+  ]
+ },
+ "girl_af_bella__miss": {
+  "character": "girl_af_bella",
+  "text": "Oh, no... I'm going to miss it.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_bella.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_af_bella__miss_s1.wav",
+    "gen_s": 3.77,
+    "rtf": 1.52,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.858,
+    "pass": true,
+    "score": 13.532,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.28
+     ],
+     [
+      " no,",
+      0.28,
+      0.58
+     ],
+     [
+      " I'm",
+      1.04,
+      1.48
+     ],
+     [
+      " going",
+      1.48,
+      1.62
+     ],
+     [
+      " to",
+      1.62,
+      1.74
+     ],
+     [
+      " miss",
+      1.74,
+      1.88
+     ],
+     [
+      " it.",
+      1.88,
+      2.16
+     ]
+    ],
+    "dur": 2.48,
+    "peak_db": -4.559,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -20.768,
+    "pause_floor_db": -78.039,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.09,
+    "speech_t1": 2.18,
+    "tail_db": -79.14,
+    "truncated": false,
+    "f0_median": 218.003,
+    "f0_spread_st": 7.65
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_af_bella__miss_s2.wav",
+    "gen_s": 2.92,
+    "rtf": 1.52,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.839,
+    "pass": true,
+    "score": 13.443,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.22
+     ],
+     [
+      " no,",
+      0.22,
+      0.46
+     ],
+     [
+      " I'm",
+      0.74,
+      0.92
+     ],
+     [
+      " going",
+      0.92,
+      1.08
+     ],
+     [
+      " to",
+      1.08,
+      1.24
+     ],
+     [
+      " miss",
+      1.24,
+      1.44
+     ],
+     [
+      " it.",
+      1.44,
+      1.72
+     ]
+    ],
+    "dur": 1.92,
+    "peak_db": -9.48,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.411,
+    "pause_floor_db": -81.059,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.09,
+    "speech_t1": 1.64,
+    "tail_db": -80.675,
+    "truncated": false,
+    "f0_median": 196.476,
+    "f0_spread_st": 7.41
+   }
+  ]
+ },
+ "girl_af_bella__alone": {
+  "character": "girl_af_bella",
+  "text": "Hey, little one. Are you all alone?",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_bella.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_af_bella__alone_s1.wav",
+    "gen_s": 3.34,
+    "rtf": 1.54,
+    "asr": "Hey, little one. Are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.854,
+    "pass": true,
+    "score": 13.421,
+    "words": [
+     [
+      " Hey,",
+      0.0,
+      0.28
+     ],
+     [
+      " little",
+      0.36,
+      0.44
+     ],
+     [
+      " one.",
+      0.44,
+      0.76
+     ],
+     [
+      " Are",
+      1.14,
+      1.22
+     ],
+     [
+      " you",
+      1.22,
+      1.34
+     ],
+     [
+      " all",
+      1.34,
+      1.5
+     ],
+     [
+      " alone?",
+      1.5,
+      1.74
+     ]
+    ],
+    "dur": 2.16,
+    "peak_db": -9.464,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.623,
+    "pause_floor_db": -75.194,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.13,
+    "speech_t1": 1.92,
+    "tail_db": -79.811,
+    "truncated": false,
+    "f0_median": 193.658,
+    "f0_spread_st": 6.86
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_af_bella__alone_s2.wav",
+    "gen_s": 3.05,
+    "rtf": 1.52,
+    "asr": "Hey little one, are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.787,
+    "pass": false,
+    "score": 13.361,
+    "words": [
+     [
+      " Hey",
+      0.0,
+      0.24
+     ],
+     [
+      " little",
+      0.24,
+      0.4
+     ],
+     [
+      " one,",
+      0.4,
+      0.7
+     ],
+     [
+      " are",
+      0.96,
+      1.02
+     ],
+     [
+      " you",
+      1.02,
+      1.14
+     ],
+     [
+      " all",
+      1.14,
+      1.28
+     ],
+     [
+      " alone?",
+      1.28,
+      1.56
+     ]
+    ],
+    "dur": 2.0,
+    "peak_db": -10.757,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.765,
+    "pause_floor_db": -81.019,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.12,
+    "speech_t1": 1.71,
+    "tail_db": -80.58,
+    "truncated": false,
+    "f0_median": 198.185,
+    "f0_spread_st": 8.52
+   }
+  ]
+ },
+ "girl_af_nicole__miss": {
+  "character": "girl_af_nicole",
+  "text": "Oh, no... I'm going to miss it.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_nicole.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_af_nicole__miss_s1.wav",
+    "gen_s": 4.13,
+    "rtf": 1.69,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.809,
+    "pass": true,
+    "score": 13.426,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.3
+     ],
+     [
+      " no,",
+      0.3,
+      0.64
+     ],
+     [
+      " I'm",
+      1.08,
+      1.3
+     ],
+     [
+      " going",
+      1.3,
+      1.44
+     ],
+     [
+      " to",
+      1.44,
+      1.6
+     ],
+     [
+      " miss",
+      1.6,
+      1.82
+     ],
+     [
+      " it.",
+      1.82,
+      2.12
+     ]
+    ],
+    "dur": 2.44,
+    "peak_db": -0.162,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -13.354,
+    "pause_floor_db": -79.506,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.07,
+    "speech_t1": 2.16,
+    "tail_db": -80.914,
+    "truncated": false,
+    "f0_median": 171.536,
+    "f0_spread_st": 9.34
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_af_nicole__miss_s2.wav",
+    "gen_s": 4.19,
+    "rtf": 1.59,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.891,
+    "pass": true,
+    "score": 13.148,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.4
+     ],
+     [
+      " no,",
+      0.4,
+      0.8
+     ],
+     [
+      " I'm",
+      1.28,
+      1.56
+     ],
+     [
+      " going",
+      1.56,
+      1.7
+     ],
+     [
+      " to",
+      1.7,
+      1.84
+     ],
+     [
+      " miss",
+      1.84,
+      2.04
+     ],
+     [
+      " it.",
+      2.04,
+      2.3
+     ]
+    ],
+    "dur": 2.64,
+    "peak_db": -5.576,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -14.251,
+    "pause_floor_db": -79.557,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.11,
+    "speech_t1": 2.37,
+    "tail_db": -81.341,
+    "truncated": false,
+    "f0_median": 159.127,
+    "f0_spread_st": 3.81
+   }
+  ]
+ },
+ "girl_af_nicole__alone": {
+  "character": "girl_af_nicole",
+  "text": "Hey, little one. Are you all alone?",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_af_nicole.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_af_nicole__alone_s1.wav",
+    "gen_s": 3.19,
+    "rtf": 1.29,
+    "asr": "Hey, little one, are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.864,
+    "pass": true,
+    "score": 13.593,
+    "words": [
+     [
+      " Hey,",
+      0.0,
+      0.34
+     ],
+     [
+      " little",
+      0.36,
+      0.54
+     ],
+     [
+      " one,",
+      0.54,
+      0.88
+     ],
+     [
+      " are",
+      1.2,
+      1.36
+     ],
+     [
+      " you",
+      1.36,
+      1.5
+     ],
+     [
+      " all",
+      1.5,
+      1.66
+     ],
+     [
+      " alone?",
+      1.66,
+      1.96
+     ]
+    ],
+    "dur": 2.48,
+    "peak_db": -4.289,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -16.139,
+    "pause_floor_db": -80.367,
+    "pause_hf_ratio": 0.003,
+    "speech_t0": 0.1,
+    "speech_t1": 2.15,
+    "tail_db": -79.401,
+    "truncated": false,
+    "f0_median": 151.941,
+    "f0_spread_st": 8.0
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_af_nicole__alone_s2.wav",
+    "gen_s": 4.07,
+    "rtf": 1.72,
+    "asr": "Hey, little one, are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.854,
+    "pass": true,
+    "score": 13.306,
+    "words": [
+     [
+      " Hey,",
+      0.0,
+      0.24
+     ],
+     [
+      " little",
+      0.36,
+      0.46
+     ],
+     [
+      " one,",
+      0.46,
+      0.84
+     ],
+     [
+      " are",
+      1.24,
+      1.4
+     ],
+     [
+      " you",
+      1.4,
+      1.52
+     ],
+     [
+      " all",
+      1.52,
+      1.68
+     ],
+     [
+      " alone?",
+      1.68,
+      1.98
+     ]
+    ],
+    "dur": 2.36,
+    "peak_db": -4.567,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -15.947,
+    "pause_floor_db": -79.435,
+    "pause_hf_ratio": 0.005,
+    "speech_t0": 0.08,
+    "speech_t1": 2.15,
+    "tail_db": -81.575,
+    "truncated": false,
+    "f0_median": 150.196,
+    "f0_spread_st": 5.96
+   }
+  ]
+ },
+ "girl_bf_emma__miss": {
+  "character": "girl_bf_emma",
+  "text": "Oh, no... I'm going to miss it.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bf_emma.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_bf_emma__miss_s1.wav",
+    "gen_s": 3.8,
+    "rtf": 1.5,
+    "asr": "Oh no. I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.867,
+    "pass": true,
+    "score": 13.602,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.34
+     ],
+     [
+      " no.",
+      0.34,
+      0.7
+     ],
+     [
+      " I'm",
+      1.24,
+      1.5
+     ],
+     [
+      " going",
+      1.5,
+      1.64
+     ],
+     [
+      " to",
+      1.64,
+      1.82
+     ],
+     [
+      " miss",
+      1.82,
+      2.02
+     ],
+     [
+      " it.",
+      2.02,
+      2.28
+     ]
+    ],
+    "dur": 2.54,
+    "peak_db": -13.903,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.667,
+    "pause_floor_db": -82.136,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.11,
+    "speech_t1": 2.32,
+    "tail_db": -99.258,
+    "truncated": false,
+    "f0_median": 176.562,
+    "f0_spread_st": 20.65
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_bf_emma__miss_s2.wav",
+    "gen_s": 3.7,
+    "rtf": 1.67,
+    "asr": "Oh no, I'm going to miss it.",
+    "word_match": 1.0,
+    "sim": 0.879,
+    "pass": true,
+    "score": 13.412,
+    "words": [
+     [
+      " Oh",
+      0.0,
+      0.28
+     ],
+     [
+      " no,",
+      0.28,
+      0.58
+     ],
+     [
+      " I'm",
+      0.96,
+      1.22
+     ],
+     [
+      " going",
+      1.22,
+      1.36
+     ],
+     [
+      " to",
+      1.36,
+      1.54
+     ],
+     [
+      " miss",
+      1.54,
+      1.7
+     ],
+     [
+      " it.",
+      1.7,
+      1.94
+     ]
+    ],
+    "dur": 2.22,
+    "peak_db": -8.745,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -23.395,
+    "pause_floor_db": -80.156,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.08,
+    "speech_t1": 2.02,
+    "tail_db": -96.431,
+    "truncated": false,
+    "f0_median": 194.78,
+    "f0_spread_st": 6.2
+   }
+  ]
+ },
+ "girl_bf_emma__alone": {
+  "character": "girl_bf_emma",
+  "text": "Hey, little one. Are you all alone?",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bf_emma.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/girl_bf_emma__alone_s1.wav",
+    "gen_s": 3.19,
+    "rtf": 1.44,
+    "asr": "Hey little one, are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.816,
+    "pass": true,
+    "score": 13.427,
+    "words": [
+     [
+      " Hey",
+      0.0,
+      0.24
+     ],
+     [
+      " little",
+      0.24,
+      0.44
+     ],
+     [
+      " one,",
+      0.44,
+      0.74
+     ],
+     [
+      " are",
+      1.04,
+      1.14
+     ],
+     [
+      " you",
+      1.14,
+      1.28
+     ],
+     [
+      " all",
+      1.28,
+      1.44
+     ],
+     [
+      " alone?",
+      1.44,
+      1.72
+     ]
+    ],
+    "dur": 2.22,
+    "peak_db": -15.178,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -26.319,
+    "pause_floor_db": -81.947,
+    "pause_hf_ratio": 0.022,
+    "speech_t0": 0.1,
+    "speech_t1": 1.86,
+    "tail_db": -96.231,
+    "truncated": false,
+    "f0_median": 169.566,
+    "f0_spread_st": 7.82
+   },
+   {
+    "seed": 2,
+    "file": "takes/girl_bf_emma__alone_s2.wav",
+    "gen_s": 3.2,
+    "rtf": 1.44,
+    "asr": "Hey little one, are you all alone?",
+    "word_match": 1.0,
+    "sim": 0.8,
+    "pass": true,
+    "score": 13.401,
+    "words": [
+     [
+      " Hey",
+      0.0,
+      0.26
+     ],
+     [
+      " little",
+      0.26,
+      0.42
+     ],
+     [
+      " one,",
+      0.42,
+      0.76
+     ],
+     [
+      " are",
+      1.14,
+      1.26
+     ],
+     [
+      " you",
+      1.26,
+      1.42
+     ],
+     [
+      " all",
+      1.42,
+      1.56
+     ],
+     [
+      " alone?",
+      1.56,
+      1.82
+     ]
+    ],
+    "dur": 2.22,
+    "peak_db": -14.438,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -26.174,
+    "pause_floor_db": -88.269,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.1,
+    "speech_t1": 1.98,
+    "tail_db": -102.654,
+    "truncated": false,
+    "f0_median": 157.302,
+    "f0_spread_st": 21.2
+   }
+  ]
+ },
+ "drv_am_michael__minute": {
+  "character": "drv_am_michael",
+  "text": "Come on. I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_michael.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_am_michael__minute_s1.wav",
+    "gen_s": 2.23,
+    "rtf": 2.66,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.7,
+    "pass": false,
+    "score": 2.1,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on.",
+      0.22,
+      0.44
+     ]
+    ],
+    "dur": 0.84,
+    "peak_db": -17.248,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -31.466,
+    "pause_floor_db": -79.687,
+    "pause_hf_ratio": 0.032,
+    "speech_t0": 0.09,
+    "speech_t1": 0.5,
+    "tail_db": -104.834,
+    "truncated": false,
+    "f0_median": 544.593,
+    "f0_spread_st": 0.0
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_am_michael__minute_s2.wav",
+    "gen_s": 2.2,
+    "rtf": 2.75,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.699,
+    "pass": false,
+    "score": 2.096,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on.",
+      0.22,
+      0.42
+     ]
+    ],
+    "dur": 0.8,
+    "peak_db": -8.868,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.278,
+    "pause_floor_db": -80.013,
+    "pause_hf_ratio": 0.007,
+    "speech_t0": 0.1,
+    "speech_t1": 0.44,
+    "tail_db": -104.427,
+    "truncated": false,
+    "f0_median": 544.593,
+    "f0_spread_st": 0.0
+   }
+  ]
+ },
+ "drv_am_fenrir__minute": {
+  "character": "drv_am_fenrir",
+  "text": "Come on. I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_fenrir.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_am_fenrir__minute_s1.wav",
+    "gen_s": 2.84,
+    "rtf": 1.56,
+    "asr": "Come on, I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.802,
+    "pass": true,
+    "score": 13.405,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on,",
+      0.22,
+      0.58
+     ],
+     [
+      " I've",
+      0.86,
+      1.06
+     ],
+     [
+      " got",
+      1.06,
+      1.14
+     ],
+     [
+      " a",
+      1.14,
+      1.28
+     ],
+     [
+      " minute.",
+      1.28,
+      1.4
+     ]
+    ],
+    "dur": 1.82,
+    "peak_db": -6.182,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.225,
+    "pause_floor_db": -80.521,
+    "pause_hf_ratio": 0.004,
+    "speech_t0": 0.08,
+    "speech_t1": 1.5,
+    "tail_db": -99.797,
+    "truncated": false,
+    "f0_median": 111.872,
+    "f0_spread_st": 10.48
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_am_fenrir__minute_s2.wav",
+    "gen_s": 2.29,
+    "rtf": 2.33,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.646,
+    "pass": false,
+    "score": 2.846,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on.",
+      0.2,
+      0.5
+     ]
+    ],
+    "dur": 0.98,
+    "peak_db": -13.084,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -30.49,
+    "pause_floor_db": -80.69,
+    "pause_hf_ratio": 0.009,
+    "speech_t0": 0.02,
+    "speech_t1": 0.63,
+    "tail_db": -104.759,
+    "truncated": false,
+    "f0_median": 83.899,
+    "f0_spread_st": 7.26
+   }
+  ]
+ },
+ "drv_bm_george__minute": {
+  "character": "drv_bm_george",
+  "text": "Come on. I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_george.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_bm_george__minute_s1.wav",
+    "gen_s": 3.25,
+    "rtf": 1.53,
+    "asr": "Come on. I got a minute.",
+    "word_match": 0.833,
+    "sim": 0.864,
+    "pass": false,
+    "score": 3.593,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on.",
+      0.24,
+      0.56
+     ],
+     [
+      " I",
+      1.02,
+      1.18
+     ],
+     [
+      " got",
+      1.18,
+      1.34
+     ],
+     [
+      " a",
+      1.34,
+      1.46
+     ],
+     [
+      " minute.",
+      1.46,
+      1.6
+     ]
+    ],
+    "dur": 2.12,
+    "peak_db": -8.731,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.075,
+    "pause_floor_db": -105.019,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.09,
+    "speech_t1": 1.78,
+    "tail_db": -104.836,
+    "truncated": false,
+    "f0_median": 160.049,
+    "f0_spread_st": 31.87
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_bm_george__minute_s2.wav",
+    "gen_s": 2.31,
+    "rtf": 2.62,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.659,
+    "pass": false,
+    "score": 2.976,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on.",
+      0.24,
+      0.42
+     ]
+    ],
+    "dur": 0.88,
+    "peak_db": -11.28,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -21.939,
+    "pause_floor_db": -79.659,
+    "pause_hf_ratio": 0.0,
+    "speech_t0": 0.1,
+    "speech_t1": 0.46,
+    "tail_db": -104.719,
+    "truncated": false,
+    "f0_median": 122.704,
+    "f0_spread_st": 11.8
+   }
+  ]
+ },
+ "drv_bm_lewis__minute": {
+  "character": "drv_bm_lewis",
+  "text": "Come on. I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_bm_lewis.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": true,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_bm_lewis__minute_s1.wav",
+    "gen_s": 3.62,
+    "rtf": 1.97,
+    "asr": "Come on, I've got a minute.",
+    "word_match": 1.0,
+    "sim": 0.827,
+    "pass": true,
+    "score": 12.667,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on,",
+      0.24,
+      0.56
+     ],
+     [
+      " I've",
+      0.82,
+      1.02
+     ],
+     [
+      " got",
+      1.02,
+      1.14
+     ],
+     [
+      " a",
+      1.14,
+      1.26
+     ],
+     [
+      " minute.",
+      1.26,
+      1.42
+     ]
+    ],
+    "dur": 1.84,
+    "peak_db": -10.637,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -23.078,
+    "pause_floor_db": -103.585,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.11,
+    "speech_t1": 1.51,
+    "tail_db": -104.827,
+    "truncated": false,
+    "f0_median": 544.593,
+    "f0_spread_st": 1.5
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_bm_lewis__minute_s2.wav",
+    "gen_s": 2.21,
+    "rtf": 2.4,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.664,
+    "pass": false,
+    "score": 1.993,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on.",
+      0.24,
+      0.42
+     ]
+    ],
+    "dur": 0.92,
+    "peak_db": -11.424,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -26.978,
+    "pause_floor_db": -81.288,
+    "pause_hf_ratio": 0.002,
+    "speech_t0": 0.1,
+    "speech_t1": 0.46,
+    "tail_db": -104.808,
+    "truncated": false,
+    "f0_median": 499.394,
+    "f0_spread_st": 0.0
+   }
+  ]
+ },
+ "drv_am_puck__minute": {
+  "character": "drv_am_puck",
+  "text": "Come on. I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/kokoro_src/kref_am_puck.wav",
+  "params": {},
+  "chosen": 1,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_am_puck__minute_s1.wav",
+    "gen_s": 2.33,
+    "rtf": 2.59,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.631,
+    "pass": false,
+    "score": 2.892,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.22
+     ],
+     [
+      " on.",
+      0.22,
+      0.48
+     ]
+    ],
+    "dur": 0.9,
+    "peak_db": -14.784,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -24.765,
+    "pause_floor_db": -71.202,
+    "pause_hf_ratio": 0.0,
+    "speech_t0": 0.07,
+    "speech_t1": 0.55,
+    "tail_db": -104.845,
+    "truncated": false,
+    "f0_median": 112.52,
+    "f0_spread_st": 10.1
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_am_puck__minute_s2.wav",
+    "gen_s": 2.22,
+    "rtf": 2.18,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.614,
+    "pass": false,
+    "score": 2.491,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.2
+     ],
+     [
+      " on.",
+      0.2,
+      0.5
+     ]
+    ],
+    "dur": 1.02,
+    "peak_db": -16.976,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -29.774,
+    "pause_floor_db": -102.899,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.02,
+    "speech_t1": 0.78,
+    "tail_db": -104.841,
+    "truncated": false,
+    "f0_median": 70.069,
+    "f0_spread_st": 5.2
+   }
+  ]
+ },
+ "drv_LS__minute": {
+  "character": "drv_LS",
+  "text": "Come on. I've got a minute.",
+  "model": "nano",
+  "ref": "../../../shared/audio_references/user/LS_narrator_it.wav",
+  "params": {},
+  "chosen": 2,
+  "chosen_pass": false,
+  "takes": [
+   {
+    "seed": 1,
+    "file": "takes/drv_LS__minute_s1.wav",
+    "gen_s": 2.13,
+    "rtf": 2.42,
+    "asr": "Come on!",
+    "word_match": 0.333,
+    "sim": 0.617,
+    "pass": false,
+    "score": 2.039,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on!",
+      0.24,
+      0.48
+     ]
+    ],
+    "dur": 0.88,
+    "peak_db": -12.448,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -25.32,
+    "pause_floor_db": -79.285,
+    "pause_hf_ratio": 0.005,
+    "speech_t0": 0.1,
+    "speech_t1": 0.53,
+    "tail_db": -104.819,
+    "truncated": false,
+    "f0_median": 544.593,
+    "f0_spread_st": 1.5
+   },
+   {
+    "seed": 2,
+    "file": "takes/drv_LS__minute_s2.wav",
+    "gen_s": 2.29,
+    "rtf": 2.6,
+    "asr": "Come on.",
+    "word_match": 0.333,
+    "sim": 0.636,
+    "pass": false,
+    "score": 2.096,
+    "words": [
+     [
+      " Come",
+      0.0,
+      0.24
+     ],
+     [
+      " on.",
+      0.24,
+      0.44
+     ]
+    ],
+    "dur": 0.88,
+    "peak_db": -10.962,
+    "clip_samples": 0,
+    "dc": -0.0,
+    "speech_db": -22.954,
+    "pause_floor_db": -80.843,
+    "pause_hf_ratio": 0.001,
+    "speech_t0": 0.1,
+    "speech_t1": 0.49,
+    "tail_db": -104.828,
+    "truncated": false,
+    "f0_median": 544.593,
+    "f0_spread_st": 1.5
+   }
+  ]
+ }
+}
