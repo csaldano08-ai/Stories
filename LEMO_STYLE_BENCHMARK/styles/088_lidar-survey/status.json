@@ -1,0 +1,6 @@
+{
+ "status": "blocked",
+ "note": "BLOCKED: The data host is reachable (`s3-us-west-2.amazonaws.com/usgs-lidar-public` answers 200), so this is not a network block. The blocker is the story: a lidar survey of Station Road cannot exist because the street is invented, and AKI cannot appear in a real scan, since making a runner out of points would be \"moving points into a shape\", fabricated data presented as a measurement. Surveying some real street and claiming it is hers would present a simulation as an observation, which the brief forbids.",
+ "measured": null,
+ "fails": []
+}

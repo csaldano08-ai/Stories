@@ -1,0 +1,6 @@
+{
+ "status": "blocked",
+ "note": "BLOCKED: The board is built from photographs of real objects (a wristwatch, a station clock, a rain puddle, a train ticket, a coat), and the library ships none (the demo fetches them in its tools). Every photo host the style names answers `403 (agent proxy: no rule allows this host)`: `upload.wikimedia.org`, `commons.wikimedia.org`, `tile.loc.gov`, `www.loc.gov`, `api.smithsonian.edu`, `www.rijksmuseum.nl`. Drawing the objects in code or rendering 3D models and calling them photographs would break the style's rule; it is not replaced by a generic version.",
+ "measured": null,
+ "fails": []
+}

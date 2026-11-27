@@ -606,17 +606,17 @@
    "name": "Whiteboard Explainer",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/033_whiteboard/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/033_whiteboard/preview.mp4",
+   "thumb": "styles/033_whiteboard/thumbnail.png",
+   "report": "styles/033_whiteboard/qa_report.md"
   },
   {
    "id": "034",
@@ -624,7 +624,7 @@
    "name": "Chalkboard",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
@@ -632,11 +632,11 @@
     "WebGL shader pass",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/034_chalkboard/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/034_chalkboard/preview.mp4",
+   "thumb": "styles/034_chalkboard/thumbnail.png",
+   "report": "styles/034_chalkboard/qa_report.md"
   },
   {
    "id": "035",
@@ -644,17 +644,17 @@
    "name": "Sketchnote",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/035_sketchnote/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/035_sketchnote/preview.mp4",
+   "thumb": "styles/035_sketchnote/thumbnail.png",
+   "report": "styles/035_sketchnote/qa_report.md"
   },
   {
    "id": "036",
@@ -680,17 +680,17 @@
    "name": "Marker on Paper",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/037_marker-paper/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/037_marker-paper/preview.mp4",
+   "thumb": "styles/037_marker-paper/thumbnail.png",
+   "report": "styles/037_marker-paper/qa_report.md"
   },
   {
    "id": "038",
@@ -698,18 +698,18 @@
    "name": "Shadow Puppetry",
    "category": "Traditional Crafts",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/038_shadow-puppet/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/038_shadow-puppet/preview.mp4",
+   "thumb": "styles/038_shadow-puppet/thumbnail.png",
+   "report": "styles/038_shadow-puppet/qa_report.md"
   },
   {
    "id": "039",
@@ -771,18 +771,18 @@
    "name": "Risograph Print",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/042_risograph/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/042_risograph/preview.mp4",
+   "thumb": "styles/042_risograph/thumbnail.png",
+   "report": "styles/042_risograph/qa_report.md"
   },
   {
    "id": "043",
@@ -790,17 +790,17 @@
    "name": "Halftone Dossier",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/043_halftone-dossier/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/043_halftone-dossier/preview.mp4",
+   "thumb": "styles/043_halftone-dossier/thumbnail.png",
+   "report": "styles/043_halftone-dossier/qa_report.md"
   },
   {
    "id": "044",
@@ -808,18 +808,18 @@
    "name": "Woodcut Print",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/044_woodcut/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/044_woodcut/preview.mp4",
+   "thumb": "styles/044_woodcut/thumbnail.png",
+   "report": "styles/044_woodcut/qa_report.md"
   },
   {
    "id": "045",
@@ -827,18 +827,18 @@
    "name": "Copperplate Engraving",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/045_engraving/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/045_engraving/preview.mp4",
+   "thumb": "styles/045_engraving/thumbnail.png",
+   "report": "styles/045_engraving/qa_report.md"
   },
   {
    "id": "046",
@@ -846,17 +846,17 @@
    "name": "Silkscreen Travel Poster",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/046_silkscreen-poster/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/046_silkscreen-poster/preview.mp4",
+   "thumb": "styles/046_silkscreen-poster/thumbnail.png",
+   "report": "styles/046_silkscreen-poster/qa_report.md"
   },
   {
    "id": "047",
@@ -884,18 +884,18 @@
    "name": "Pop Art",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/048_pop-art/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/048_pop-art/preview.mp4",
+   "thumb": "styles/048_pop-art/thumbnail.png",
+   "report": "styles/048_pop-art/qa_report.md"
   },
   {
    "id": "049",
@@ -921,17 +921,17 @@
    "name": "Swiss Motion Graphics",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/050_swiss-motion/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/050_swiss-motion/preview.mp4",
+   "thumb": "styles/050_swiss-motion/thumbnail.png",
+   "report": "styles/050_swiss-motion/qa_report.md"
   },
   {
    "id": "051",
@@ -939,17 +939,17 @@
    "name": "60s Spy Title Sequence",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/051_spy-titles/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/051_spy-titles/preview.mp4",
+   "thumb": "styles/051_spy-titles/thumbnail.png",
+   "report": "styles/051_spy-titles/qa_report.md"
   },
   {
    "id": "052",
@@ -957,17 +957,17 @@
    "name": "Art Deco",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/052_art-deco/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/052_art-deco/preview.mp4",
+   "thumb": "styles/052_art-deco/thumbnail.png",
+   "report": "styles/052_art-deco/qa_report.md"
   },
   {
    "id": "053",
@@ -1590,8 +1590,8 @@
    "name": "Satellite Briefing",
    "category": "Instruments & Evidence",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: Two blockers. (1) The story is fiction in an invented place: AKI's run, the puddle and the station clock happen on a street that does not exist. Putting them on a real photograph of a real town would present a simulation as an observed fact, which the brief forbids (\"Non… presentare le simulazioni come riprese autentiche\"); drawing an invented street as if it were imagery would break the style's first rule. (2) The imagery is out of reach at the scale the story needs: the whole event covers about 40 m of pavement, so the dive has to end on sub-metre aerial imagery. The hosts the library's demo and docs use answer `403 (agent proxy: no rule allows this host)`: `planetarycomputer.microsoft.com`, `gibs.earthdata.nasa.gov`, `tiles.maps.eox.at`, `api.pdok.nl`, `basemap.nationalmap.gov`. Only 10 m Sentinel-2 tiles on `sentinel-cogs.s3.us-west-2.amazonaws.com` answer, and at 10 m the street is four pixels wide.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -1610,8 +1610,8 @@
    "name": "Engineering Briefing Board",
    "category": "Instruments & Evidence",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: The board is built from photographs of real objects (a wristwatch, a station clock, a rain puddle, a train ticket, a coat), and the library ships none (the demo fetches them in its tools). Every photo host the style names answers `403 (agent proxy: no rule allows this host)`: `upload.wikimedia.org`, `commons.wikimedia.org`, `tile.loc.gov`, `www.loc.gov`, `api.smithsonian.edu`, `www.rijksmuseum.nl`. Drawing the objects in code or rendering 3D models and calling them photographs would break the style's rule; it is not replaced by a generic version.",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
@@ -1628,8 +1628,8 @@
    "name": "LiDAR Survey",
    "category": "Instruments & Evidence",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: The data host is reachable (`s3-us-west-2.amazonaws.com/usgs-lidar-public` answers 200), so this is not a network block. The blocker is the story: a lidar survey of Station Road cannot exist because the street is invented, and AKI cannot appear in a real scan, since making a runner out of points would be \"moving points into a shape\", fabricated data presented as a measurement. Surveying some real street and claiming it is hers would present a simulation as an observation, which the brief forbids.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -1648,8 +1648,8 @@
    "name": "Under the Microscope",
    "category": "Instruments & Evidence",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: A native version needs real micrographs (for this story, e.g. a drop of rain water or a fibre of the coat) and the library ships none. The open micrograph sources answer `403 (agent proxy: no rule allows this host)`: `idr.openmicroscopy.org`, `upload.wikimedia.org`, `commons.wikimedia.org`, `images.nasa.gov`. Drawing cells or crystals in code would break the style's first rule, and a micrograph of a sample that is not from the scene would present an invented link as a fact; the style is not replaced by a generic version.",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
@@ -1666,8 +1666,8 @@
    "name": "Archive Light Table",
    "category": "Instruments & Evidence",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: The table holds real archive scans (glass negatives, timetables, tickets, telegrams), and the library ships none. The holders the style names answer `403 (agent proxy: no rule allows this host)`: `tile.loc.gov`, `lx2.loc.gov`, `www.loc.gov`, `upload.wikimedia.org`, `api.smithsonian.edu`, `www.rijksmuseum.nl`. Faking archive objects (or inventing catalogue numbers) would break the style's first two rules; it is not replaced by a generic version.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -1759,8 +1759,8 @@
    "name": "Projection-Mapped Model",
    "category": "Data & Maps",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: Two blockers. (1) The place is invented: Station Road has no footprints to extrude; modelling it would be the \"representative\" geometry the style forbids, and modelling a real district as if it were hers would present the fiction as fact. (2) The open building data hosts answer `403 (agent proxy: no rule allows this host)`: `data.3dbag.nl`, `api.pdok.nl`, `overpass-api.de`.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -1797,8 +1797,8 @@
    "name": "Transit Map",
    "category": "Data & Maps",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: Two blockers. (1) The last train in our story runs on an invented line: drawing a network for it would invent the data the style says must be real and checked. Putting the story on a real network would claim a real last departure at midnight from a real station, which we cannot state. (2) The open data hosts for networks answer `403 (agent proxy: no rule allows this host)`: `overpass-api.de`, `tile.openstreetmap.org`.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -1816,8 +1816,8 @@
    "name": "3D Map Explainer",
    "category": "Data & Maps",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: Elevation is reachable (`copernicus-dem-30m.s3.amazonaws.com` and `elevation-tiles-prod.s3.amazonaws.com` answer 200), and so is 10 m Sentinel-2 (`sentinel-cogs.s3.us-west-2.amazonaws.com`). The blockers are (1) the place: our story happens on an invented street, and a 3D relief map has to show a real place, so placing the run there would present the fiction as geography; and (2) the scale: the event covers about 40 m, below what 30 m elevation and 10 m imagery can show, and the licence-clean mosaics the style uses for the wide shot answer `403`: `tiles.maps.eox.at` (Sentinel-2 cloudless), `gibs.earthdata.nasa.gov`.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",

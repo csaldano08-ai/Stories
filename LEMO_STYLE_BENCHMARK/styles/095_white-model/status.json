@@ -1,0 +1,6 @@
+{
+ "status": "blocked",
+ "note": "BLOCKED: Two blockers. (1) The place is invented: Station Road has no footprints to extrude; modelling it would be the \"representative\" geometry the style forbids, and modelling a real district as if it were hers would present the fiction as fact. (2) The open building data hosts answer `403 (agent proxy: no rule allows this host)`: `data.3dbag.nl`, `api.pdok.nl`, `overpass-api.de`.",
+ "measured": null,
+ "fails": []
+}
