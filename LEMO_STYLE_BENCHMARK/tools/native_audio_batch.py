@@ -4,13 +4,16 @@ final_native.mp4 (the same video as final.mp4, the style's own sound instead of 
 already done unless --force. Usage: $LEMO_PY tools/native_audio_batch.py [--force] [slug-number ...]"""
 import glob, json, os, subprocess, sys
 B = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); LIB = os.environ['LIB']
-force = '--force' in sys.argv; only = [a for a in sys.argv[1:] if a.isdigit()]
+force = '--force' in sys.argv; only = [a for a in sys.argv[1:] if a.isdigit() and len(a) == 3]
+mx = next((int(a.split('=')[1]) for a in sys.argv if a.startswith('--max=')), 10 ** 6); done_n = 0
 for d in sorted(glob.glob(f'{B}/styles/[0-9][0-9][0-9]_*')):
     n = os.path.basename(d)[:3]
     if only and n not in only: continue
     V = f'{d}/build/video.mp4'; out = f'{d}/final_native.mp4'
     if not os.path.exists(V) or not os.path.exists(f'{d}/final.mp4'): continue
     if os.path.exists(out) and not force: continue
+    if done_n >= mx: print('stopped at --max; run again to continue'); break
+    done_n += 1
     r = subprocess.run([sys.executable, f'{B}/shared/audio/native.py', d], capture_output=True, text=True, cwd=f'{B}/shared/audio')
     if r.returncode: print(n, 'AUDIO FAILED', r.stderr[-300:]); continue
     m = subprocess.run(['sh', f'{LIB}/core/render/mux.sh', V, f'{d}/audio/native.wav', out, '30', '0'], capture_output=True, text=True)

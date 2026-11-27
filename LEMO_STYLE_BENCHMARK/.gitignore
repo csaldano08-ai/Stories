@@ -1,3 +1,4 @@
 styles/*/build/
 **/out/
 reference/frames/
+__pycache__/
