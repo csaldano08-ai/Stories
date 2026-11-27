@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEMO STYLE LAB</title>
+<style>
+:root{--bg:#050506;--panel:#0e0e11;--line:#1d1d22;--txt:#e9e7ef;--dim:#8a8796;--acc:#ff5a3c;--ok:#5fd38a;--warn:#e2b84a;--bad:#e05a6a}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.4 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:rgba(5,5,6,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+h1{font-size:15px;letter-spacing:.32em;margin:0 18px 0 0;font-weight:700}h1 span{color:var(--acc)}
+input,select,button,textarea{background:var(--panel);color:var(--txt);border:1px solid var(--line);border-radius:7px;padding:7px 10px;font:inherit}
+button{cursor:pointer}button.on{border-color:var(--acc);color:#fff}input[type=search]{min-width:220px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:10px 20px;border-bottom:1px solid var(--line)}.chip{font-size:12px;padding:4px 10px;border-radius:999px}
+main{padding:18px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;position:relative}
+.card .media{aspect-ratio:16/9;background:#000;position:relative;cursor:pointer}.card img,.card video{width:100%;height:100%;object-fit:cover;display:block}
+.card .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--dim);font-size:12px;letter-spacing:.2em}
+.card .meta{padding:9px 11px}.card .name{font-weight:600}.card .cat{color:var(--dim);font-size:12px}
+.badge{position:absolute;top:8px;left:8px;font-size:11px;padding:2px 8px;border-radius:999px;background:rgba(0,0,0,.7);border:1px solid var(--line)}
+.b-done{color:var(--ok)}.b-qa{color:var(--warn)}.b-blocked{color:var(--bad)}.b-queued,.b-wip{color:var(--dim)}
+.fav{position:absolute;top:6px;right:8px;background:none;border:0;font-size:18px;color:var(--dim);padding:2px}.fav.on{color:var(--warn)}
+.stars{display:flex;gap:2px;margin-top:4px}.stars b{cursor:pointer;color:#3a3844}.stars b.on{color:var(--warn)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#viewer,#cmp{display:none}.vwrap{display:grid;gap:10px}.v2{grid-template-columns:1fr 1fr}.v4{grid-template-columns:1fr 1fr}
+.vcell{background:#000;border:1px solid var(--line);border-radius:8px;overflow:hidden}.vcell video{width:100%;display:block;aspect-ratio:16/9;background:#000}
+.vcell .hd{display:flex;gap:6px;padding:6px;border-top:1px solid var(--line)}.vcell select{flex:1}
+.ctl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}#scrub{flex:1;min-width:260px;accent-color:var(--acc)}
+.mono{font-family:ui-monospace,Menlo,monospace;color:var(--dim)}textarea{width:100%;min-height:70px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:20;display:none;align-items:center;justify-content:center;padding:24px}
+.modal .box{width:min(1280px,100%);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+.modal video{width:100%;background:#000;border-radius:8px}.x{float:right}
+a{color:var(--acc)}
+@media (max-width:700px){header{padding:10px 12px}main{padding:12px}.v2,.v4{grid-template-columns:1fr}input[type=search]{min-width:0;flex:1}}
+</style></head>
+<body>
+<header>
+  <h1>LEMO <span>STYLE</span> LAB</h1>
+  <input id="q" type="search" placeholder="search style…">
+  <select id="st"><option value="">all statuses</option><option>done</option><option>qa</option><option>wip</option><option>queued</option><option>blocked</option></select>
+  <button id="favOnly">★ favourites</button>
+  <span style="flex:1"></span>
+  <button data-mode="grid" class="mode on">grid</button><button data-mode="cmp2" class="mode">compare ×2</button><button data-mode="cmp4" class="mode">compare ×4</button>
+  <span id="count" class="mono"></span>
+</header>
+<div class="chips" id="chips"></div>
+<main>
+  <section id="grid" class="grid"></section>
+  <section id="cmp">
+    <div id="cells" class="vwrap v2"></div>
+    <div class="ctl">
+      <button id="play">▶ play</button><button id="back">◀ frame</button><button id="fwd">frame ▶</button>
+      <input id="scrub" type="range" min="0" max="299" value="0"><span id="fr" class="mono">0 / 299</span>
+      <select id="rate"><option value="1">1×</option><option value=".5">0.5×</option><option value=".25">0.25×</option></select>
+      <label class="mono"><input type="checkbox" id="loop" checked> loop</label>
+      <select id="audioSrc"></select>
+    </div>
+    <p class="mono">All players share one clock; the scrubber and frame steps move every player to the same frame (30 fps, 300 frames).</p>
+  </section>
+</main>
+<div class="modal" id="modal"><div class="box">
+  <button class="x" id="close">✕</button><div class="row"><b id="mTitle"></b><span id="mCat" class="mono"></span></div>
+  <video id="mVid" controls loop playsinline></video>
+  <div class="row" style="margin-top:8px"><button id="mCommon" class="on">common audio</button><button id="mNative">native sound</button><button id="mFull">fullscreen</button><a id="mReport" target="_blank">QA report</a><span id="mStars" class="stars"></span></div>
+  <textarea id="mNote" placeholder="your notes on this style…"></textarea>
+</div></div>
+<script>
+const LS = { get(k, d) { try { const v = localStorage.getItem('lsl.' + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem('lsl.' + k, JSON.stringify(v)); } catch (e) { } } };
+const $ = s => document.querySelector(s), el = (t, a = {}, ...c) => { const e = document.createElement(t); Object.assign(e, a); c.forEach(x => e.append(x)); return e; };
+let DATA, cat = '', mode = 'grid';
+const ALL = () => [DATA.reference, ...DATA.styles];
+const byId = id => ALL().find(s => s.id === id);
+const url = p => p ? '../' + p : null;
+fetch('data.json').then(r => r.json()).then(d => { DATA = d; chips(); grid(); cmpInit(); });
+function chips() {
+  const cats = [...new Set(DATA.styles.map(s => s.category))];
+  const mk = c => { const b = el('button', { className: 'chip' + (c === cat ? ' on' : ''), textContent: c || 'all categories' }); b.onclick = () => { cat = c; chips(); grid(); }; return b; };
+  $('#chips').replaceChildren(mk(''), ...cats.map(mk));
+}
+function stars(id, host) {
+  host.replaceChildren(); const r = LS.get('rate.' + id, 0);
+  for (let i = 1; i <= 5; i++) { const b = el('b', { textContent: '★', className: i <= r ? 'on' : '' }); b.onclick = e => { e.stopPropagation(); LS.set('rate.' + id, i === r ? 0 : i); stars(id, host); }; host.append(b); }
+}
+function grid() {
+  const q = $('#q').value.toLowerCase(), st = $('#st').value, fo = $('#favOnly').classList.contains('on');
+  const list = DATA.styles.filter(s => (!cat || s.category === cat) && (!st || s.status === st) && (!q || (s.name + ' ' + s.slug + ' ' + s.id).toLowerCase().includes(q)) && (!fo || LS.get('fav.' + s.id, false)));
+  $('#count').textContent = `${DATA.styles.filter(s => s.video).length} / ${DATA.styles.length} clips · ${list.length} shown`;
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting && e.target.dataset.src) { e.target.src = e.target.dataset.src; delete e.target.dataset.src; io.unobserve(e.target); } }), { rootMargin: '200px' });
+  $('#grid').replaceChildren(...list.map(s => {
+    const media = el('div', { className: 'media' });
+    if (s.thumb) { const im = el('img', { alt: s.name, loading: 'lazy' }); im.dataset.src = url(s.thumb); io.observe(im); media.append(im); }
+    else media.append(el('div', { className: 'ph', textContent: s.status === 'blocked' ? 'BLOCKED' : 'NOT YET' }));
+    if (s.preview) {   // a preview plays only while hovered (one heavy player at a time)
+      media.onmouseenter = () => { const v = el('video', { src: url(s.preview), muted: true, loop: true, playsInline: true, autoplay: true }); v.className = 'hov'; media.append(v); };
+      media.onmouseleave = () => media.querySelectorAll('video.hov').forEach(v => { v.pause(); v.remove(); });
+      media.onclick = () => openModal(s);
+    }
+    const fav = el('button', { className: 'fav' + (LS.get('fav.' + s.id, false) ? ' on' : ''), textContent: '★', title: 'favourite' });
+    fav.onclick = e => { e.stopPropagation(); LS.set('fav.' + s.id, !LS.get('fav.' + s.id, false)); fav.classList.toggle('on'); };
+    const st = el('span', { className: 'stars' }); stars(s.id, st);
+    return el('div', { className: 'card' }, media, el('span', { className: 'badge b-' + s.status, textContent: s.id + ' · ' + s.status }), fav,
+      el('div', { className: 'meta' }, el('div', { className: 'name', textContent: s.name }), el('div', { className: 'cat', textContent: s.category + (s.adaptation ? ' · adaptation' : '') }), st));
+  }));
+}
+['#q', '#st'].forEach(s => $(s).addEventListener('input', grid));
+$('#favOnly').onclick = () => { $('#favOnly').classList.toggle('on'); grid(); };
+// —— single viewer ——
+let cur = null;
+function openModal(s) {
+  cur = s; $('#modal').style.display = 'flex'; $('#mTitle').textContent = s.id + ' · ' + s.name; $('#mCat').textContent = '  ' + s.category + ' · ' + s.engine.join(', ');
+  $('#mVid').src = url(s.video); $('#mVid').play().catch(() => { });
+  $('#mNative').disabled = !s.native; $('#mCommon').classList.add('on'); $('#mNative').classList.remove('on');
+  $('#mReport').href = url(s.report) || '#'; stars(s.id, $('#mStars')); $('#mNote').value = LS.get('note.' + s.id, '');
+}
+$('#mNote').oninput = () => cur && LS.set('note.' + cur.id, $('#mNote').value);
+$('#mCommon').onclick = () => { const t = $('#mVid').currentTime; $('#mVid').src = url(cur.video); $('#mVid').currentTime = t; $('#mVid').play(); $('#mCommon').classList.add('on'); $('#mNative').classList.remove('on'); };
+$('#mNative').onclick = () => { if (!cur.native) return; const t = $('#mVid').currentTime; $('#mVid').src = url(cur.native); $('#mVid').currentTime = t; $('#mVid').play(); $('#mNative').classList.add('on'); $('#mCommon').classList.remove('on'); };
+$('#mFull').onclick = () => $('#mVid').requestFullscreen?.();
+$('#close').onclick = () => { $('#mVid').pause(); $('#mVid').removeAttribute('src'); $('#modal').style.display = 'none'; };
+// —— synchronised comparison (one clock for all players) ——
+const FPS = 30, N = 300; let vids = [], playing = false, t0 = 0, base = 0, curF = 0;
+function cmpInit() {
+  document.querySelectorAll('.mode').forEach(b => b.onclick = () => { document.querySelectorAll('.mode').forEach(x => x.classList.remove('on')); b.classList.add('on'); mode = b.dataset.mode; layout(); });
+}
+function options(sel, val) { sel.replaceChildren(...ALL().filter(s => s.video).map(s => el('option', { value: s.id, textContent: s.id + ' · ' + s.name, selected: s.id === val }))); }
+function layout() {
+  $('#grid').style.display = mode === 'grid' ? '' : 'none'; $('#chips').style.display = mode === 'grid' ? '' : 'none'; $('#cmp').style.display = mode === 'grid' ? 'none' : 'block';
+  if (mode === 'grid') { vids.forEach(v => v.pause()); return; }
+  const done = ALL().filter(s => s.video).map(s => s.id), n = mode === 'cmp2' ? 2 : 4;
+  const init = LS.get('cmp.' + mode, null) || Array.from({ length: n }, (_, i) => done[Math.min(i, done.length - 1)]);
+  $('#cells').className = 'vwrap ' + (n === 2 ? 'v2' : 'v4'); vids = [];
+  $('#cells').replaceChildren(...init.slice(0, n).map((id, i) => {
+    const v = el('video', { muted: true, playsInline: true, preload: 'auto' }); v.src = url(byId(id).video); vids.push(v);
+    const sel = el('select'); options(sel, id); sel.onchange = () => { init[i] = sel.value; LS.set('cmp.' + mode, init); v.src = url(byId(sel.value).video); seek(frame()); };
+    return el('div', { className: 'vcell' }, v, el('div', { className: 'hd' }, sel));
+  }));
+  $('#audioSrc').replaceChildren(el('option', { value: -1, textContent: 'audio: muted' }), ...init.slice(0, n).map((id, i) => el('option', { value: i, textContent: 'audio: player ' + (i + 1) })));
+  $('#audioSrc').onchange = () => vids.forEach((v, i) => v.muted = String(i) !== $('#audioSrc').value);
+  seek(0);
+}
+const frame = () => curF;   // explicit frame counter: never read back from a video that is still seeking
+function seek(f) { f = Math.max(0, Math.min(N - 1, f)); curF = f; vids.forEach(v => { v.pause(); v.currentTime = (f + .5) / FPS; }); playing = false; $('#play').textContent = '▶ play'; ui(f); }
+function ui(f) { $('#scrub').value = f; $('#fr').textContent = f + ' / ' + (N - 1); }
+$('#scrub').oninput = () => seek(+$('#scrub').value);
+$('#back').onclick = () => seek(frame() - 1); $('#fwd').onclick = () => seek(frame() + 1);
+$('#play').onclick = () => {
+  playing = !playing; $('#play').textContent = playing ? '❚❚ pause' : '▶ play';
+  if (playing) { base = (curF + .5) / FPS; t0 = performance.now(); vids.forEach(v => { v.playbackRate = +$('#rate').value; v.play().catch(() => { }); }); requestAnimationFrame(tick); } else vids.forEach(v => v.pause());
+};
+function tick() {
+  if (!playing) return;
+  let t = base + (performance.now() - t0) / 1000 * +$('#rate').value;
+  if (t >= N / FPS) { if ($('#loop').checked) { base = 0; t0 = performance.now(); t = 0; vids.forEach(v => v.currentTime = 0); } else { $('#play').click(); return; } }
+  vids.forEach(v => { if (Math.abs(v.currentTime - t) > 1.5 / FPS) v.currentTime = t; });   // keep every player on the master clock
+  curF = Math.min(N - 1, Math.floor(t * FPS)); ui(curF); requestAnimationFrame(tick);
+}
+document.addEventListener('keydown', e => { if (mode === 'grid' || e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return; if (e.key === ' ') { e.preventDefault(); $('#play').click(); } if (e.key === 'ArrowLeft') seek(frame() - 1); if (e.key === 'ArrowRight') seek(frame() + 1); });
+</script>
+</body></html>

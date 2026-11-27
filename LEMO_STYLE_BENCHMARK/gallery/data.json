@@ -1,0 +1,1852 @@
+{
+ "reference": {
+  "id": "000",
+  "name": "Original — Last Train Home",
+  "category": "Reference",
+  "video": "reference/original_clip.mp4",
+  "preview": "reference/original_clip.mp4",
+  "thumb": "gallery/ref_thumb.png"
+ },
+ "styles": [
+  {
+   "id": "001",
+   "slug": "cel-anime-80s",
+   "name": "80s Cel Anime",
+   "category": "Cartoons",
+   "series": 1,
+   "status": "done",
+   "note": "Same style as the original: rebuilt on AKI v2 (refined head/eyes), v2 run rig (constant bones, foot lock verified), real watch-check arm act",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": "styles/001_cel-anime-80s/final.mp4",
+   "native": null,
+   "preview": "styles/001_cel-anime-80s/preview.mp4",
+   "thumb": "styles/001_cel-anime-80s/thumbnail.png",
+   "report": "styles/001_cel-anime-80s/qa_report.md"
+  },
+  {
+   "id": "002",
+   "slug": "rubber-hose",
+   "name": "1930s Rubber Hose Cartoon",
+   "category": "Cartoons",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "003",
+   "slug": "midcentury-toon",
+   "name": "Mid-century Cartoon",
+   "category": "Cartoons",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "004",
+   "slug": "scifi-toon",
+   "name": "Sci-Fi Sitcom Toon",
+   "category": "Cartoons",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "005",
+   "slug": "manga-panels",
+   "name": "Manga Panels",
+   "category": "Cartoons",
+   "series": 1,
+   "status": "blocked",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "image generator (external)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "006",
+   "slug": "hd-2d",
+   "name": "2.5D Pixel Art",
+   "category": "Games",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "real data / imagery",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "007",
+   "slug": "pixel-rpg",
+   "name": "16-bit Pixel RPG",
+   "category": "Games",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "008",
+   "slug": "brick-toy",
+   "name": "Brick Toy",
+   "category": "3D & Miniature",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "009",
+   "slug": "lowpoly-island",
+   "name": "Low-poly Isometric Island",
+   "category": "3D & Miniature",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "three.js 3D (WebGL)",
+    "real data / imagery"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "010",
+   "slug": "crayon-world",
+   "name": "Crayon World 3D",
+   "category": "3D & Miniature",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "011",
+   "slug": "isometric-picture-book",
+   "name": "Isometric People Scene",
+   "category": "3D & Miniature",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "012",
+   "slug": "tilt-shift",
+   "name": "Tilt-Shift Miniature",
+   "category": "3D & Miniature",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "013",
+   "slug": "stick-explainer",
+   "name": "Stick-figure Explainer",
+   "category": "Sketch & Board",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "014",
+   "slug": "watercolor",
+   "name": "Watercolor Brush",
+   "category": "Painting & Illustration",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "015",
+   "slug": "crayon-book",
+   "name": "Crayon Picture Book",
+   "category": "Painting & Illustration",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "016",
+   "slug": "ink-wash",
+   "name": "Chinese Ink Wash",
+   "category": "Traditional Crafts",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "017",
+   "slug": "ukiyoe",
+   "name": "Ukiyo-e",
+   "category": "Traditional Crafts",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "018",
+   "slug": "paper-lantern",
+   "name": "Paper-cut Lightbox",
+   "category": "Traditional Crafts",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "019",
+   "slug": "backrooms",
+   "name": "Liminal Found Footage",
+   "category": "Film & Tape",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "020",
+   "slug": "neon-tubes",
+   "name": "Neon Tubes",
+   "category": "Light & Lines",
+   "series": 1,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "021",
+   "slug": "caption-news",
+   "name": "Caption News",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "real footage / archive (licensed)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "022",
+   "slug": "newsreel",
+   "name": "1920s Newsreel",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "real footage / archive (licensed)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "023",
+   "slug": "countdown",
+   "name": "Live Countdown Split-screen",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "real footage / archive (licensed)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "024",
+   "slug": "city-symphony",
+   "name": "City Symphony",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "real footage / archive (licensed)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "025",
+   "slug": "visual-investigation",
+   "name": "Visual Investigation",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "real footage / archive (licensed)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "026",
+   "slug": "kino-montage",
+   "name": "Constructivist Montage",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "real footage / archive (licensed)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "027",
+   "slug": "telestrator",
+   "name": "Sports Telestrator",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "real footage / archive (licensed)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "028",
+   "slug": "news-package",
+   "name": "Broadcast News Package",
+   "category": "Edit & Documentary",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "real footage / archive (licensed)",
+    "real data / imagery"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "029",
+   "slug": "impasto",
+   "name": "Impasto Oil Painting",
+   "category": "Painting & Illustration",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "030",
+   "slug": "urban-sketch",
+   "name": "Urban Sketch · Pen & Wash",
+   "category": "Painting & Illustration",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "031",
+   "slug": "colored-pencil",
+   "name": "Colored-Pencil Science Illustration",
+   "category": "Painting & Illustration",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "032",
+   "slug": "one-line",
+   "name": "One-line Drawing",
+   "category": "Sketch & Board",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "033",
+   "slug": "whiteboard",
+   "name": "Whiteboard Explainer",
+   "category": "Sketch & Board",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "034",
+   "slug": "chalkboard",
+   "name": "Chalkboard",
+   "category": "Sketch & Board",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "035",
+   "slug": "sketchnote",
+   "name": "Sketchnote",
+   "category": "Sketch & Board",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "036",
+   "slug": "ipad-sketch",
+   "name": "Tablet Sketch Explainer",
+   "category": "Sketch & Board",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "037",
+   "slug": "marker-paper",
+   "name": "Marker on Paper",
+   "category": "Sketch & Board",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "038",
+   "slug": "shadow-puppet",
+   "name": "Shadow Puppetry",
+   "category": "Traditional Crafts",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "039",
+   "slug": "papercut-red",
+   "name": "Red Paper-cut",
+   "category": "Traditional Crafts",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "040",
+   "slug": "stained-glass",
+   "name": "Stained Glass",
+   "category": "Traditional Crafts",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "041",
+   "slug": "gilded-illumination",
+   "name": "Gilded Illumination",
+   "category": "Traditional Crafts",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "042",
+   "slug": "risograph",
+   "name": "Risograph Print",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "043",
+   "slug": "halftone-dossier",
+   "name": "Halftone Dossier",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "044",
+   "slug": "woodcut",
+   "name": "Woodcut Print",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "045",
+   "slug": "engraving",
+   "name": "Copperplate Engraving",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "046",
+   "slug": "silkscreen-poster",
+   "name": "Silkscreen Travel Poster",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "047",
+   "slug": "printed-long-take",
+   "name": "Scratchboard Long Take",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)",
+    "real data / imagery"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "048",
+   "slug": "pop-art",
+   "name": "Pop Art",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "049",
+   "slug": "vintage-collage",
+   "name": "Vintage Engraving Collage",
+   "category": "Print & Printmaking",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "050",
+   "slug": "swiss-motion",
+   "name": "Swiss Motion Graphics",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "051",
+   "slug": "spy-titles",
+   "name": "60s Spy Title Sequence",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "052",
+   "slug": "art-deco",
+   "name": "Art Deco",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "053",
+   "slug": "pictogram-motion",
+   "name": "Pictogram Motion",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "054",
+   "slug": "bauhaus-shapes",
+   "name": "Bauhaus Shapes",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "055",
+   "slug": "flat-space-explainer",
+   "name": "Scale Zoom Explainer",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "056",
+   "slug": "text-flash-cuts",
+   "name": "Text Flash Cuts",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "blocked",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "image generator (external)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "057",
+   "slug": "silhouette-rhythm",
+   "name": "Silhouette Rhythm",
+   "category": "Graphic & Type",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "real data / imagery",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "058",
+   "slug": "blueprint",
+   "name": "Blueprint",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "059",
+   "slug": "iso-infographic",
+   "name": "Isometric Infographic",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "060",
+   "slug": "teardown",
+   "name": "Exploded Teardown",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "061",
+   "slug": "hardcore-info",
+   "name": "Line-Art Cutaway",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "062",
+   "slug": "precise-mechanism",
+   "name": "Color-Coded Mechanism",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "WebGL shader pass",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "063",
+   "slug": "instruction-manual",
+   "name": "Instruction Manual Art",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "064",
+   "slug": "pen-plotter",
+   "name": "Pen Plotter",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "real data / imagery",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "065",
+   "slug": "assembly-line-diagram",
+   "name": "Assembly-Line Diagram",
+   "category": "Line Diagrams",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "066",
+   "slug": "comic-history",
+   "name": "Comic History Cartoon",
+   "category": "Cartoons",
+   "series": 2,
+   "status": "blocked",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "image generator (external)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "067",
+   "slug": "microgame",
+   "name": "Microgame Frenzy",
+   "category": "Games",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "068",
+   "slug": "game-show",
+   "name": "Rhythm Game Show",
+   "category": "Games",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "069",
+   "slug": "ascii-crt",
+   "name": "CRT ASCII Terminal",
+   "category": "Film & Tape",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "real data / imagery",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "070",
+   "slug": "silent-film",
+   "name": "1920s Silent Film",
+   "category": "Film & Tape",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "real footage / archive (licensed)",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "071",
+   "slug": "scratch-film",
+   "name": "Scratch Film",
+   "category": "Film & Tape",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "072",
+   "slug": "double-exposure",
+   "name": "Double Exposure",
+   "category": "Film & Tape",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "073",
+   "slug": "dark-keynote",
+   "name": "Dark Tech Keynote",
+   "category": "Screens & Interfaces",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "074",
+   "slug": "living-screencast",
+   "name": "Mascot Screencast",
+   "category": "Screens & Interfaces",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "075",
+   "slug": "hologram-hud",
+   "name": "Sci-fi Hologram HUD",
+   "category": "Screens & Interfaces",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "076",
+   "slug": "desktop-flythrough",
+   "name": "Tabletop App Flythrough",
+   "category": "Screens & Interfaces",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "077",
+   "slug": "spreadsheet",
+   "name": "Spreadsheet Film",
+   "category": "Screens & Interfaces",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "078",
+   "slug": "one-bit-dither",
+   "name": "1-bit Dither",
+   "category": "Screens & Interfaces",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "079",
+   "slug": "circuit-board",
+   "name": "Circuit Board",
+   "category": "Light & Lines",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "080",
+   "slug": "firefly-pointillism",
+   "name": "Firefly Pointillism",
+   "category": "Light & Lines",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "081",
+   "slug": "flow-field",
+   "name": "Flow-field Wind Lines",
+   "category": "Light & Lines",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "real data / imagery",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "082",
+   "slug": "oscilloscope-math",
+   "name": "Oscilloscope Math",
+   "category": "Light & Lines",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "real data / imagery",
+    "SVG"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "083",
+   "slug": "paper-popup",
+   "name": "Paper Pop-up Book",
+   "category": "3D & Miniature",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "084",
+   "slug": "glass-product",
+   "name": "Glass Product Render",
+   "category": "3D & Miniature",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "085",
+   "slug": "memphis-diorama",
+   "name": "Memphis Diorama",
+   "category": "3D & Miniature",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": false,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "086",
+   "slug": "satellite-briefing",
+   "name": "Satellite Briefing",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "real data / imagery",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "087",
+   "slug": "briefing-board",
+   "name": "Engineering Briefing Board",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "088",
+   "slug": "lidar-survey",
+   "name": "LiDAR Survey",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "real data / imagery",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "089",
+   "slug": "microscope",
+   "name": "Under the Microscope",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "090",
+   "slug": "archive-lighttable",
+   "name": "Archive Light Table",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "091",
+   "slug": "security-xray",
+   "name": "Security X-ray",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "092",
+   "slug": "dark-documentary",
+   "name": "Radar Sweep Documentary",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "093",
+   "slug": "thermal-camera",
+   "name": "Thermal Camera",
+   "category": "Instruments & Evidence",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "094",
+   "slug": "dataviz",
+   "name": "Data Storytelling",
+   "category": "Data & Maps",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "095",
+   "slug": "white-model",
+   "name": "Projection-Mapped Model",
+   "category": "Data & Maps",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "096",
+   "slug": "data-physical",
+   "name": "Data Physicalization",
+   "category": "Data & Maps",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "097",
+   "slug": "transit-map",
+   "name": "Transit Map",
+   "category": "Data & Maps",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "WebGL shader pass"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "098",
+   "slug": "map-explainer",
+   "name": "3D Map Explainer",
+   "category": "Data & Maps",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  },
+  {
+   "id": "099",
+   "slug": "pip-simulation",
+   "name": "Blob Simulation",
+   "category": "Data & Maps",
+   "series": 2,
+   "status": "queued",
+   "note": "",
+   "adaptation": true,
+   "engine": [
+    "Canvas 2D",
+    "three.js 3D (WebGL)"
+   ],
+   "video": null,
+   "native": null,
+   "preview": null,
+   "thumb": null,
+   "report": null
+  }
+ ]
+}
