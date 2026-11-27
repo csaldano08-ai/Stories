@@ -25,3 +25,4 @@ LEMO_STYLE_BENCHMARK/styles/052_art-deco
 LEMO_STYLE_BENCHMARK/styles/053_pictogram-motion
 LEMO_STYLE_BENCHMARK/styles/054_bauhaus-shapes
 LEMO_STYLE_BENCHMARK/styles/055_flat-space-explainer
+LEMO_STYLE_BENCHMARK/styles/057_silhouette-rhythm
