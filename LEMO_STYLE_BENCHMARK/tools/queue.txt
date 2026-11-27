@@ -12,3 +12,4 @@ LEMO_STYLE_BENCHMARK/styles/038_shadow-puppet
 LEMO_STYLE_BENCHMARK/styles/039_papercut-red
 LEMO_STYLE_BENCHMARK/styles/040_stained-glass
 LEMO_STYLE_BENCHMARK/styles/041_gilded-illumination
+LEMO_STYLE_BENCHMARK/styles/042_risograph
