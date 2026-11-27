@@ -125,17 +125,17 @@
    "name": "16-bit Pixel RPG",
    "category": "Games",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: 320x180 indexed framebuffer x6, ENDESGA-32 + protected coat red, rig-driven sprite with ASCII head, HUD clock, portrait box ",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/007_pixel-rpg/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/007_pixel-rpg/preview.mp4",
+   "thumb": "styles/007_pixel-rpg/thumbnail.png",
+   "report": "styles/007_pixel-rpg/qa_report.md"
   },
   {
    "id": "008",
