@@ -10,6 +10,7 @@ def run(c, **k): return subprocess.run(c, capture_output=True, text=True, **k)
 def ff(*a): r = run(['ffmpeg', '-y', '-loglevel', 'error', *a]); assert r.returncode == 0, r.stderr; return r
 ap = argparse.ArgumentParser(); ap.add_argument('dir'); ap.add_argument('--strip', default='5.8:7.2'); ap.add_argument('--native'); ap.add_argument('--note', default='')
 ap.add_argument('--manual', default=''); ap.add_argument('--status', default='qa'); ap.add_argument('--grain', default='0')
+ap.add_argument('--skip-mux', action='store_true', help='final.mp4 already muxed: only previews, sheets and the report'); ap.add_argument('--capped', action='store_true', help='with --skip-mux: the existing final was bitrate-capped')
 ap.add_argument('--meta-only', action='store_true', help='keep final/preview/sheets as they are; re-measure and rewrite qa_report.md + status.json only')
 a = ap.parse_args(); D = os.path.abspath(a.dir); sid = os.path.basename(D)
 inv = {r['folder'].split('/')[-1]: r for r in json.load(open(f'{B}/STYLE_INVENTORY.json'))['styles']}[sid]
@@ -18,12 +19,13 @@ V = f'{D}/build/video.mp4'
 common = f'{B}/reference/original_audio_48k.wav'
 mux = lambda aud, out: run(['sh', f'{LIB}/core/render/mux.sh', V, aud, out, '30', a.grain])
 if not a.meta_only:
-    r = mux(common, f'{D}/final.mp4'); assert os.path.exists(f'{D}/final.mp4'), r.stderr[-800:]
-    if a.native: r = mux(a.native, f'{D}/final_native.mp4'); assert os.path.exists(f'{D}/final_native.mp4'), r.stderr[-800:]
+    if not a.skip_mux:
+        r = mux(common, f'{D}/final.mp4'); assert os.path.exists(f'{D}/final.mp4'), r.stderr[-800:]
+        if a.native: r = mux(a.native, f'{D}/final_native.mp4'); assert os.path.exists(f'{D}/final_native.mp4'), r.stderr[-800:]
     # GitHub refuses files over 100 MB: a texture-heavy style (crayon tooth boiling every drawing) can pass that at CRF 19, so cap the
     # video bitrate (audio copied untouched) when the muxed file is over 90 MB. The cap is recorded in the report.
-    CAPPED = []
-    for f in [f'{D}/final.mp4', f'{D}/final_native.mp4']:
+    CAPPED = ['final.mp4'] if a.skip_mux and a.capped else []
+    for f in ([] if a.skip_mux else [f'{D}/final.mp4', f'{D}/final_native.mp4']):
         if os.path.exists(f) and os.path.getsize(f) > 90e6:
             tmp = f + '.cap.mp4'; ff('-i', f, '-map', '0', '-c:v', 'libx264', '-preset', 'slow', '-crf', '19', '-maxrate', '55M', '-bufsize', '110M', '-c:a', 'copy', '-movflags', '+faststart', tmp)
             os.replace(tmp, f); CAPPED.append(os.path.basename(f))
