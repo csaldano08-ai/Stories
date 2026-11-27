@@ -1,6 +1,7 @@
 // LEMO_STYLE_BENCHMARK copy of lemo-opuscar core/render/video.mjs (library 2.0.0) for heavy CPU-WebGL pages: identical, except
 // that a frame's screenshot may take up to 15 min (the library's 30 s default stops renders whose frames take longer on SwiftShader).
-// Usage: node render_long.mjs <page dir> --fps 30 --workers 3 --out <file.mp4>   (needs $LIB, see LEMO_CINEMATIC_LAB/tools/env.sh)
+// Usage: node render_long.mjs <page dir> --fps 30 --workers 3 --out <file.mp4> [--frames a:b]   (needs $LIB, see LEMO_CINEMATIC_LAB/tools/env.sh)
+// Added here: --frames a:b renders only frames a…b−1 (used by render_chunks.sh for resumable renders of very heavy pages).
 // Render video: node core/render/video.mjs <demo> [--fps 24] [--workers 3] [--q 'k=v'] [--out <demo>/out/video.mp4] [--size 1920x1080]
 // when several films are in production in parallel, use 3 workers (the default); a render on its own can go up to 6
 // each worker has its own browser; JPEG screenshots are piped to ffmpeg; the segments are joined losslessly at the end
@@ -52,11 +53,12 @@ const release = process.env.RENDER_SLOTS ? await (await import(path.join(process
 segDir = fs.mkdtempSync(path.join(outDir, `.${base}_segs-`)); fs.writeFileSync(path.join(segDir, 'pid'), String(process.pid));
 const probe = await openDemo(dir, { w: W, h: H, q: Q }); const DUR = await probe.page.evaluate(() => window.DUR); await probe.browser.close();
 if (!(DUR > 0)) fail(`window.DUR must be a positive number of seconds (got ${DUR})`);
-const TOTAL = Math.round(DUR * FPS), per = Math.ceil(TOTAL / WK), t0 = Date.now();
+const FULL = Math.round(DUR * FPS), FR = (opt('--frames', '') || `0:${FULL}`).split(':').map(Number);   // --frames a:b renders frames a…b−1 only (chunked, resumable renders)
+const F0 = Math.max(0, FR[0]), F1 = Math.min(FULL, FR[1]), TOTAL = F1 - F0, per = Math.ceil(TOTAL / WK), t0 = Date.now();
 let abort = null;   // a worker found the WebGL context lost: every worker stops feeding and lets its ffmpeg finish (on Windows a killed
                     // ffmpeg keeps its segment busy for a while), then the render fails with nothing left behind
 try { await Promise.all([...Array(WK)].map(async (_, w) => {
-  const a = w * per, b = Math.min(TOTAL, a + per); if (a >= b) return;
+  const a = F0 + w * per, b = Math.min(F1, a + per); if (a >= b) return;
   const { browser, page } = await openDemo(dir, { w: W, h: H, q: Q });
   // cwd set to the segment directory with relative filenames: that way ffmpeg won't read characters such as # ? in the path as protocol syntax
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
