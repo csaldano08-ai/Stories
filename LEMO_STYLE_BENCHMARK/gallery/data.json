@@ -105,19 +105,19 @@
    "name": "2.5D Pixel Art",
    "category": "Games",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: pixel-textured 3D diorama, pixel sprite from the rig, lamps throwing her shadow, rain + blue fog, physical DOF + tilt-shift ",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "real data / imagery",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/006_hd-2d/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/006_hd-2d/preview.mp4",
+   "thumb": "styles/006_hd-2d/thumbnail.png",
+   "report": "styles/006_hd-2d/qa_report.md"
   },
   {
    "id": "007",
