@@ -1,0 +1,19 @@
+{
+ "status": "done",
+ "note": "Native oscilloscope: AKI as a phosphor trace with motion trails and live read-outs, contact and watch markers, the watch dial drawn by the b",
+ "measured": {
+  "frames": 300,
+  "fps": "30/1",
+  "size": "1920x1080",
+  "codec": "h264",
+  "pix_fmt": "yuvj420p",
+  "duration_s": 10.0,
+  "audio": "aac 48000 Hz 2 ch",
+  "black": [],
+  "frozen_ge_0.7s": [],
+  "lufs": -14.2,
+  "true_peak_dbtp": -1.0,
+  "size_mb": 21.0
+ },
+ "fails": []
+}

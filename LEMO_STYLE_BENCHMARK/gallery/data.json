@@ -1237,17 +1237,17 @@
    "name": "Microgame Frenzy",
    "category": "Games",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native microgame: a run of tiny stages with shouted instructions (DODGE!, RUN!, SPEED UP!, LOOK!, READ!) and an original conductor host; the",
    "adaptation": false,
    "engine": [
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/067_microgame/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/067_microgame/preview.mp4",
+   "thumb": "styles/067_microgame/thumbnail.png",
+   "report": "styles/067_microgame/qa_report.md"
   },
   {
    "id": "068",
@@ -1255,18 +1255,18 @@
    "name": "Rhythm Game Show",
    "category": "Games",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native game show: an original clock-mascot host, AKI on a treadmill stage passing shop signs with a step counter, GREAT! call-outs, a close-",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/068_game-show/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/068_game-show/preview.mp4",
+   "thumb": "styles/068_game-show/thumbnail.png",
+   "report": "styles/068_game-show/qa_report.md"
   },
   {
    "id": "069",
@@ -1313,17 +1313,17 @@
    "name": "Scratch Film",
    "category": "Film & Tape",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native scratch-on-film: lines scratched into black stock, AKI in red with a glowing wrist, the splash in scratched blue, the street of scrat",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/071_scratch-film/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/071_scratch-film/preview.mp4",
+   "thumb": "styles/071_scratch-film/thumbnail.png",
+   "report": "styles/071_scratch-film/qa_report.md"
   },
   {
    "id": "072",
@@ -1349,17 +1349,17 @@
    "name": "Dark Tech Keynote",
    "category": "Screens & Interfaces",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native dark keynote: a wireframe runner on a dark stage, stat cards of the run (4.06 m/s, 174 /min, 1.40 m stride, 1.62 m), a step log, the ",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/073_dark-keynote/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/073_dark-keynote/preview.mp4",
+   "thumb": "styles/073_dark-keynote/thumbnail.png",
+   "report": "styles/073_dark-keynote/qa_report.md"
   },
   {
    "id": "074",
@@ -1367,17 +1367,17 @@
    "name": "Mascot Screencast",
    "category": "Screens & Interfaces",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native living screencast: an original route app; AKI as a sprite over the route with a wet-surface tag and the splash time, the live clock a",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/074_living-screencast/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/074_living-screencast/preview.mp4",
+   "thumb": "styles/074_living-screencast/thumbnail.png",
+   "report": "styles/074_living-screencast/qa_report.md"
   },
   {
    "id": "075",
@@ -1385,17 +1385,17 @@
    "name": "Sci-fi Hologram HUD",
    "category": "Screens & Interfaces",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native hologram HUD: AKI as a cyan wireframe hologram on a pad, the foot strike 0.94 s logged, run read-outs, the watch projected as a holog",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/075_hologram-hud/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/075_hologram-hud/preview.mp4",
+   "thumb": "styles/075_hologram-hud/thumbnail.png",
+   "report": "styles/075_hologram-hud/qa_report.md"
   },
   {
    "id": "076",
@@ -1422,17 +1422,17 @@
    "name": "Spreadsheet Film",
    "category": "Screens & Interfaces",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native spreadsheet: AKI drawn with coloured cells, the run log (splash, steps, now), the cells counting steps and time to 11:58:48, the towe",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/077_spreadsheet/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/077_spreadsheet/preview.mp4",
+   "thumb": "styles/077_spreadsheet/thumbnail.png",
+   "report": "styles/077_spreadsheet/qa_report.md"
   },
   {
    "id": "078",
@@ -1459,17 +1459,17 @@
    "name": "Circuit Board",
    "category": "Light & Lines",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native circuit board: AKI as a silkscreen figure, the run as a signal pulse along a trace, WET at the puddle, a seven-segment display 11:58:",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/079_circuit-board/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/079_circuit-board/preview.mp4",
+   "thumb": "styles/079_circuit-board/thumbnail.png",
+   "report": "styles/079_circuit-board/qa_report.md"
   },
   {
    "id": "080",
@@ -1495,18 +1495,18 @@
    "name": "Flow-field Wind Lines",
    "category": "Light & Lines",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native flow field: an engraved field of lines bending round AKI, the puddle labelled, the street names lettered in, the watch read-out rolli",
    "adaptation": false,
    "engine": [
     "real data / imagery",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/081_flow-field/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/081_flow-field/preview.mp4",
+   "thumb": "styles/081_flow-field/thumbnail.png",
+   "report": "styles/081_flow-field/qa_report.md"
   },
   {
    "id": "082",
@@ -1514,18 +1514,18 @@
    "name": "Oscilloscope Math",
    "category": "Light & Lines",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native oscilloscope: AKI as a phosphor trace with motion trails and live read-outs, contact and watch markers, the watch dial drawn by the b",
    "adaptation": false,
    "engine": [
     "real data / imagery",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/082_oscilloscope-math/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/082_oscilloscope-math/preview.mp4",
+   "thumb": "styles/082_oscilloscope-math/thumbnail.png",
+   "report": "styles/082_oscilloscope-math/qa_report.md"
   },
   {
    "id": "083",
@@ -1741,17 +1741,17 @@
    "name": "Data Storytelling",
    "category": "Data & Maps",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native data storytelling: every footfall from the rig plotted the moment it lands by a red-blue pencil, notes pinned in data space (puddle, ",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/094_dataviz/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/094_dataviz/preview.mp4",
+   "thumb": "styles/094_dataviz/thumbnail.png",
+   "report": "styles/094_dataviz/qa_report.md"
   },
   {
    "id": "095",
