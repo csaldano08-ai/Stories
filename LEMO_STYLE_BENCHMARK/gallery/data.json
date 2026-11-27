@@ -199,17 +199,17 @@
    "name": "Isometric People Scene",
    "category": "3D & Miniature",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: true isometric full-bleed street, flat three-tone solids, faceless hand-less billboard people, AKI as the one accent (the ru",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/011_isometric-picture-book/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/011_isometric-picture-book/preview.mp4",
+   "thumb": "styles/011_isometric-picture-book/thumbnail.png",
+   "report": "styles/011_isometric-picture-book/qa_report.md"
   },
   {
    "id": "012",
