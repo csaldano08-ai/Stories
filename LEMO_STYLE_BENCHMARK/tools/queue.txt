@@ -53,3 +53,4 @@ LEMO_STYLE_BENCHMARK/styles/084_glass-product
 LEMO_STYLE_BENCHMARK/styles/085_memphis-diorama
 LEMO_STYLE_BENCHMARK/styles/091_security-xray
 LEMO_STYLE_BENCHMARK/styles/092_dark-documentary
+LEMO_STYLE_BENCHMARK/styles/093_thermal-camera
