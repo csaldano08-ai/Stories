@@ -9,13 +9,13 @@ LIB = os.environ['LIB']
 def run(c, **k): return subprocess.run(c, capture_output=True, text=True, **k)
 def ff(*a): r = run(['ffmpeg', '-y', '-loglevel', 'error', *a]); assert r.returncode == 0, r.stderr; return r
 ap = argparse.ArgumentParser(); ap.add_argument('dir'); ap.add_argument('--strip', default='5.8:7.2'); ap.add_argument('--native'); ap.add_argument('--note', default='')
-ap.add_argument('--manual', default=''); ap.add_argument('--status', default='qa')
+ap.add_argument('--manual', default=''); ap.add_argument('--status', default='qa'); ap.add_argument('--grain', default='0')
 a = ap.parse_args(); D = os.path.abspath(a.dir); sid = os.path.basename(D)
 inv = {r['folder'].split('/')[-1]: r for r in json.load(open(f'{B}/STYLE_INVENTORY.json'))['styles']}[sid]
 os.makedirs(f'{D}/qa', exist_ok=True)
 V = f'{D}/build/video.mp4'
 common = f'{B}/reference/original_audio_48k.wav'
-mux = lambda aud, out: run(['sh', f'{LIB}/core/render/mux.sh', V, aud, out, '30', '0'])
+mux = lambda aud, out: run(['sh', f'{LIB}/core/render/mux.sh', V, aud, out, '30', a.grain])
 r = mux(common, f'{D}/final.mp4'); assert os.path.exists(f'{D}/final.mp4'), r.stderr[-800:]
 if a.native: r = mux(a.native, f'{D}/final_native.mp4'); assert os.path.exists(f'{D}/final_native.mp4'), r.stderr[-800:]
 ff('-i', f'{D}/final.mp4', '-vf', 'scale=960:540', '-c:v', 'libx264', '-crf', '26', '-preset', 'medium', '-c:a', 'aac', '-b:a', '128k', f'{D}/preview.mp4')

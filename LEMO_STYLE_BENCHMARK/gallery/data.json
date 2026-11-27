@@ -33,17 +33,17 @@
    "name": "1930s Rubber Hose Cartoon",
    "category": "Cartoons",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: greyscale 4:3 worn print, pie eyes, gloves, noodle limbs, windmill run synced to the shared footfalls, breathing props, watc",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/002_rubber-hose/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/002_rubber-hose/preview.mp4",
+   "thumb": "styles/002_rubber-hose/thumbnail.png",
+   "report": "styles/002_rubber-hose/qa_report.md"
   },
   {
    "id": "003",
