@@ -34,3 +34,4 @@ LEMO_STYLE_BENCHMARK/styles/065_assembly-line-diagram
 LEMO_STYLE_BENCHMARK/styles/067_microgame
 LEMO_STYLE_BENCHMARK/styles/068_game-show
 LEMO_STYLE_BENCHMARK/styles/069_ascii-crt
+LEMO_STYLE_BENCHMARK/styles/070_silent-film
