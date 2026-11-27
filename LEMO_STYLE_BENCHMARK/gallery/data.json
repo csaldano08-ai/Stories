@@ -40,7 +40,7 @@
     "Canvas 2D"
    ],
    "video": "styles/002_rubber-hose/final.mp4",
-   "native": null,
+   "native": "styles/002_rubber-hose/final_native.mp4",
    "preview": "styles/002_rubber-hose/preview.mp4",
    "thumb": "styles/002_rubber-hose/thumbnail.png",
    "report": "styles/002_rubber-hose/qa_report.md"
@@ -58,7 +58,7 @@
     "Canvas 2D"
    ],
    "video": "styles/003_midcentury-toon/final.mp4",
-   "native": null,
+   "native": "styles/003_midcentury-toon/final_native.mp4",
    "preview": "styles/003_midcentury-toon/preview.mp4",
    "thumb": "styles/003_midcentury-toon/thumbnail.png",
    "report": "styles/003_midcentury-toon/qa_report.md"
@@ -132,7 +132,7 @@
     "Canvas 2D"
    ],
    "video": "styles/007_pixel-rpg/final.mp4",
-   "native": null,
+   "native": "styles/007_pixel-rpg/final_native.mp4",
    "preview": "styles/007_pixel-rpg/preview.mp4",
    "thumb": "styles/007_pixel-rpg/thumbnail.png",
    "report": "styles/007_pixel-rpg/qa_report.md"
@@ -188,7 +188,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/010_crayon-world/final.mp4",
-   "native": null,
+   "native": "styles/010_crayon-world/final_native.mp4",
    "preview": "styles/010_crayon-world/preview.mp4",
    "thumb": "styles/010_crayon-world/thumbnail.png",
    "report": "styles/010_crayon-world/qa_report.md"
@@ -279,7 +279,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/015_crayon-book/final.mp4",
-   "native": null,
+   "native": "styles/015_crayon-book/final_native.mp4",
    "preview": "styles/015_crayon-book/preview.mp4",
    "thumb": "styles/015_crayon-book/thumbnail.png",
    "report": "styles/015_crayon-book/qa_report.md"
@@ -853,7 +853,7 @@
     "Canvas 2D"
    ],
    "video": "styles/046_silkscreen-poster/final.mp4",
-   "native": null,
+   "native": "styles/046_silkscreen-poster/final_native.mp4",
    "preview": "styles/046_silkscreen-poster/preview.mp4",
    "thumb": "styles/046_silkscreen-poster/thumbnail.png",
    "report": "styles/046_silkscreen-poster/qa_report.md"
@@ -873,7 +873,7 @@
     "real data / imagery"
    ],
    "video": "styles/047_printed-long-take/final.mp4",
-   "native": null,
+   "native": "styles/047_printed-long-take/final_native.mp4",
    "preview": "styles/047_printed-long-take/preview.mp4",
    "thumb": "styles/047_printed-long-take/thumbnail.png",
    "report": "styles/047_printed-long-take/qa_report.md"
@@ -892,7 +892,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/048_pop-art/final.mp4",
-   "native": null,
+   "native": "styles/048_pop-art/final_native.mp4",
    "preview": "styles/048_pop-art/preview.mp4",
    "thumb": "styles/048_pop-art/thumbnail.png",
    "report": "styles/048_pop-art/qa_report.md"
@@ -928,7 +928,7 @@
     "Canvas 2D"
    ],
    "video": "styles/050_swiss-motion/final.mp4",
-   "native": null,
+   "native": "styles/050_swiss-motion/final_native.mp4",
    "preview": "styles/050_swiss-motion/preview.mp4",
    "thumb": "styles/050_swiss-motion/thumbnail.png",
    "report": "styles/050_swiss-motion/qa_report.md"
@@ -946,7 +946,7 @@
     "Canvas 2D"
    ],
    "video": "styles/051_spy-titles/final.mp4",
-   "native": null,
+   "native": "styles/051_spy-titles/final_native.mp4",
    "preview": "styles/051_spy-titles/preview.mp4",
    "thumb": "styles/051_spy-titles/thumbnail.png",
    "report": "styles/051_spy-titles/qa_report.md"
@@ -964,7 +964,7 @@
     "Canvas 2D"
    ],
    "video": "styles/052_art-deco/final.mp4",
-   "native": null,
+   "native": "styles/052_art-deco/final_native.mp4",
    "preview": "styles/052_art-deco/preview.mp4",
    "thumb": "styles/052_art-deco/thumbnail.png",
    "report": "styles/052_art-deco/qa_report.md"
@@ -982,7 +982,7 @@
     "Canvas 2D"
    ],
    "video": "styles/053_pictogram-motion/final.mp4",
-   "native": null,
+   "native": "styles/053_pictogram-motion/final_native.mp4",
    "preview": "styles/053_pictogram-motion/preview.mp4",
    "thumb": "styles/053_pictogram-motion/thumbnail.png",
    "report": "styles/053_pictogram-motion/qa_report.md"
@@ -1000,7 +1000,7 @@
     "Canvas 2D"
    ],
    "video": "styles/054_bauhaus-shapes/final.mp4",
-   "native": null,
+   "native": "styles/054_bauhaus-shapes/final_native.mp4",
    "preview": "styles/054_bauhaus-shapes/preview.mp4",
    "thumb": "styles/054_bauhaus-shapes/thumbnail.png",
    "report": "styles/054_bauhaus-shapes/qa_report.md"
@@ -1019,7 +1019,7 @@
     "SVG"
    ],
    "video": "styles/055_flat-space-explainer/final.mp4",
-   "native": null,
+   "native": "styles/055_flat-space-explainer/final_native.mp4",
    "preview": "styles/055_flat-space-explainer/preview.mp4",
    "thumb": "styles/055_flat-space-explainer/thumbnail.png",
    "report": "styles/055_flat-space-explainer/qa_report.md"
@@ -1058,7 +1058,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/057_silhouette-rhythm/final.mp4",
-   "native": null,
+   "native": "styles/057_silhouette-rhythm/final_native.mp4",
    "preview": "styles/057_silhouette-rhythm/preview.mp4",
    "thumb": "styles/057_silhouette-rhythm/thumbnail.png",
    "report": "styles/057_silhouette-rhythm/qa_report.md"
@@ -1076,7 +1076,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/058_blueprint/final.mp4",
-   "native": null,
+   "native": "styles/058_blueprint/final_native.mp4",
    "preview": "styles/058_blueprint/preview.mp4",
    "thumb": "styles/058_blueprint/thumbnail.png",
    "report": "styles/058_blueprint/qa_report.md"
@@ -1094,7 +1094,7 @@
     "Canvas 2D"
    ],
    "video": "styles/059_iso-infographic/final.mp4",
-   "native": null,
+   "native": "styles/059_iso-infographic/final_native.mp4",
    "preview": "styles/059_iso-infographic/preview.mp4",
    "thumb": "styles/059_iso-infographic/thumbnail.png",
    "report": "styles/059_iso-infographic/qa_report.md"
@@ -1131,7 +1131,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/061_hardcore-info/final.mp4",
-   "native": null,
+   "native": "styles/061_hardcore-info/final_native.mp4",
    "preview": "styles/061_hardcore-info/preview.mp4",
    "thumb": "styles/061_hardcore-info/thumbnail.png",
    "report": "styles/061_hardcore-info/qa_report.md"
@@ -1150,7 +1150,7 @@
     "SVG"
    ],
    "video": "styles/062_precise-mechanism/final.mp4",
-   "native": null,
+   "native": "styles/062_precise-mechanism/final_native.mp4",
    "preview": "styles/062_precise-mechanism/preview.mp4",
    "thumb": "styles/062_precise-mechanism/thumbnail.png",
    "report": "styles/062_precise-mechanism/qa_report.md"
@@ -1168,7 +1168,7 @@
     "Canvas 2D"
    ],
    "video": "styles/063_instruction-manual/final.mp4",
-   "native": null,
+   "native": "styles/063_instruction-manual/final_native.mp4",
    "preview": "styles/063_instruction-manual/preview.mp4",
    "thumb": "styles/063_instruction-manual/thumbnail.png",
    "report": "styles/063_instruction-manual/qa_report.md"
@@ -1188,7 +1188,7 @@
     "SVG"
    ],
    "video": "styles/064_pen-plotter/final.mp4",
-   "native": null,
+   "native": "styles/064_pen-plotter/final_native.mp4",
    "preview": "styles/064_pen-plotter/preview.mp4",
    "thumb": "styles/064_pen-plotter/thumbnail.png",
    "report": "styles/064_pen-plotter/qa_report.md"
@@ -1207,7 +1207,7 @@
     "SVG"
    ],
    "video": "styles/065_assembly-line-diagram/final.mp4",
-   "native": null,
+   "native": "styles/065_assembly-line-diagram/final_native.mp4",
    "preview": "styles/065_assembly-line-diagram/preview.mp4",
    "thumb": "styles/065_assembly-line-diagram/thumbnail.png",
    "report": "styles/065_assembly-line-diagram/qa_report.md"
@@ -1244,7 +1244,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/067_microgame/final.mp4",
-   "native": null,
+   "native": "styles/067_microgame/final_native.mp4",
    "preview": "styles/067_microgame/preview.mp4",
    "thumb": "styles/067_microgame/thumbnail.png",
    "report": "styles/067_microgame/qa_report.md"
@@ -1263,7 +1263,7 @@
     "SVG"
    ],
    "video": "styles/068_game-show/final.mp4",
-   "native": null,
+   "native": "styles/068_game-show/final_native.mp4",
    "preview": "styles/068_game-show/preview.mp4",
    "thumb": "styles/068_game-show/thumbnail.png",
    "report": "styles/068_game-show/qa_report.md"
@@ -1282,7 +1282,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/069_ascii-crt/final.mp4",
-   "native": null,
+   "native": "styles/069_ascii-crt/final_native.mp4",
    "preview": "styles/069_ascii-crt/preview.mp4",
    "thumb": "styles/069_ascii-crt/thumbnail.png",
    "report": "styles/069_ascii-crt/qa_report.md"
@@ -1302,7 +1302,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/070_silent-film/final.mp4",
-   "native": null,
+   "native": "styles/070_silent-film/final_native.mp4",
    "preview": "styles/070_silent-film/preview.mp4",
    "thumb": "styles/070_silent-film/thumbnail.png",
    "report": "styles/070_silent-film/qa_report.md"
@@ -1320,7 +1320,7 @@
     "Canvas 2D"
    ],
    "video": "styles/071_scratch-film/final.mp4",
-   "native": null,
+   "native": "styles/071_scratch-film/final_native.mp4",
    "preview": "styles/071_scratch-film/preview.mp4",
    "thumb": "styles/071_scratch-film/thumbnail.png",
    "report": "styles/071_scratch-film/qa_report.md"
@@ -1356,7 +1356,7 @@
     "Canvas 2D"
    ],
    "video": "styles/073_dark-keynote/final.mp4",
-   "native": null,
+   "native": "styles/073_dark-keynote/final_native.mp4",
    "preview": "styles/073_dark-keynote/preview.mp4",
    "thumb": "styles/073_dark-keynote/thumbnail.png",
    "report": "styles/073_dark-keynote/qa_report.md"
@@ -1374,7 +1374,7 @@
     "Canvas 2D"
    ],
    "video": "styles/074_living-screencast/final.mp4",
-   "native": null,
+   "native": "styles/074_living-screencast/final_native.mp4",
    "preview": "styles/074_living-screencast/preview.mp4",
    "thumb": "styles/074_living-screencast/thumbnail.png",
    "report": "styles/074_living-screencast/qa_report.md"
@@ -1392,7 +1392,7 @@
     "Canvas 2D"
    ],
    "video": "styles/075_hologram-hud/final.mp4",
-   "native": null,
+   "native": "styles/075_hologram-hud/final_native.mp4",
    "preview": "styles/075_hologram-hud/preview.mp4",
    "thumb": "styles/075_hologram-hud/thumbnail.png",
    "report": "styles/075_hologram-hud/qa_report.md"
@@ -1429,7 +1429,7 @@
     "Canvas 2D"
    ],
    "video": "styles/077_spreadsheet/final.mp4",
-   "native": null,
+   "native": "styles/077_spreadsheet/final_native.mp4",
    "preview": "styles/077_spreadsheet/preview.mp4",
    "thumb": "styles/077_spreadsheet/thumbnail.png",
    "report": "styles/077_spreadsheet/qa_report.md"
@@ -1466,7 +1466,7 @@
     "Canvas 2D"
    ],
    "video": "styles/079_circuit-board/final.mp4",
-   "native": null,
+   "native": "styles/079_circuit-board/final_native.mp4",
    "preview": "styles/079_circuit-board/preview.mp4",
    "thumb": "styles/079_circuit-board/thumbnail.png",
    "report": "styles/079_circuit-board/qa_report.md"
@@ -1503,7 +1503,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/081_flow-field/final.mp4",
-   "native": null,
+   "native": "styles/081_flow-field/final_native.mp4",
    "preview": "styles/081_flow-field/preview.mp4",
    "thumb": "styles/081_flow-field/thumbnail.png",
    "report": "styles/081_flow-field/qa_report.md"
@@ -1522,7 +1522,7 @@
     "SVG"
    ],
    "video": "styles/082_oscilloscope-math/final.mp4",
-   "native": null,
+   "native": "styles/082_oscilloscope-math/final_native.mp4",
    "preview": "styles/082_oscilloscope-math/preview.mp4",
    "thumb": "styles/082_oscilloscope-math/thumbnail.png",
    "report": "styles/082_oscilloscope-math/qa_report.md"
@@ -1748,7 +1748,7 @@
     "Canvas 2D"
    ],
    "video": "styles/094_dataviz/final.mp4",
-   "native": null,
+   "native": "styles/094_dataviz/final_native.mp4",
    "preview": "styles/094_dataviz/preview.mp4",
    "thumb": "styles/094_dataviz/thumbnail.png",
    "report": "styles/094_dataviz/qa_report.md"
