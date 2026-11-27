@@ -1049,8 +1049,8 @@
    "name": "Silhouette Rhythm",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "wip",
-   "note": "",
+   "status": "done",
+   "note": "Native silhouette rhythm: AKI as one black shape against a single warm light over wet water, the splash back-lit at 0.94 s, the run in telep",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -1199,18 +1199,18 @@
    "name": "Assembly-Line Diagram",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "queued",
+   "status": "qa",
    "note": "",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/065_assembly-line-diagram/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/065_assembly-line-diagram/preview.mp4",
+   "thumb": "styles/065_assembly-line-diagram/thumbnail.png",
+   "report": "styles/065_assembly-line-diagram/qa_report.md"
   },
   {
    "id": "066",

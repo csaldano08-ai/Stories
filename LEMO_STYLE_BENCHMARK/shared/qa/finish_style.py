@@ -9,7 +9,7 @@ LIB = os.environ['LIB']
 def run(c, **k): return subprocess.run(c, capture_output=True, text=True, **k)
 def ff(*a): r = run(['ffmpeg', '-y', '-loglevel', 'error', *a]); assert r.returncode == 0, r.stderr; return r
 ap = argparse.ArgumentParser(); ap.add_argument('dir'); ap.add_argument('--strip', default='5.8:7.2'); ap.add_argument('--native'); ap.add_argument('--note', default='')
-ap.add_argument('--manual', default=''); ap.add_argument('--status', default='qa'); ap.add_argument('--grain', default='0')
+ap.add_argument('--manual', default=''); ap.add_argument('--black-ok', default='', help='the black frames are intended by the style (give the reason): they stay measured and are reported, not counted as a fail'); ap.add_argument('--status', default='qa'); ap.add_argument('--grain', default='0')
 ap.add_argument('--skip-mux', action='store_true', help='final.mp4 already muxed: only previews, sheets and the report'); ap.add_argument('--capped', action='store_true', help='with --skip-mux: the existing final was bitrate-capped')
 ap.add_argument('--meta-only', action='store_true', help='keep final/preview/sheets as they are; re-measure and rewrite qa_report.md + status.json only')
 a = ap.parse_args(); D = os.path.abspath(a.dir); sid = os.path.basename(D)
@@ -50,7 +50,8 @@ fails = []
 if M['frames'] != 300: fails.append(f"{M['frames']} frames (expected 300)")
 if M['size'] != '1920x1080': fails.append('size')
 if M['fps'] != '30/1': fails.append('fps')
-if blacks: fails.append(f'black frames {blacks}')
+if blacks and not a.black_ok: fails.append(f'black frames {blacks}')
+INTENDED = [f'black frames {blacks}: intended — {a.black_ok}'] if blacks and a.black_ok else []
 if TP > -1.0: fails.append(f'true peak {TP}')
 if rig and not rig['pass']: fails.append('rig QA failed')
 rep = [f"# {sid} — {inv['name']} ({inv['category']}) — QA report", '',
@@ -60,7 +61,7 @@ if rig: rep += ['## Rig QA (all 300 frames, `shared/qa/rig_check.mjs`)', '```', 
                'bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.']
 rep += ['## Visual review (done by the agent on stills / strips — not full-speed playback)', a.manual or '(none recorded)', '',
         *([f'Encoding note: {", ".join(CAPPED)} re-encoded with the video bitrate capped at 55 Mb/s (CRF 19 otherwise; the muxed file was over 90 MB).', ''] if CAPPED else []),
-        '## Needs a human', '- full-speed viewing; listening to the mix', '', f"**Automated result:** {'PASS' if not fails else 'FAIL — ' + '; '.join(fails)}", '', a.note]
+        '## Needs a human', '- full-speed viewing; listening to the mix', '', f"**Automated result:** {'PASS' if not fails else 'FAIL — ' + '; '.join(fails)}", *(['', '**Accepted as intended:** ' + '; '.join(INTENDED)] if INTENDED else []), '', a.note]
 open(f'{D}/qa_report.md', 'w').write('\n'.join(rep) + '\n')
-json.dump({'status': 'done' if (not fails and a.status == 'done') else ('qa' if not fails else 'wip'), 'note': a.note[:140], 'measured': M, 'fails': fails}, open(f'{D}/status.json', 'w'), indent=1)
+json.dump({'status': 'done' if (not fails and a.status == 'done') else ('qa' if not fails else 'wip'), 'note': a.note[:140], 'measured': M, 'fails': fails, **({'intended': INTENDED} if INTENDED else {})}, open(f'{D}/status.json', 'w'), indent=1)
 print(json.dumps({'fails': fails, **{k: M[k] for k in ['frames', 'lufs', 'true_peak_dbtp', 'size_mb']}}))

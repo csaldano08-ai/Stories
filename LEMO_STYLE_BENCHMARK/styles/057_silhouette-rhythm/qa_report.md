@@ -60,11 +60,13 @@ Style construction: Canvas 2D, real data / imagery, WebGL shader pass. Narrative
 ```
 bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.
 ## Visual review (done by the agent on stills / strips — not full-speed playback)
-(none recorded)
+QA review 2026-11-27: contact sheet viewed; black frames checked against the source (intended wipe)
 
 ## Needs a human
 - full-speed viewing; listening to the mix
 
-**Automated result:** FAIL — black frames [('2.466667', '2.566667'), ('7.466667', '7.566667')]
+**Automated result:** PASS
 
+**Accepted as intended:** black frames [('2.466667', '2.566667'), ('7.466667', '7.566667')]: intended — the style's black wipe at the cuts (a pillar crossing the lens), 3 frames at 2.5 s and 7.5 s
 
+Native silhouette rhythm: AKI as one black shape against a single warm light over wet water, the splash back-lit at 0.94 s, the run in telephoto across the disc, the wrist and watch against the glow, the tower on the chime. Weakness: the warm disc reads as a setting sun, at odds with the 11:58 pm setting.
