@@ -3,3 +3,5 @@ LEMO_STYLE_BENCHMARK/styles/029_impasto
 LEMO_STYLE_BENCHMARK/styles/030_urban-sketch
 LEMO_STYLE_BENCHMARK/styles/031_colored-pencil
 LEMO_STYLE_BENCHMARK/styles/032_one-line
+LEMO_STYLE_BENCHMARK/styles/033_whiteboard
+LEMO_STYLE_BENCHMARK/styles/034_chalkboard
