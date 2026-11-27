@@ -532,17 +532,17 @@
    "name": "Impasto Oil Painting",
    "category": "Painting & Illustration",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild in thick oil paint: impasto strokes laid along form, palette-knife highlights on wet stone, the protagonist painted with the ",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/029_impasto/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/029_impasto/preview.mp4",
+   "thumb": "styles/029_impasto/thumbnail.png",
+   "report": "styles/029_impasto/qa_report.md"
   },
   {
    "id": "030",
