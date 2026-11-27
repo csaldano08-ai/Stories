@@ -47,3 +47,4 @@ LEMO_STYLE_BENCHMARK/styles/078_one-bit-dither
 LEMO_STYLE_BENCHMARK/styles/079_circuit-board
 LEMO_STYLE_BENCHMARK/styles/080_firefly-pointillism
 LEMO_STYLE_BENCHMARK/styles/081_flow-field
+LEMO_STYLE_BENCHMARK/styles/082_oscilloscope-math
