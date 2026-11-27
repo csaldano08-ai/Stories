@@ -28,8 +28,10 @@ LEMO_STYLE_BENCHMARK/styles/055_flat-space-explainer
 LEMO_STYLE_BENCHMARK/styles/057_silhouette-rhythm
 LEMO_STYLE_BENCHMARK/styles/058_blueprint
 LEMO_STYLE_BENCHMARK/styles/059_iso-infographic
+LEMO_STYLE_BENCHMARK/styles/061_hardcore-info
 LEMO_STYLE_BENCHMARK/styles/062_precise-mechanism
 LEMO_STYLE_BENCHMARK/styles/063_instruction-manual
+LEMO_STYLE_BENCHMARK/styles/064_pen-plotter
 LEMO_STYLE_BENCHMARK/styles/065_assembly-line-diagram
 LEMO_STYLE_BENCHMARK/styles/067_microgame
 LEMO_STYLE_BENCHMARK/styles/068_game-show

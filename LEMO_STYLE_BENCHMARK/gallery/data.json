@@ -568,18 +568,18 @@
    "name": "Colored-Pencil Science Illustration",
    "category": "Painting & Illustration",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild in colored pencil: layered directional pencil strokes on toothed paper, the street, puddle and AKI built up stroke by stroke,",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "three.js 3D (WebGL)"
    ],
-   "video": null,
+   "video": "styles/031_colored-pencil/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/031_colored-pencil/preview.mp4",
+   "thumb": "styles/031_colored-pencil/thumbnail.png",
+   "report": "styles/031_colored-pencil/qa_report.md"
   },
   {
    "id": "032",

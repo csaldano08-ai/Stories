@@ -1,7 +1,8 @@
 #!/bin/sh
 # Resumable render of one style in chunks of N frames (default 50): each chunk is its own render_long run (3 workers) into
 # build/chunks/c_<a>.mp4; chunks already on disk are skipped, so a render stopped by a time limit continues where it was.
-# When every chunk exists they are joined losslessly into build/video.mp4.
+# When every chunk exists they are joined losslessly into build/video.mp4. With DEADLINE (epoch seconds) set, no new chunk is
+# started after it: the script exits with status 2 and the next run continues at the first missing chunk.
 #   sh LEMO_STYLE_BENCHMARK/tools/render_chunks.sh LEMO_STYLE_BENCHMARK/styles/008_brick-toy [50]
 . "$(dirname "$0")/../../LEMO_CINEMATIC_LAB/tools/env.sh"
 B="$(cd "$(dirname "$0")/.." && pwd)"; ST="$1"; N="${2:-50}"; C="$ST/build/chunks"; mkdir -p "$C"
@@ -9,6 +10,7 @@ a=0; : > "$C/list.txt"
 while [ $a -lt 300 ]; do b=$((a + N)); [ $b -gt 300 ] && b=300
   f="c_$(printf %03d $a).mp4"
   if [ ! -s "$C/$f" ]; then
+    if [ -n "$DEADLINE" ] && [ "$(date +%s)" -ge "$DEADLINE" ]; then echo "   time budget spent: stopping before chunk $a:$b"; exit 2; fi
     start=$(date +%s)
     node "$B/tools/render_long.mjs" "$ST/source" --fps 30 --workers 3 --frames $a:$b --out "$C/$f" 2>&1 | grep -v "^\[note\]\|GL Driver\|^\[page\]\|^w[0-9]" | tail -1
     echo "   chunk $a:$b $(( $(date +%s) - start )) s"
