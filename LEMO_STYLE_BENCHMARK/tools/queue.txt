@@ -29,3 +29,4 @@ LEMO_STYLE_BENCHMARK/styles/057_silhouette-rhythm
 LEMO_STYLE_BENCHMARK/styles/058_blueprint
 LEMO_STYLE_BENCHMARK/styles/059_iso-infographic
 LEMO_STYLE_BENCHMARK/styles/062_precise-mechanism
+LEMO_STYLE_BENCHMARK/styles/063_instruction-manual
