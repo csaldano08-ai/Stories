@@ -60,7 +60,9 @@ removing a wing along its hinge axis · rigid-body fall of the bird (pre-simulat
 lever touching the part) · DOF and GTAO stability · **s/frame on CPU** (decides render budget).
 
 ## 8. Status
-Treatment only. Next: CPU 3D benchmark with the library's three.js post (`core/three/post.js`), then character bible + rig tests.
+Treatment written; CPU benchmark done (see `research/limitations/ENVIRONMENT_LIMITS.md`: 5.3 s/frame at 1080p 1× + GTAO,
+20.2 s with 2× SSAA). Next: character bible (robot + bird) with `bricks.js`-style geometry, rig tests (walk on studs, two-hand grasp,
+clip hand, wing hinge), 960×540 preview, then one final 1080p render (~3 h).
 
 ## 9. Production gate
 No GPU in this environment (SwiftShader). If a supersampled PBR+GTAO+DOF frame costs > 30 s, the plan is: render at 1080p without
