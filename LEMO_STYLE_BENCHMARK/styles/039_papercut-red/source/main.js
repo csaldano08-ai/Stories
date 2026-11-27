@@ -255,7 +255,7 @@ function drawStreet(ctx, t, cam, tq) {
   for (const c of RUN.contacts) {
     const u = t - c.t0; if (u < 0 || u > .9) continue;
     const big = c === SPL, fx = Wp([c.x, 0])[0] + 28, s = big ? 1 : .45;
-    if (big || u < .3) { const i = Math.min(3, Math.floor(u * 12)); if (u < (big ? .34 : .17)) put(ctx, SETS.crown[big ? i : i + 2], mul(C, mul(Tm(fx, GROUND + 4), Sm(s))), { shadow: .8 }); }
+    if (big || u < .3) { const i = Math.min(3, Math.floor(u * 12)); if (u < (big ? .34 : .17)) put(ctx, SETS.crown[Math.min(SETS.crown.length - 1, big ? i : i + 2)], mul(C, mul(Tm(fx, GROUND + 4), Sm(s))), { shadow: .8 }); }
     if (big) {
       for (let k = 0; k < 9; k++) { const a = -Math.PI / 2 + (k / 8 - .5) * 2.4, v0 = 380 + 160 * hash(k * 3.3), x = fx + Math.cos(a) * v0 * u, y = GROUND - 10 + Math.sin(a) * v0 * u + 900 * u * u; if (u < .55) put(ctx, SETS.drop, mul(C, mul(Tm(x, y), Rm(a + Math.PI / 2))), { shadow: .6 }); }
       const ri = Math.floor((u - .1) * 6); if (ri >= 0 && ri < 3) put(ctx, SETS.ring[ri], mul(C, Tm(fx, GROUND + 30)), { shadow: .5 });
