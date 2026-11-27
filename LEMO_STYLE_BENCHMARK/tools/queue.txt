@@ -50,3 +50,4 @@ LEMO_STYLE_BENCHMARK/styles/081_flow-field
 LEMO_STYLE_BENCHMARK/styles/082_oscilloscope-math
 LEMO_STYLE_BENCHMARK/styles/083_paper-popup
 LEMO_STYLE_BENCHMARK/styles/084_glass-product
+LEMO_STYLE_BENCHMARK/styles/085_memphis-diorama
