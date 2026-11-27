@@ -1,0 +1,6 @@
+{
+ "status": "blocked",
+ "note": "BLOCKED: the style takes a real product apart from its own engineering files (STYLE.md \u00a71: \"the object is real and exact: geometry, positions and counts come from the product's own files (STEP, KiCad, BOM, assembly guide). Nothing is eyeballed that a file can give\"; \u00a72: \"Without files, build only from published dimensions \u2026 and show no number you could not source. Never stand in a generated image for the real part\"). The only product in the clip is AKI's wristwatch, a fictional object with no CAD, layout or bill of materials, and the open-hardware sources the style names (GitHub, GitLab, OSHWA, Hackaday.io, Printables) are not reachable from this environment (the proxy refuses them, as it refused github raw files earlier). A teardown of an invented watch with invented part numbers and dimensions would present fabricated engineering data as real, which both the style and the brief forbid. Not substituted with a generic version.",
+ "measured": null,
+ "fails": []
+}
