@@ -587,18 +587,18 @@
    "name": "One-line Drawing",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild as one continuous ink line that never leaves the paper: the street, the puddle and the watch are one stroke; AKI is the only ",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/032_one-line/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/032_one-line/preview.mp4",
+   "thumb": "styles/032_one-line/thumbnail.png",
+   "report": "styles/032_one-line/qa_report.md"
   },
   {
    "id": "033",
@@ -662,17 +662,17 @@
    "name": "Tablet Sketch Explainer",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild as a tablet sketch on one cream canvas: pencil construction, brush ink, flat fills dropped in; the watch and the street map a",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/036_ipad-sketch/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/036_ipad-sketch/preview.mp4",
+   "thumb": "styles/036_ipad-sketch/thumbnail.png",
+   "report": "styles/036_ipad-sketch/qa_report.md"
   },
   {
    "id": "037",
@@ -753,17 +753,17 @@
    "name": "Gilded Illumination",
    "category": "Traditional Crafts",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild as a gilded miniature: flat jewel colours, gold-leaf highlights, a patterned night street, the watch as an illuminated rounde",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/041_gilded-illumination/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/041_gilded-illumination/preview.mp4",
+   "thumb": "styles/041_gilded-illumination/thumbnail.png",
+   "report": "styles/041_gilded-illumination/qa_report.md"
   },
   {
    "id": "042",
@@ -864,19 +864,19 @@
    "name": "Scratchboard Long Take",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild as a printed long take: linocut-black street in two inks plus her red coat, one tracking move, the watch and the tower in the",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "three.js 3D (WebGL)",
     "real data / imagery"
    ],
-   "video": null,
+   "video": "styles/047_printed-long-take/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/047_printed-long-take/preview.mp4",
+   "thumb": "styles/047_printed-long-take/thumbnail.png",
+   "report": "styles/047_printed-long-take/qa_report.md"
   },
   {
    "id": "048",
@@ -975,17 +975,17 @@
    "name": "Pictogram Motion",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild as pictogram motion: chaptered panels (SPLASH, CORRI, 23:58, STATION), a pictogram AKI in a round window driven by the rig.",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/053_pictogram-motion/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/053_pictogram-motion/preview.mp4",
+   "thumb": "styles/053_pictogram-motion/thumbnail.png",
+   "report": "styles/053_pictogram-motion/qa_report.md"
   },
   {
    "id": "054",

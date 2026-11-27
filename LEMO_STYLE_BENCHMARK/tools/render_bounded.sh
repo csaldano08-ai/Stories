@@ -10,19 +10,20 @@ B="$(cd "$(dirname "$0")/.." && pwd)"; Q="$B/tools/queue.txt"; R="$(cd "$B/.." &
 END=$(( $(date +%s) + ${BUDGET:-5400} )); export DEADLINE=$END
 waitfree() { while pgrep -f "render_queue_chunks|render_long.mjs" >/dev/null; do
   [ "$(date +%s)" -ge $END ] && { echo "== $(date +%H:%M:%S) budget spent while waiting for another render"; exit 0; }; sleep 30; done; }
-grep -v '^$' "$Q" > "$B/tools/.queue_snapshot"
-while read -r d; do
-  ST="$R/$d"
+# EDIT: iterate over a word list, not `while read` on a redirected file: the render tools inside the loop (ffmpeg) read stdin
+# and swallowed queue lines. Every inner command also gets </dev/null.
+for d in $(grep -v '^$' "$Q"); do
+  ST="$R/$d"; [ -d "$ST/source" ] || { echo "   skip (no source): $d"; continue; }
   { [ -f "$ST/final.mp4" ] && [ -s "$ST/build/video.mp4" ]; } && continue; [ -f "$ST/build/.failed" ] && continue
   waitfree
   [ "$(date +%s)" -ge $END ] && { echo "== $(date +%H:%M:%S) budget spent; next: $d"; exit 0; }
   echo "== $(date +%H:%M:%S) $d"
-  [ -s "$ST/animation/rig_qa.json" ] || node "$B/shared/qa/rig_check.mjs" "$ST/source" "$ST/animation/rig_qa.json" 2>&1 | grep -v "GL Driver\|^\[note\]" | tail -1 | cut -c1-160
+  [ -s "$ST/animation/rig_qa.json" ] || node "$B/shared/qa/rig_check.mjs" "$ST/source" "$ST/animation/rig_qa.json" </dev/null 2>&1 | grep -v "GL Driver\|^\[note\]" | tail -1 | cut -c1-160
   if [ ! -s "$ST/build/video.mp4" ]; then
-    sh "$B/tools/render_chunks.sh" "$ST" 50; rc=$?
+    sh "$B/tools/render_chunks.sh" "$ST" 50 </dev/null; rc=$?
     [ $rc -eq 2 ] && { echo "== $(date +%H:%M:%S) budget spent inside $d (chunks kept)"; exit 0; }
     [ -s "$ST/build/video.mp4" ] || { mkdir -p "$ST/build"; touch "$ST/build/.failed"; echo "   FAILED $d"; continue; }
   fi
-  $LEMO_PY "$B/shared/qa/finish_style.py" "$ST" --grain 0 --status qa 2>&1 | tail -1
-done < "$B/tools/.queue_snapshot"
+  $LEMO_PY "$B/shared/qa/finish_style.py" "$ST" --grain 0 --status qa </dev/null 2>&1 | tail -1
+done
 echo "== $(date +%H:%M:%S) queue exhausted"
