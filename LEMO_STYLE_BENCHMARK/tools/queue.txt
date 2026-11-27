@@ -6,3 +6,4 @@ LEMO_STYLE_BENCHMARK/styles/032_one-line
 LEMO_STYLE_BENCHMARK/styles/033_whiteboard
 LEMO_STYLE_BENCHMARK/styles/034_chalkboard
 LEMO_STYLE_BENCHMARK/styles/035_sketchnote
+LEMO_STYLE_BENCHMARK/styles/036_ipad-sketch
