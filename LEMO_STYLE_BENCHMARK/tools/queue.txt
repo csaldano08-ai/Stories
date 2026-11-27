@@ -19,3 +19,4 @@ LEMO_STYLE_BENCHMARK/styles/045_engraving
 LEMO_STYLE_BENCHMARK/styles/046_silkscreen-poster
 LEMO_STYLE_BENCHMARK/styles/047_printed-long-take
 LEMO_STYLE_BENCHMARK/styles/048_pop-art
+LEMO_STYLE_BENCHMARK/styles/050_swiss-motion
