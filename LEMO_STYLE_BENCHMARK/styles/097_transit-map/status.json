@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: Two blockers. (1) The last train in our story runs on an invented line: drawing a network for it would invent the data the style says must be real and checked. Putting the story on a real network would claim a real last departure at midnight from a real station, which we cannot state. (2) The open data hosts for networks answer `403 (agent proxy: no rule allows this host)`: `overpass-api.de`, `tile.openstreetmap.org`.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Needs a real, checked transit network; the story's line is invented and the map data hosts are refused."
 }

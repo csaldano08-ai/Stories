@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: A native version needs real micrographs (for this story, e.g. a drop of rain water or a fibre of the coat) and the library ships none. The open micrograph sources answer `403 (agent proxy: no rule allows this host)`: `idr.openmicroscopy.org`, `upload.wikimedia.org`, `commons.wikimedia.org`, `images.nasa.gov`. Drawing cells or crystals in code would break the style's first rule, and a micrograph of a sample that is not from the scene would present an invented link as a fact; the style is not replaced by a generic version.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Needs real micrographs of a real sample; the microscopy hosts are refused by this network."
 }

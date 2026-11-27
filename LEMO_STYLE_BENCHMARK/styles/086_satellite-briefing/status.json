@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: Two blockers. (1) The story is fiction in an invented place: AKI's run, the puddle and the station clock happen on a street that does not exist. Putting them on a real photograph of a real town would present a simulation as an observed fact, which the brief forbids (\"Non\u2026 presentare le simulazioni come riprese autentiche\"); drawing an invented street as if it were imagery would break the style's first rule. (2) The imagery is out of reach at the scale the story needs: the whole event covers about 40 m of pavement, so the dive has to end on sub-metre aerial imagery. The hosts the library's demo and docs use answer `403 (agent proxy: no rule allows this host)`: `planetarycomputer.microsoft.com`, `gibs.earthdata.nasa.gov`, `tiles.maps.eox.at`, `api.pdok.nl`, `basemap.nationalmap.gov`. Only 10 m Sentinel-2 tiles on `sentinel-cogs.s3.us-west-2.amazonaws.com` answer, and at 10 m the street is four pixels wide.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Needs real satellite imagery of a real place; the story is set in an invented street and the imagery hosts are refused."
 }

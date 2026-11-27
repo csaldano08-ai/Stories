@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: this style is a broadcast news package whose frame is built around a channel sting and a permanent channel bug (STYLE.md \u00a72\u20133: \"the frame is the graphic, the strap, the bug and a source line\"), and whose every graphic states one sourced fact (\"every number from the source page\"; illustration plates \"never stand in for the event, the place or the people\"). For a fictional story this would require inventing news facts, numbers and sources (the brief forbids fake statistics and presenting simulations as real), and the sting + bug are exactly the studio logo / repeated intro the brief excludes. Not substituted with a generic version.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "A broadcast package built on a channel sting and bug and on real news material; it would imitate a broadcaster."
 }

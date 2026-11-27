@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: it is cut from real archive material (STYLE.md \u00a71: \"cut from real archive material\"; nothing is drawn but the packaging). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Cut from real archive film; the story is fiction, so no archive of it exists."
 }

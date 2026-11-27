@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: this style requires an external image generator (STYLE.md \u00a79: every character and panel drawing is generated, and stand-in characters drawn in code are forbidden). `core/image/gen_image.py --check` returned exit 4 (Codex CLI not installed, no other image tool provided). Not substituted with a generic version.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Needs an external image generator for every drawing; none is available in this environment."
 }

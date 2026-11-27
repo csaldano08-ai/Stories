@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: The table holds real archive scans (glass negatives, timetables, tickets, telegrams), and the library ships none. The holders the style names answer `403 (agent proxy: no rule allows this host)`: `tile.loc.gov`, `lx2.loc.gov`, `www.loc.gov`, `upload.wikimedia.org`, `api.smithsonian.edu`, `www.rijksmuseum.nl`. Faking archive objects (or inventing catalogue numbers) would break the style's first two rules; it is not replaced by a generic version.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Needs real archive scans with catalogue records; the archive hosts are refused by this network."
 }

@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: its picture layer is real footage, photos and the source document of a real news event (STYLE.md \u00a71: \"Real footage, photos and the source document are the ground\"). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Built on real news footage and documents; the story is fiction, so no real footage of it exists."
 }

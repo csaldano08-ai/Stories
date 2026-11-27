@@ -2,5 +2,6 @@
  "status": "blocked",
  "note": "BLOCKED: the style is made of real printed matter (STYLE.md \u00a71: \"every figure is a cut-out of a real public-domain print (an engraving, a stamp, a news photo, a line drawing)\u2026 Nothing is drawn in a vector or 3D way to look printed\"; \u00a79: \"only public domain and CC0 prints, each one in the credits\"). The library ships no scans (the demo downloads them in `build.sh` from Wikimedia Commons, listed in `SOURCES.jsonl`), and this environment's network refuses the archive hosts: `upload.wikimedia.org`, `commons.wikimedia.org`, `www.loc.gov` and `archive.org` all answer `403 Forbidden (agent proxy: no rule or network setting allows this host)` (checked 2026-11-27). Drawing fake engravings in code would break the style's first rule; it is not substituted with a generic version.",
  "measured": null,
- "fails": []
+ "fails": [],
+ "short": "Made of real public-domain prints; the archive hosts are refused by this network."
 }
