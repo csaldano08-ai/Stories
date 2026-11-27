@@ -161,18 +161,18 @@
    "name": "Low-poly Isometric Island",
    "category": "3D & Miniature",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: a flat-shaded low-poly hex-tile island at night under an isometric orthographic camera — warm emissive windows, faceted sea,",
    "adaptation": false,
    "engine": [
     "three.js 3D (WebGL)",
     "real data / imagery"
    ],
-   "video": null,
+   "video": "styles/009_lowpoly-island/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/009_lowpoly-island/preview.mp4",
+   "thumb": "styles/009_lowpoly-island/thumbnail.png",
+   "report": "styles/009_lowpoly-island/qa_report.md"
   },
   {
    "id": "010",
@@ -180,18 +180,18 @@
    "name": "Crayon World 3D",
    "category": "3D & Miniature",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: a real 3D night street traced and recoloured in crayon 15 times a second (region ids, marching squares, scribbled hatching, ",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/010_crayon-world/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/010_crayon-world/preview.mp4",
+   "thumb": "styles/010_crayon-world/thumbnail.png",
+   "report": "styles/010_crayon-world/qa_report.md"
   },
   {
    "id": "011",
@@ -217,17 +217,17 @@
    "name": "Tilt-Shift Miniature",
    "category": "3D & Miniature",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: the 10 s as a real miniature street seen through a tilt-shift lens — a narrow plane of focus, toy-scale props, saturated sho",
    "adaptation": false,
    "engine": [
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/012_tilt-shift/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/012_tilt-shift/preview.mp4",
+   "thumb": "styles/012_tilt-shift/thumbnail.png",
+   "report": "styles/012_tilt-shift/qa_report.md"
   },
   {
    "id": "013",
@@ -253,17 +253,17 @@
    "name": "Watercolor Brush",
    "category": "Painting & Illustration",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: wet graded washes with pooled edges and granulation, brush-stroke figure, paper as white and multiplied through, hand notes ",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/014_watercolor/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/014_watercolor/preview.mp4",
+   "thumb": "styles/014_watercolor/thumbnail.png",
+   "report": "styles/014_watercolor/qa_report.md"
   },
   {
    "id": "015",
@@ -271,18 +271,18 @@
    "name": "Crayon Picture Book",
    "category": "Painting & Illustration",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: one picture-book page drawn in wax crayon on toothy paper (12-crayon box, indigo outlines, zig-zag hatching that overshoots)",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/015_crayon-book/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/015_crayon-book/preview.mp4",
+   "thumb": "styles/015_crayon-book/thumbnail.png",
+   "report": "styles/015_crayon-book/qa_report.md"
   },
   {
    "id": "016",
@@ -290,17 +290,17 @@
    "name": "Chinese Ink Wash",
    "category": "Traditional Crafts",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: a xieyi ink painting on procedural rice paper — five ink tones, loaded strokes, pale masses, flying white, light as unpainte",
    "adaptation": false,
    "engine": [
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/016_ink-wash/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/016_ink-wash/preview.mp4",
+   "thumb": "styles/016_ink-wash/thumbnail.png",
+   "report": "styles/016_ink-wash/qa_report.md"
   },
   {
    "id": "017",
@@ -308,17 +308,17 @@
    "name": "Ukiyo-e",
    "category": "Traditional Crafts",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: four woodblock prints on one mounting scroll — washi, flat colour blocks out of register with woodgrain, baren and goma-zuri",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/017_ukiyoe/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/017_ukiyoe/preview.mp4",
+   "thumb": "styles/017_ukiyoe/thumbnail.png",
+   "report": "styles/017_ukiyoe/qa_report.md"
   },
   {
    "id": "018",
@@ -326,8 +326,8 @@
    "name": "Paper-cut Lightbox",
    "category": "Traditional Crafts",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "qa",
+   "note": " [re-rendering S3: watch-hand pivot fixed]",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -335,9 +335,9 @@
    ],
    "video": null,
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/018_paper-lantern/preview.mp4",
+   "thumb": "styles/018_paper-lantern/thumbnail.png",
+   "report": "styles/018_paper-lantern/qa_report.md"
   },
   {
    "id": "019",
@@ -345,18 +345,18 @@
    "name": "Liminal Found Footage",
    "category": "Film & Tape",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: the 10 s as a 1990s consumer camcorder tape shot by AKI herself in an empty fluorescent station arcade; the style's VHS shad",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "three.js 3D (WebGL)"
    ],
-   "video": null,
+   "video": "styles/019_backrooms/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/019_backrooms/preview.mp4",
+   "thumb": "styles/019_backrooms/thumbnail.png",
+   "report": "styles/019_backrooms/qa_report.md"
   },
   {
    "id": "020",
@@ -364,18 +364,18 @@
    "name": "Neon Tubes",
    "category": "Light & Lines",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: the whole 10 s told in neon tubes on a dark wet street — glass tubes with glow, struck signs, a figure traced as one neon ou",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/020_neon-tubes/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/020_neon-tubes/preview.mp4",
+   "thumb": "styles/020_neon-tubes/thumbnail.png",
+   "report": "styles/020_neon-tubes/qa_report.md"
   },
   {
    "id": "021",
@@ -383,8 +383,8 @@
    "name": "Caption News",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: its picture layer is real footage, photos and the source document of a real news event (STYLE.md §1: \"Real footage, photos and the source document are the ground\"). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "real footage / archive (licensed)"
@@ -401,8 +401,8 @@
    "name": "1920s Newsreel",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: it is cut from real archive material (STYLE.md §1: \"cut from real archive material\"; nothing is drawn but the packaging). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "real footage / archive (licensed)"
@@ -419,8 +419,8 @@
    "name": "Live Countdown Split-screen",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: it is real footage of one real event with a known zero, shown in real time (STYLE.md §1: \"Real footage of one event\"). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -438,8 +438,8 @@
    "name": "City Symphony",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: its picture is real footage of a real place (STYLE.md §1: \"The picture is real footage of a place\"). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -457,8 +457,8 @@
    "name": "Visual Investigation",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: it lays out footage, photographs, documents and maps from one real event on a shared clock (STYLE.md §1). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -476,8 +476,8 @@
    "name": "Constructivist Montage",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: every picture is real archive material about the actual subject (STYLE.md §1: \"Evidence, recut\"). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
@@ -495,8 +495,8 @@
    "name": "Sports Telestrator",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: real match footage is the ground every line is drawn on (STYLE.md §1). \"Last Train Home\" is a fictional animated story: no real footage of it exists. Building this style on our own animated master would mean putting a filter over the original film (the brief forbids it), and fabricating footage that looks real would present a simulation as authentic recording (the brief forbids that too). Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "real footage / archive (licensed)"
@@ -513,8 +513,8 @@
    "name": "Broadcast News Package",
    "category": "Edit & Documentary",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "blocked",
+   "note": "BLOCKED: this style is a broadcast news package whose frame is built around a channel sting and a permanent channel bug (STYLE.md §2–3: \"the frame is the graphic, the strap, the bug and a source line\"), and whose every graphic states one sourced fact (\"every number from the source page\"; illustration plates \"never stand in for the event, the place or the people\"). For a fictional story this would require inventing news facts, numbers and sources (the brief forbids fake statistics and presenting simulations as real), and the sting + bug are exactly the studio logo / repeated intro the brief excludes. Not substituted with a generic version.",
    "adaptation": true,
    "engine": [
     "real footage / archive (licensed)",
