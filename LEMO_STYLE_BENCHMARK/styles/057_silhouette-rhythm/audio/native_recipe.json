@@ -1,0 +1,14 @@
+{
+ "slug": "silhouette-rhythm",
+ "recipe": {
+  "bpm": 116,
+  "key": "C",
+  "prog": "pop",
+  "lead": null,
+  "rain": 0.2,
+  "step": "tap",
+  "chime": "bell",
+  "drums": 1.0,
+  "family": "graphic"
+ }
+}

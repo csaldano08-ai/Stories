@@ -1,0 +1,14 @@
+{
+ "slug": "bauhaus-shapes",
+ "recipe": {
+  "bpm": 110,
+  "key": "C",
+  "prog": "bright",
+  "lead": "marimba",
+  "rain": 0.2,
+  "step": "tap",
+  "chime": "bell",
+  "drums": 0.7,
+  "family": "graphic"
+ }
+}
