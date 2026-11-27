@@ -44,3 +44,4 @@ LEMO_STYLE_BENCHMARK/styles/075_hologram-hud
 LEMO_STYLE_BENCHMARK/styles/076_desktop-flythrough
 LEMO_STYLE_BENCHMARK/styles/077_spreadsheet
 LEMO_STYLE_BENCHMARK/styles/078_one-bit-dither
+LEMO_STYLE_BENCHMARK/styles/079_circuit-board
