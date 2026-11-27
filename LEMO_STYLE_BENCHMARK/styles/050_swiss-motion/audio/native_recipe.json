@@ -1,0 +1,14 @@
+{
+ "slug": "swiss-motion",
+ "recipe": {
+  "bpm": 110,
+  "key": "C",
+  "prog": "pop",
+  "lead": "pluck",
+  "rain": 0,
+  "step": "tap",
+  "chime": "bell",
+  "drums": 0.6,
+  "family": "graphic"
+ }
+}

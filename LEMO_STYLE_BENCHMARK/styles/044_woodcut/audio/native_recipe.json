@@ -1,0 +1,16 @@
+{
+ "slug": "woodcut",
+ "recipe": {
+  "bpm": 72,
+  "key": "D",
+  "prog": "minor",
+  "lead": null,
+  "rain": 0.7,
+  "step": "wet",
+  "chime": "bell",
+  "pad": 0.8,
+  "room": 1.6,
+  "drone": 0.15,
+  "family": "painterly"
+ }
+}

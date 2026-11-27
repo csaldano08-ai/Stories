@@ -1,0 +1,15 @@
+{
+ "slug": "stained-glass",
+ "recipe": {
+  "bpm": 72,
+  "key": "D",
+  "prog": "modal",
+  "lead": "glock",
+  "rain": 0.7,
+  "step": "wet",
+  "chime": "bell",
+  "pad": 0.8,
+  "room": 2.4,
+  "family": "painterly"
+ }
+}

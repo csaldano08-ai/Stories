@@ -1,0 +1,15 @@
+{
+ "slug": "engraving",
+ "recipe": {
+  "bpm": 72,
+  "key": "D",
+  "prog": "minor",
+  "lead": "pluck",
+  "rain": 0.3,
+  "step": "wet",
+  "chime": "bell",
+  "pad": 0.8,
+  "room": 1.6,
+  "family": "painterly"
+ }
+}

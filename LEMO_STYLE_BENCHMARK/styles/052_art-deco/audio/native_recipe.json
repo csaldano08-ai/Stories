@@ -1,0 +1,14 @@
+{
+ "slug": "art-deco",
+ "recipe": {
+  "bpm": 110,
+  "key": "C",
+  "prog": "pop",
+  "lead": "epiano",
+  "rain": 0.2,
+  "step": "tap",
+  "chime": "bell",
+  "drums": 0.5,
+  "family": "graphic"
+ }
+}
