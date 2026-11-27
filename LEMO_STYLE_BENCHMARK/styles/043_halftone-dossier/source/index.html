@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>043 · Halftone Dossier · Last Train Home (10 s)</title>
+<style>
+  @font-face { font-family: 'Slab'; src: url(fonts/AlfaSlabOne-Regular.ttf); font-display: block; }
+  @font-face { font-family: 'Jost'; src: url(fonts/Jost.ttf); font-weight: 100 900; font-display: block; }
+  @font-face { font-family: 'Mono'; src: url(fonts/IBMPlexMono.ttf); font-display: block; }
+  @font-face { font-family: 'Hand'; src: url(fonts/Gaegu-Bold.ttf); font-display: block; }
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #F4ECDD; }
+  svg, canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+  #paper { mix-blend-mode: multiply; pointer-events: none; }
+  #fx { pointer-events: none; }
+  .mul { mix-blend-mode: multiply; }
+</style>
+</head>
+<body>
+<!-- 043 · Halftone Dossier — the first 10 s of "Last Train Home" read out as a case file, one exhibit at a time (lemo-opuscar
+     styles/halftone-dossier). Cream archive paper, overprinted halftone dots in flat inks, heavy slab headlines with a
+     misregistered shadow, a caption bar with the keyword in the highlight ink, rubber stamps that slam, a thick-outlined
+     character. The page skeleton, helpers, halftone, caption, stamp, scene, dot wipe, paper and grain are the demo's engine
+     (copied; marked below); the case, the exhibits and the character are this clip's.
+       EXHIBIT 01 · THE PUDDLE (0–2.5)   she runs through the café's puddle; on the splash (0.9375 s) a SPLASH! starburst and a shake
+       ─ dot wipe ─
+       EXHIBIT 02 · THE RUN (2.5–7.5)    side view, the ground's dots scroll under her locked feet, the shop chips pass, halftone dots
+                                         crowd the frame edge as the clock runs; 6.05–7.15 she lifts the watch: "!?"
+       ─ dot wipe ─
+       EXHIBIT 03 · THE WATCH (7.5–9.4)  a flash (being photographed), the watch as evidence: 23:58, the red second hand ticking
+       ─ hard cut ─
+       VERDICT (9.4–10)                  the station clock; the stamp LAST TRAIN slams on the chime (9.575 s) with a shake and a flash
+     AKI is a chunky, thick-outlined figure posed by the shared run rig (constant limb lengths, foot lock); line boil at 10 fps on
+     her only. Page contract: window.render(t), DUR, READY, RIGQA. -->
+<svg id="stage" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="boil" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence id="boilT" type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="1" result="w"/>
+      <feDisplacementMap in="SourceGraphic" in2="w" scale="5" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="4" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -22 15.2" result="gm"/>
+      <feComposite in="d" in2="gm" operator="in"/>
+    </filter>
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="9" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -22 15.4" result="gm"/>
+      <feComposite in="SourceGraphic" in2="gm" operator="in"/>
+    </filter>
+    <filter id="stampInk" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="11" result="w"/>
+      <feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="3" seed="21" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.9" result="gm"/>
+      <feComposite in="d" in2="gm" operator="in"/>
+    </filter>
+    <clipPath id="frameClip"><rect width="1920" height="1080"/></clipPath>
+  </defs>
+  <g clip-path="url(#frameClip)">
+    <g id="cam"><g id="world"></g></g>
+    <g id="hud"></g>
+    <g id="wipe"></g>
+    <rect id="flash" width="1920" height="1080" fill="#FFFFFF" opacity="0"/>
+    <rect id="fade" width="1920" height="1080" fill="#1D2340" opacity="0"/>
+  </g>
+</svg>
+<canvas id="paper" width="1920" height="1080"></canvas>
+<canvas id="fx" width="1920" height="1080"></canvas>
+<script type="module">
+import { solveProfile } from './shared/aki2/aki_profile.js';
+import { runner } from './shared/aki2/motion.js';
+import { DUR as CLIPDUR, shotAt, T as EV, CADENCE, FIRST_STEP, STEP } from './shared/clip10.js';
+
+// ============================================================ engine (lemo-opuscar styles/halftone-dossier/demo/index.html,
+// core helpers, per-character text, halftone, caption, stamp, scene, paper & grain — copied; palette and fonts are this clip's)
+const NS = 'http://www.w3.org/2000/svg';
+const C = { paper: '#F4ECDD', navy: '#1D2340', blue: '#2E55D6', pink: '#FF5A87', yellow: '#FFC628', cream: '#FFF4E2', red: '#E8384F', skin: '#F7C9A1', verm: '#E8603A' };
+const F = { slab: "'Slab'", hand: "'Hand'", mono: "'Mono'", sans: "'Jost'" };
+const FPS = 30, DUR = CLIPDUR;
+function el(tag, attrs = {}, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function txt(parent, str, attrs) { const e = el('text', attrs, parent); e.textContent = str; return e; }
+function tf(e, x = 0, y = 0, s = 1, r = 0, sy) { e.setAttribute('transform', `translate(${x.toFixed(2)} ${y.toFixed(2)}) rotate(${r.toFixed(2)}) scale(${s.toFixed(4)} ${(sy ?? s).toFixed(4)})`); }
+function op(e, o) { e.setAttribute('opacity', Math.max(0, Math.min(1, o)).toFixed(3)); }
+function show(e, v) { e.style.display = v ? '' : 'none'; }
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const lerp = (a, b, p) => a + (b - a) * p;
+const E = { out: p => 1 - Math.pow(1 - p, 3), in: p => p * p * p, io: p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2, back: p => { const c = 1.9; return 1 + (c + 1) * Math.pow(p - 1, 3) + c * Math.pow(p - 1, 2); } };
+const pop = (t, t0, d = 0.35) => t < t0 ? 0 : E.back(seg(t, t0, t0 + d));
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const mctx = document.createElement('canvas').getContext('2d');
+function measure(str, size, family, weight = 900) { mctx.font = `${weight} ${size}px ${family}`; return mctx.measureText(str).width; }
+function chars(parent, str, o) {
+  const { x, y, size, family, weight = 900, fill = C.navy, anchor = 'start', ls = 0, shadow, stroke, sw = 0 } = o;
+  const g = el('g', {}, parent), arr = [...str], widths = arr.map(c => measure(c, size, family, weight));
+  const total = widths.reduce((a, b) => a + b, 0) + ls * (arr.length - 1);
+  let cx = anchor === 'middle' ? x - total / 2 : anchor === 'end' ? x - total : x;
+  const items = arr.map((ch, i) => {
+    const cg = el('g', {}, g), base = { x: 0, y: 0, 'font-size': size, 'font-family': family, 'font-weight': weight, 'text-anchor': 'middle' };
+    if (shadow) txt(cg, ch, { ...base, x: shadow.dx, y: shadow.dy, fill: shadow.fill, class: 'mul' });
+    const st = stroke ? { stroke, 'stroke-width': sw, 'paint-order': 'stroke', 'stroke-linejoin': 'round' } : {};
+    txt(cg, ch, { ...base, fill, ...st });
+    const it = { g: cg, x: cx + widths[i] / 2, y, w: widths[i], size }; cx += widths[i] + ls; tf(cg, it.x, it.y); return it;
+  });
+  return { g, items, total };
+}
+function charsPop(c, t, t0, stagger = 0.05, d = 0.38, from = 60) {
+  c.items.forEach((it, i) => {
+    const s = t0 + i * stagger, p = seg(t, s, s + d), h = it.size * 0.35;
+    if (t < s) { op(it.g, 0); return; }
+    op(it.g, 1); const sc = E.back(p), sq = 1 + 0.25 * Math.sin(p * Math.PI) * (1 - p);
+    it.g.setAttribute('transform', `translate(${it.x} ${it.y + from * (1 - E.out(p))}) translate(0 ${-h}) scale(${(sc / sq).toFixed(3)} ${(sc * sq).toFixed(3)}) translate(0 ${h})`);
+  });
+}
+function halftone(parent, { x0 = 0, y0 = 0, w = 1920, h = 1080, step = 22, angle = 15, color, f, maxK = 0.62 }) {
+  const a = angle * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), n = Math.ceil(Math.hypot(w, h) / step / 2) + 2;
+  let d = '';
+  for (let i = -n; i <= n; i++) for (let j = -n; j <= n; j++) {
+    const u = i * step, v = j * step, x = x0 + w / 2 + u * ca - v * sa, y = y0 + h / 2 + u * sa + v * ca;
+    if (x < x0 - step || x > x0 + w + step || y < y0 - step || y > y0 + h + step) continue;
+    const s = clamp(f(x, y)); if (s < 0.05) continue; const r = s * step * maxK;
+    d += `M${(x - r).toFixed(1)} ${y.toFixed(1)}a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(2 * r).toFixed(1)} 0a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(-2 * r).toFixed(1)} 0`;
+  }
+  return el('path', { d, fill: color }, parent);
+}
+const radial = (cx, cy, R, pw = 1.2) => (x, y) => Math.pow(clamp(1 - Math.hypot(x - cx, y - cy) / R), pw);
+const edge = (R = 900, pw = 1.6) => (x, y) => Math.pow(clamp(Math.hypot(x - 960, y - 540) / R - 0.35), pw) * 1.3;
+function bg(parent, color) { return el('rect', { width: 1920, height: 1080, fill: color }, parent); }
+function caption(parent, parts, { x = 960, y = 980, size = 46 } = {}) {
+  const g = el('g', {}, parent), inner = el('g', {}, g);
+  const w = parts.reduce((a, [s]) => a + measure(s, size, F.sans, 800), 0), padX = 34, hgt = size * 1.7;
+  el('rect', { x: -w / 2 - padX + 8, y: -hgt / 2 + 8, width: w + padX * 2, height: hgt, rx: 14, fill: C.pink, class: 'mul' }, inner);
+  el('rect', { x: -w / 2 - padX, y: -hgt / 2, width: w + padX * 2, height: hgt, rx: 14, fill: C.navy }, inner);
+  const t = el('text', { x: -w / 2, y: size * 0.36, 'font-size': size, 'font-family': F.sans, 'font-weight': 800 }, inner);
+  parts.forEach(([s, col]) => { const sp = el('tspan', { fill: col || C.cream }, t); sp.textContent = s; });
+  return { g, inner, x, y };
+}
+function captionAnim(c, t, t0) { const p = seg(t, t0, t0 + 0.4); if (t < t0) { op(c.g, 0); return; } op(c.g, seg(t, t0, t0 + 0.12)); tf(c.g, c.x, c.y + 40 * (1 - E.out(p)), lerp(0.8, 1, E.back(p)), -1.2 * (1 - p) - 0.6); }
+function stampEl(parent, str, { size = 200, color = C.red, family = F.sans, padX = 50, padY = 26, border = 12 } = {}) {
+  const g = el('g', {}, parent), inner = el('g', { filter: 'url(#stampInk)' }, g);
+  const w = measure(str, size, family, 900) + padX * 2, h = size * 1.08 + padY * 2;
+  el('rect', { x: -w / 2, y: -h / 2, width: w, height: h, rx: 22, fill: 'none', stroke: color, 'stroke-width': border }, inner);
+  el('rect', { x: -w / 2 + border * 1.8, y: -h / 2 + border * 1.8, width: w - border * 3.6, height: h - border * 3.6, rx: 12, fill: 'none', stroke: color, 'stroke-width': border * 0.35 }, inner);
+  txt(inner, str, { x: 0, y: size * 0.36, 'font-size': size, 'font-family': family, 'font-weight': 900, fill: color, 'text-anchor': 'middle' });
+  return { g, w, h };
+}
+function stampAnim(s, t, t0, x, y, rot) {
+  if (t < t0 - 0.09) { op(s.g, 0); return; }
+  const p = seg(t, t0 - 0.09, t0), after = Math.max(0, t - t0), bounce = 1 + 0.05 * Math.sin(after * 30) * Math.exp(-after * 9);
+  op(s.g, p < 1 ? 0.3 + 0.7 * p : 0.93); tf(s.g, x, y, lerp(2.6, 1, E.in(p)) * bounce, rot);
+}
+const world = document.getElementById('world'), cam = document.getElementById('cam'), hud = document.getElementById('hud'), wipe = document.getElementById('wipe'), flash = document.getElementById('flash'), fade = document.getElementById('fade');
+const scenes = [];
+function scene(t0, t1, build) { const g = el('g', {}, world); const s = { g, t0, t1 }; s.update = build(g, s); scenes.push(s); return s; }
+function buildPaper() {
+  const cv = document.getElementById('paper'), ctx = cv.getContext('2d'), r = rng(3);
+  const small = document.createElement('canvas'); small.width = 96; small.height = 54;
+  const sctx = small.getContext('2d'), sim = sctx.createImageData(96, 54);
+  for (let i = 0; i < sim.data.length; i += 4) { const v = 242 + r() * 13; sim.data[i] = sim.data[i + 1] = sim.data[i + 2] = v; sim.data[i + 3] = 255; }
+  sctx.putImageData(sim, 0, 0); ctx.imageSmoothingEnabled = true; ctx.drawImage(small, 0, 0, 1920, 1080);
+  const base = ctx.getImageData(0, 0, 1920, 1080);
+  for (let i = 0; i < base.data.length; i += 4) { const n = (r() - 0.5) * 26; base.data[i] = clamp(base.data[i] + n, 0, 255); base.data[i + 1] = clamp(base.data[i + 1] + n, 0, 255); base.data[i + 2] = clamp(base.data[i + 2] + n - 4, 0, 255); }
+  ctx.putImageData(base, 0, 0);
+  const gr = ctx.createRadialGradient(960, 540, 400, 960, 540, 1150); gr.addColorStop(0, 'rgba(255,255,255,0)'); gr.addColorStop(1, 'rgba(120,100,80,0.35)');
+  ctx.fillStyle = gr; ctx.fillRect(0, 0, 1920, 1080);
+  ctx.strokeStyle = 'rgba(140,120,100,0.18)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(960, 0); ctx.lineTo(962, 1080); ctx.stroke();
+}
+function drawFx(frame) {
+  const cv = document.getElementById('fx'), ctx = cv.getContext('2d'); ctx.clearRect(0, 0, 1920, 1080);
+  const r = rng(1000 + Math.floor(frame / 2)); ctx.fillStyle = 'rgba(255,248,235,0.75)';
+  for (let i = 0; i < 520; i++) { const x = r() * 1920, y = r() * 1080, s = 0.6 + r() * 1.8; ctx.beginPath(); ctx.arc(x, y, s, 0, 7); ctx.fill(); }
+  ctx.fillStyle = 'rgba(29,35,64,0.25)'; for (let i = 0; i < 90; i++) { ctx.beginPath(); ctx.arc(r() * 1920, r() * 1080, 0.6 + r() * 1.3, 0, 7); ctx.fill(); }
+}
+// ============================================================ end of the engine excerpt
+
+// ───────── the run rig (shared by every style)
+const RUN = runner({ t0: FIRST_STEP + STEP, t1: 12, x0: -1400, v: 1450, cadence: CADENCE, duty: .42, lean: .15 });
+const SPL = RUN.contacts.find(c => Math.abs(c.t0 - EV.splash) < .02);
+const X = t => RUN.pelvisAt(t)[0];
+const back_ = (t, s = 1.8) => { t = clamp(t) - 1; return 1 + t * t * ((s + 1) * t + s); }, ss = t => { t = clamp(t); return t * t * (3 - 2 * t); };
+function poseAt(t) {
+  const S_ = RUN.pose(t);
+  const up = back_(seg(t, EV.watchUp, EV.watchUp + .2), 1.3), dn = ss(seg(t, EV.watchDown - .14, EV.watchDown + .2));
+  const w = clamp(up, 0, 1.1) * (1 - dn); S_.watch = w;
+  if (w > 0) { const J0 = solveProfile(S_), sh = J0.sh.n, ra = J0.arm.n, wm = Math.min(1, w), tgt = [sh[0] + lerp(70, 92, wm), sh[1] + lerp(150, 50, wm)];
+    S_.arms.n = { tgt: [lerp(ra.wr[0], tgt[0], wm), lerp(ra.wr[1], tgt[1], wm)], bend: -1, hand: 'grip' }; S_.arms.f.sh *= 1 - .45 * wm; S_.head += .26 * wm; S_.neck += .08 * wm; }
+  return S_;
+}
+
+// ───────── AKI as a chunky outlined figure (7 px navy outline, flat fills, glossy eye); parts built once, posed every frame
+function makeAki(parent) {
+  const g = el('g', { filter: 'url(#boil)' }, parent), P = {};
+  const limb = (col) => ({ o: el('path', { fill: 'none', stroke: C.navy, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, g), f: el('path', { fill: 'none', stroke: col, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, g) });
+  P.tail = el('path', { fill: C.navy }, g);
+  P.armF = limb('#C24A2C'); P.handF = el('circle', { fill: C.skin, stroke: C.navy, 'stroke-width': 6 }, g);
+  P.legF = limb('#24399A'); P.bootF = el('path', { fill: C.navy, stroke: C.navy, 'stroke-width': 6, 'stroke-linejoin': 'round' }, g);
+  P.coat = el('path', { fill: C.verm, stroke: C.navy, 'stroke-width': 7, 'stroke-linejoin': 'round' }, g);
+  P.legN = limb(C.blue); P.bootN = el('path', { fill: C.navy, stroke: C.navy, 'stroke-width': 6, 'stroke-linejoin': 'round' }, g);
+  P.head = el('path', { fill: C.skin, stroke: C.navy, 'stroke-width': 7, 'stroke-linejoin': 'round' }, g);
+  P.hair = el('path', { fill: C.navy }, g);
+  P.eye = el('ellipse', { fill: C.navy }, g); P.hl1 = el('circle', { fill: '#fff' }, g); P.hl2 = el('circle', { fill: '#fff' }, g);
+  P.blush = el('ellipse', { fill: C.pink, opacity: .55 }, g);
+  P.armN = limb(C.verm); P.handN = el('circle', { fill: C.skin, stroke: C.navy, 'stroke-width': 6 }, g);
+  P.watch = el('circle', { fill: C.yellow, stroke: C.navy, 'stroke-width': 5 }, g);
+  return { g, P };
+}
+const pd = pts => 'M' + pts.map(p => p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join('L');
+const sm = pts => { const n = pts.length, m = i => [(pts[i % n][0] + pts[(i + 1) % n][0]) / 2, (pts[i % n][1] + pts[(i + 1) % n][1]) / 2]; let d = `M${m(0)[0].toFixed(1)} ${m(0)[1].toFixed(1)}`; for (let i = 1; i <= n; i++) { const p = pts[i % n], q = m(i); d += `Q${p[0].toFixed(1)} ${p[1].toFixed(1)} ${q[0].toFixed(1)} ${q[1].toFixed(1)}`; } return d + 'Z'; };
+function poseAki(A, t, M) {
+  const S_ = poseAt(t), J = solveProfile(S_), P = A.P, k = Math.hypot(M[0], M[1]);
+  const W = p => [M[0] * p[0] + M[2] * p[1] + M[4], M[1] * p[0] + M[3] * p[1] + M[5]];
+  const setLimb = (L, pts, w) => { const d = pd(pts.map(W)); L.o.setAttribute('d', d); L.o.setAttribute('stroke-width', (w + 14 / k) * k); L.f.setAttribute('d', d); L.f.setAttribute('stroke-width', w * k); };
+  const boot = (l, el_) => { const c = Math.cos(l.pitch), s = Math.sin(l.pitch), F = ([u, v]) => W([l.ankle[0] + u * c - v * s, l.ankle[1] + u * s + v * c]); el_.setAttribute('d', sm([F([-18, -32]), F([16, -30]), F([22, -6]), F([70, 2]), F([72, 18]), F([-24, 18])])); };
+  setLimb(P.legF, [J.leg.f.hip, J.leg.f.knee, J.leg.f.ankle], 44); boot(J.leg.f, P.bootF);
+  setLimb(P.legN, [J.leg.n.hip, J.leg.n.knee, J.leg.n.ankle], 46); boot(J.leg.n, P.bootN);
+  const arm = (a, L, hand) => { setLimb(L, [a.sh, a.el, a.wr], 32); const h = W([a.wr[0] + (a.wr[0] - a.el[0]) * .18, a.wr[1] + (a.wr[1] - a.el[1]) * .18]); hand.setAttribute('cx', h[0]); hand.setAttribute('cy', h[1]); hand.setAttribute('r', 16 * k); };
+  arm(J.arm.f, P.armF, P.handF); arm(J.arm.n, P.armN, P.handN);
+  const wr = J.arm.n.wr, el_ = J.arm.n.el, wp = W([wr[0] - (wr[0] - el_[0]) * .16, wr[1] - (wr[1] - el_[1]) * .16]);
+  P.watch.setAttribute('cx', wp[0]); P.watch.setAttribute('cy', wp[1]); P.watch.setAttribute('r', 13 * k); show(P.watch, S_.watch > .3);
+  const TT = (b, u, f) => W([b[0] + J.uL[0] * u + J.fL[0] * f, b[1] + J.uL[1] * u + J.fL[1] * f]);
+  P.coat.setAttribute('d', sm([TT(J.neckBase, 8, -30), TT(J.waist, 0, -46), TT(J.pelvis, -108, -66), TT(J.pelvis, -112, 58), TT(J.waist, 0, 40), TT(J.neckBase, -6, 32)]));
+  const HK = 1.3, hc = J.headC, HR = q => { const c = Math.cos(J.headA), s = Math.sin(J.headA); return W([hc[0] + (q[0] * c - q[1] * s) * HK, hc[1] + (q[0] * s + q[1] * c) * HK]); };
+  P.head.setAttribute('d', sm([HR([16, -44]), HR([38, -20]), HR([46, -2]), HR([40, 12]), HR([36, 34]), HR([12, 46]), HR([-28, 42]), HR([-50, 10]), HR([-46, -28]), HR([-18, -50])]));
+  P.hair.setAttribute('d', sm([HR([24, -46]), HR([0, -60]), HR([-34, -54]), HR([-58, -22]), HR([-58, 14]), HR([-40, 38]), HR([-20, 30]), HR([-10, 0]), HR([4, -26]), HR([22, -30])]));
+  const wv = Math.sin(t * Math.PI * CADENCE);
+  P.tail.setAttribute('d', sm([HR([-48, -18]), HR([-90, -14 + 8 * wv]), HR([-128, -2 - 10 * wv]), HR([-150, 8 + 6 * wv]), HR([-124, 10 - 8 * wv]), HR([-86, 6 + 6 * wv]), HR([-46, 8])]));
+  const e = HR([24, -10]), h1 = HR([27, -14]), h2 = HR([21, -7]), b = HR([22, 14]);
+  P.eye.setAttribute('cx', e[0]); P.eye.setAttribute('cy', e[1]); P.eye.setAttribute('rx', 7 * k * HK); P.eye.setAttribute('ry', 10 * k * HK);
+  P.hl1.setAttribute('cx', h1[0]); P.hl1.setAttribute('cy', h1[1]); P.hl1.setAttribute('r', 3 * k * HK); P.hl2.setAttribute('cx', h2[0]); P.hl2.setAttribute('cy', h2[1]); P.hl2.setAttribute('r', 1.6 * k * HK);
+  P.blush.setAttribute('cx', b[0]); P.blush.setAttribute('cy', b[1]); P.blush.setAttribute('rx', 9 * k * HK); P.blush.setAttribute('ry', 5 * k * HK);
+  return J;
+}
+const starburst = (parent, r0, r1, n, col) => { const pts = []; for (let i = 0; i < n * 2; i++) { const a = i / (n * 2) * Math.PI * 2, r = i % 2 ? r0 : r1 * (0.85 + 0.15 * Math.sin(i * 7.3)); pts.push([Math.cos(a) * r, Math.sin(a) * r]); } return el('path', { d: pd(pts) + 'Z', fill: col, stroke: C.navy, 'stroke-width': 7, 'stroke-linejoin': 'round' }, parent); };
+function bigNumeral(parent, str, x, y, size, fill, dots, id) {
+  const g = el('g', {}, parent);
+  const cp = el('clipPath', { id }, document.querySelector('defs')); txt(cp, str, { x, y, 'font-size': size, 'font-family': F.slab, 'text-anchor': 'middle' });
+  txt(g, str, { x, y, 'font-size': size, 'font-family': F.slab, 'text-anchor': 'middle', fill });
+  const h = halftone(el('g', { 'clip-path': `url(#${id})` }, g), { x0: x - size, y0: y - size, w: size * 2, h: size * 1.2, step: 24, angle: 45, color: dots, f: (px, py) => .3 + .7 * clamp((py - (y - size)) / size), maxK: .66 }); h.setAttribute('class', 'mul');
+  return g;
+}
+function headline(g, n, sub, subFill = C.blue) {
+  const h = chars(g, n, { x: 110, y: 230, size: 128, family: F.slab, weight: 400, fill: C.navy, shadow: { fill: C.pink, dx: 8, dy: 8 } });
+  const s = chars(g, sub, { x: 116, y: 310, size: 56, family: F.sans, weight: 900, fill: subFill, ls: 6, stroke: C.cream, sw: 10 });
+  return { h, s };
+}
+
+let hudUpdate = () => {}, wipeUpdate = () => {};
+const SHAKES = [[EV.splash, 14, 0.3], [6.15, 6, 0.2], [EV.chime, 24, 0.45]];
+function buildAll() {
+  // ———— EXHIBIT 01 · THE PUDDLE (0–2.5)
+  const K1 = .82, GY1 = 860, PX1 = 1080;
+  scene(0, 2.5, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 24, angle: 15, f: radial(1080, 760, 820, 1.0), maxK: .62 });
+    bigNumeral(g, '01', 1640, 820, 620, C.blue, C.navy, 'num01');
+    el('rect', { x: 0, y: GY1, width: 1920, height: 220, fill: C.cream }, g); el('line', { x1: 0, y1: GY1, x2: 1920, y2: GY1, stroke: C.navy, 'stroke-width': 7 }, g);
+    halftone(g, { x0: 0, y0: GY1, w: 1920, h: 220, color: C.blue, step: 22, angle: 70, f: (x, y) => .18 + .5 * clamp((y - GY1) / 220), maxK: .6 }).setAttribute('class', 'mul');
+    const pud = el('g', {}, g);
+    el('ellipse', { cx: PX1 + 40, cy: GY1 + 50, rx: 380, ry: 62, fill: C.blue, stroke: C.navy, 'stroke-width': 7 }, pud);
+    const refl = el('g', {}, pud); txt(refl, '24H CAFE', { x: 0, y: 0, 'font-size': 54, 'font-family': F.slab, fill: C.cream, 'text-anchor': 'middle', 'letter-spacing': 6 });
+    halftone(pud, { x0: PX1 - 340, y0: GY1 - 12, w: 760, h: 124, color: C.pink, step: 20, angle: 30, f: (x, y) => .55 * Math.pow(clamp(1 - Math.hypot((x - PX1 - 40) / 380, (y - GY1 - 50) / 62)), .6), maxK: .6 }).setAttribute('class', 'mul');
+    const { h, s } = headline(g, 'EXHIBIT 01', 'THE PUDDLE');
+    const A = makeAki(g);
+    const fx = el('g', {}, g), burst = starburst(fx, 70, 150, 12, C.yellow); txt(fx, 'SPLASH!', { x: 0, y: 22, 'font-size': 76, 'font-family': F.hand, fill: C.cream, stroke: C.navy, 'stroke-width': 12, 'paint-order': 'stroke', 'text-anchor': 'middle' });
+    const drops = Array.from({ length: 9 }, () => el('circle', { r: 13, fill: C.blue, stroke: C.navy, 'stroke-width': 5 }, g));
+    const cap = caption(g, [['Exhibit 01: '], ['the puddle', C.yellow], [' outside the café']]);
+    return (t) => {
+      charsPop(h, t, .12, .05); charsPop(s, t, .55, .03);
+      const sh = t > EV.splash ? Math.sin((t - EV.splash) * 30) * 10 * Math.exp(-(t - EV.splash) * 2.4) : 0;
+      tf(refl, PX1 + 40 + sh, GY1 + 70, 1, 0, -1);
+      poseAki(A, t, [K1, 0, 0, K1, PX1 - SPL.x * K1, GY1]);
+      const u = t - EV.splash; show(fx, u >= 0 && u < 1.0); if (u >= 0) { const p = pop(t, EV.splash, .32); tf(fx, PX1 + 330, GY1 - 300, p * (1 - .25 * seg(u, .7, 1)), -8 + 4 * Math.sin(u * 9)); }
+      drops.forEach((d, i) => { const a = -Math.PI / 2 + (i / 8 - .5) * 2.4, v = 420 + 90 * Math.sin(i * 3.1); show(d, u >= 0 && u < .7); if (u >= 0) { d.setAttribute('cx', PX1 + 40 + Math.cos(a) * v * u); d.setAttribute('cy', GY1 - 10 + Math.sin(a) * v * u + 1200 * u * u); } });
+      captionAnim(cap, t, 1.2);
+    };
+  });
+  // ———— EXHIBIT 02 · THE RUN (2.5–7.5)
+  const K2 = .74, GY2 = 830, AX = 820;
+  scene(2.5, 7.5, (g) => {
+    const push = el('g', {}, g);
+    bg(push, C.paper);
+    const levels = [1000, 920, 840, 760].map(R => { const p = halftone(push, { color: C.blue, step: 24, angle: 15, f: edge(R, 1.6), maxK: .56 }); p.setAttribute('class', 'mul'); return p; });
+    bigNumeral(push, '02', 1600, 760, 560, C.yellow, C.pink, 'num02');
+    const street = el('g', {}, push);
+    const NAMES = ['CAFE', 'BAKERY', 'BOOKS', 'NOODLES', 'BAR', 'FLOWERS', 'HOTEL', 'RECORDS', 'LAUNDRY', 'NEWS', 'PHARMACY'];
+    const chipsG = NAMES.map((n, i) => { const cg = el('g', {}, street); const w = measure(n, 40, F.sans, 900) + 52; el('rect', { x: -w / 2 + 6, y: -34 + 6, width: w, height: 68, rx: 12, fill: C.pink, class: 'mul' }, cg); el('rect', { x: -w / 2, y: -34, width: w, height: 68, rx: 12, fill: [C.yellow, C.cream, C.blue][i % 3], stroke: C.navy, 'stroke-width': 6 }, cg); txt(cg, n, { x: 0, y: 14, 'font-size': 40, 'font-family': F.sans, 'font-weight': 900, fill: i % 3 === 2 ? C.cream : C.navy, 'text-anchor': 'middle' }); return { cg, x: 600 + i * 560 }; });
+    const ground = el('g', {}, push); el('rect', { x: -200, y: GY2, width: 2400, height: 300, fill: C.cream }, ground); el('line', { x1: -200, y1: GY2, x2: 2400, y2: GY2, stroke: C.navy, 'stroke-width': 7 }, ground);
+    const gd = el('g', {}, push); for (let x = -400; x < 2800; x += 80) el('circle', { cx: x, cy: GY2 + 40, r: 9, fill: C.navy }, gd);
+    for (let x = -400; x < 2800; x += 80) el('circle', { cx: x + 40, cy: GY2 + 90, r: 13, fill: C.blue }, gd);
+    const speed = el('g', {}, push); for (let i = 0; i < 6; i++) el('line', { x1: 0, y1: 0, x2: 160 + i * 30, y2: 0, stroke: C.navy, 'stroke-width': 8, 'stroke-linecap': 'round', transform: `translate(${300 - i * 20} ${420 + i * 52})` }, speed);
+    const { h, s } = headline(push, 'EXHIBIT 02', 'THE RUN', C.red);
+    const A = makeAki(push);
+    const bang = el('g', {}, push); txt(bang, '!?', { x: 0, y: 0, 'font-size': 120, 'font-family': F.hand, fill: C.yellow, stroke: C.navy, 'stroke-width': 12, 'paint-order': 'stroke', 'text-anchor': 'middle' });
+    const cap = caption(g, [['Exhibit 02: '], ['running', C.yellow], [' for the station']]);
+    return (t) => {
+      const z = lerp(1, 1.06, ss(seg(t, 2.5, 7.5))); push.setAttribute('transform', `translate(${960 * (1 - z)} ${540 * (1 - z)}) scale(${z})`);
+      const lv = Math.min(3, Math.floor(seg(t, 2.5, 7.4) * 4)); levels.forEach((p, i) => show(p, i === lv));
+      charsPop(h, t, 2.62, .05); charsPop(s, t, 3.0, .03);
+      const xs = (X(t) - X(2.5)) * K2;                                    // how far she has run (screen px)
+      tf(gd, -(xs % 80), 0); chipsG.forEach(c => tf(c.cg, c.x - xs * .85, GY2 - 330));
+      poseAki(A, t, [K2, 0, 0, K2, AX - X(t) * K2 + 40, GY2]);
+      show(speed, true); tf(speed, 40 * Math.sin(t * 20), 0);
+      const b = pop(t, 6.15, .3); show(bang, t >= 6.15 && t < 7.3); tf(bang, AX + 170, GY2 - 520, b, 8);
+      captionAnim(cap, t, 3.3);
+    };
+  });
+  // ———— EXHIBIT 03 · THE WATCH (7.5–9.375)
+  const AH = -Math.PI / 2 + (11 + 58 / 60) / 12 * Math.PI * 2, AM = -Math.PI / 2 + 58 / 60 * Math.PI * 2;
+  scene(7.5, 9.375, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.pink, step: 24, angle: 15, f: radial(1120, 540, 760, .9), maxK: .62 }).setAttribute('class', 'mul');
+    bigNumeral(g, '03', 1660, 900, 520, C.yellow, C.blue, 'num03');
+    const { h, s } = headline(g, 'EXHIBIT 03', 'THE WATCH');
+    const arm = el('g', {}, g);
+    el('path', { d: 'M-400 -150 L-130 -128 L-120 130 L-400 160 Z', fill: C.verm, stroke: C.navy, 'stroke-width': 8, 'stroke-linejoin': 'round' }, arm);
+    el('path', { d: 'M130 -110 Q380 -140 470 -30 Q470 60 380 110 Q250 130 130 110 Z', fill: C.skin, stroke: C.navy, 'stroke-width': 8, 'stroke-linejoin': 'round' }, arm);
+    el('rect', { x: -95, y: -360, width: 190, height: 720, rx: 30, fill: C.blue, stroke: C.navy, 'stroke-width': 8 }, arm);
+    el('circle', { r: 232, fill: C.yellow, stroke: C.navy, 'stroke-width': 9 }, arm); el('circle', { r: 196, fill: C.cream, stroke: C.navy, 'stroke-width': 7 }, arm);
+    for (let k = 0; k < 12; k++) { const a = -Math.PI / 2 + k / 12 * Math.PI * 2, r0 = k % 3 ? 160 : 140; el('line', { x1: Math.cos(a) * r0, y1: Math.sin(a) * r0, x2: Math.cos(a) * 182, y2: Math.sin(a) * 182, stroke: C.navy, 'stroke-width': k % 3 ? 7 : 12, 'stroke-linecap': 'round' }, arm); }
+    el('line', { x1: 0, y1: 0, x2: Math.cos(AH) * 100, y2: Math.sin(AH) * 100, stroke: C.navy, 'stroke-width': 18, 'stroke-linecap': 'round' }, arm);
+    el('line', { x1: 0, y1: 0, x2: Math.cos(AM) * 160, y2: Math.sin(AM) * 160, stroke: C.navy, 'stroke-width': 12, 'stroke-linecap': 'round' }, arm);
+    const sec = el('line', { x1: 0, y1: 30, x2: 0, y2: -176, stroke: C.red, 'stroke-width': 6, 'stroke-linecap': 'round' }, arm);
+    el('circle', { r: 14, fill: C.navy }, arm);
+    const time = chars(g, '23:58', { x: 1120, y: 940, size: 150, family: F.slab, weight: 400, fill: C.navy, anchor: 'middle', shadow: { fill: C.pink, dx: 8, dy: 8 } });
+    const cap = caption(g, [['Exhibit 03: '], ['23:58', C.yellow]], { y: 1010, size: 40 });
+    return (t) => {
+      charsPop(h, t, 7.56, .05); charsPop(s, t, 7.9, .03); charsPop(time, t, 7.95, .08);
+      const bob = 10 * Math.sin(Math.PI * 2 * CADENCE * (t - 7.5)), sc = lerp(1.25, 1, E.back(seg(t, 7.5, 7.85)));
+      tf(arm, 1120, 470 + bob, sc * .92, -6);
+      const tsec = t < 8.4 ? 47 : t < 9.4 ? 48 : 49, t0 = t < 8.4 ? -9 : 8.4, w = t - t0 < .25 ? Math.sin((t - t0) * 40) * 2.5 * (1 - (t - t0) / .25) : 0;
+      sec.setAttribute('transform', `rotate(${tsec * 6 + w})`);
+      captionAnim(cap, t, 8.1);
+    };
+  });
+  // ———— VERDICT (9.375–10)
+  scene(9.375, 10.01, (g) => {
+    bg(g, C.paper);
+    const rays = el('g', {}, g); for (let i = 0; i < 18; i++) { const a = i / 18 * Math.PI * 2; el('path', { d: `M0 0 L${Math.cos(a - .09) * 1400} ${Math.sin(a - .09) * 1400} L${Math.cos(a + .09) * 1400} ${Math.sin(a + .09) * 1400} Z`, fill: i % 2 ? C.yellow : C.cream }, rays); }
+    halftone(g, { color: C.blue, step: 24, angle: 15, f: edge(640, 1.3), maxK: .66 }).setAttribute('class', 'mul');
+    const tower = el('g', {}, g);
+    el('path', { d: 'M-150 600 L-150 -120 L0 -330 L150 -120 L150 600 Z', fill: C.blue, stroke: C.navy, 'stroke-width': 9, 'stroke-linejoin': 'round' }, tower);
+    el('circle', { cx: 0, cy: 0, r: 116, fill: C.cream, stroke: C.navy, 'stroke-width': 9 }, tower);
+    for (let k = 0; k < 12; k++) { const a = -Math.PI / 2 + k / 12 * Math.PI * 2; el('circle', { cx: Math.cos(a) * 92, cy: Math.sin(a) * 92, r: k % 3 ? 4 : 8, fill: C.navy }, tower); }
+    el('line', { x1: 0, y1: 0, x2: Math.cos(AH) * 56, y2: Math.sin(AH) * 56, stroke: C.navy, 'stroke-width': 13, 'stroke-linecap': 'round' }, tower);
+    el('line', { x1: 0, y1: 0, x2: Math.cos(AM) * 86, y2: Math.sin(AM) * 86, stroke: C.navy, 'stroke-width': 9, 'stroke-linecap': 'round' }, tower);
+    const v = chars(g, 'VERDICT', { x: 110, y: 230, size: 128, family: F.slab, weight: 400, fill: C.navy, shadow: { fill: C.pink, dx: 8, dy: 8 } });
+    const st = stampEl(g, 'LAST TRAIN', { size: 150, color: C.red });
+    return (t) => {
+      tf(rays, 640, 520, 1, t * 8); tf(tower, 640, 520, lerp(1.3, 1, E.out(seg(t, 9.375, 9.6))));
+      charsPop(v, t, 9.38, .03, .3);
+      stampAnim(st, t, EV.chime, 1290, 640, -9);
+    };
+  });
+
+  // ———— HUD: case number, chapter chip, REC and the time
+  const hudG = el('g', {}, hud);
+  const caseNo = txt(hudG, 'CASE No. LTH-2358', { x: 60, y: 62, 'font-size': 24, 'font-family': F.mono, 'font-weight': 700, fill: C.navy });
+  const chip = el('g', {}, hudG), chipBg = el('rect', { x: 60, y: 76, height: 40, rx: 6, fill: C.navy }, chip);
+  const chipA = txt(chip, '', { x: 74, y: 104, 'font-size': 24, 'font-family': F.sans, 'font-weight': 900, fill: C.yellow }), chipB = txt(chip, '', { y: 104, 'font-size': 24, 'font-family': F.sans, 'font-weight': 900, fill: C.cream });
+  const date = el('g', {}, hudG); el('rect', { x: 1690, y: 40, width: 170, height: 50, rx: 8, fill: 'none', stroke: C.navy, 'stroke-width': 4 }, date);
+  const rec = el('circle', { cx: 1716, cy: 65, r: 9, fill: C.red }, date); txt(date, '23:58', { x: 1740, y: 76, 'font-size': 30, 'font-family': F.mono, 'font-weight': 700, fill: C.navy });
+  const chips = [[0, 2.5, 'EXHIBIT 01', 'PUDDLE'], [2.5, 7.5, 'EXHIBIT 02', 'RUN'], [7.5, 9.375, 'EXHIBIT 03', 'WATCH'], [9.375, 10.1, 'VERDICT', 'STATION']];
+  hudUpdate = (t) => { const c = chips.find(c => t >= c[0] && t < c[1]); if (!c) return; chipA.textContent = c[2]; chipB.textContent = c[3]; const wa = measure(c[2], 24, F.sans), wb = measure(c[3], 24, F.sans); chipB.setAttribute('x', 74 + wa + 14); chipBg.setAttribute('width', wa + wb + 42); op(rec, Math.floor(t * 2) % 2 ? .25 : 1); };
+  // ———— the dot wipe (the demo's, at this clip's cuts)
+  const dotsG = el('g', {}, wipe), wipeDots = [];
+  for (let y = 0; y <= 1080 + 80; y += 80) for (let x = 0; x <= 1920 + 80; x += 80) wipeDots.push({ el: el('circle', { cx: x, cy: y, r: 0 }, dotsG), x, y });
+  const WIPES = [[2.5, C.yellow], [7.5, C.pink]];
+  wipeUpdate = (t) => {
+    const w = WIPES.find(([b]) => Math.abs(t - b) < 0.22); show(dotsG, !!w); if (!w) return;
+    dotsG.setAttribute('fill', w[1]); const u = (t - w[0] + 0.22) / 0.44;
+    wipeDots.forEach(d => { const delay = (d.x / 1920 * 0.6 + d.y / 1080 * 0.4) * 0.35, p = clamp((u - delay) / 0.65); d.el.setAttribute('r', (Math.sin(p * Math.PI) * 62).toFixed(1)); });
+  };
+}
+const boilT = document.getElementById('boilT');
+function render(t) {
+  const frame = Math.round(t * FPS);
+  boilT.setAttribute('seed', 1 + (Math.floor(t * 10) % 40));
+  for (const s of scenes) { const on = t >= s.t0 && t < s.t1; show(s.g, on); if (on) s.update(t); }
+  let dx = 0, dy = 0;
+  for (const [t0, a, d] of SHAKES) if (t >= t0 && t < t0 + d) { const k = 1 - (t - t0) / d; dx += a * k * k * Math.sin(t * 91 + t0); dy += a * k * k * Math.cos(t * 77 + t0 * 3); }
+  const pulse = 1 + 0.006 * Math.exp(-((t % 0.625) / 0.07));                  // the beat pulse (96 bpm)
+  cam.setAttribute('transform', `translate(${(dx + 960 * (1 - pulse)).toFixed(2)} ${(dy + 540 * (1 - pulse)).toFixed(2)}) scale(${pulse.toFixed(4)})`);
+  let fl = 0;
+  if (t >= 7.5 && t < 7.8) fl = Math.max(fl, .5 * Math.pow(1 - (t - 7.5) / .3, 2));              // the exhibit is photographed
+  if (t >= EV.chime && t < EV.chime + .12) fl = Math.max(fl, .5 * (1 - (t - EV.chime) / .12));    // the stamp
+  op(flash, fl); op(fade, 0);
+  hudUpdate(t); wipeUpdate(t); drawFx(frame);
+}
+async function init() {
+  const fams = ['400 50px Slab', '900 50px Jost', '800 50px Jost', '700 50px Mono', '400 50px Hand'];
+  await Promise.all(fams.map(f => document.fonts.load(f, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789:!?.-')));
+  await document.fonts.ready;
+  buildPaper(); buildAll();
+  window.RIGQA = t => { const id = shotAt(t)[2]; if (id !== 'S1' && id !== 'S2') return null; const J = solveProfile(poseAt(t)); return { t, leg: J.leg, arm: J.arm, adjust: J.qa.legAdjust }; };
+  window.render = render; window.DUR = DUR;
+  render(0); window.READY = true;
+}
+init();
+</script>
+</body>
+</html>
