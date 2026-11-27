@@ -1,6 +1,6 @@
 {
- "status": "wip",
- "note": "QA review: S3 showed mostly empty backdrop (push too weak); fixed (push into the info band, track along it, pull back from there). Re-render queued.",
+ "status": "done",
+ "note": "Native silkscreen poster: flat ink layers with misregistration and paper texture; caf\u00e9 and splash, the street of shopfronts; after the QA fi",
  "measured": {
   "frames": 300,
   "fps": "30/1",
@@ -13,7 +13,7 @@
   "frozen_ge_0.7s": [],
   "lufs": -14.2,
   "true_peak_dbtp": -1.0,
-  "size_mb": 4.6
+  "size_mb": 5.2
  },
  "fails": []
 }

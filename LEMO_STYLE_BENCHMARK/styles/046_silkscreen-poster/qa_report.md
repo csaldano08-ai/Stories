@@ -16,7 +16,7 @@ Style construction: Canvas 2D. Narrative adaptation: no.
  "frozen_ge_0.7s": [],
  "lufs": -14.2,
  "true_peak_dbtp": -1.0,
- "size_mb": 4.6
+ "size_mb": 5.2
 }
 ```
 ## Rig QA (all 300 frames, `shared/qa/rig_check.mjs`)
@@ -51,11 +51,11 @@ Style construction: Canvas 2D. Narrative adaptation: no.
 ```
 bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.
 ## Visual review (done by the agent on stills / strips — not full-speed playback)
-(none recorded)
+QA review 2026-11-27: final.mp4 contact sheet viewed (events at 0.94 / 6.05 / 8.4 / 9.58 s present; framing and legibility OK)
 
 ## Needs a human
 - full-speed viewing; listening to the mix
 
 **Automated result:** PASS
 
-
+Native silkscreen poster: flat ink layers with misregistration and paper texture; café and splash, the street of shopfronts; after the QA fix S3 pushes into the info band (dial, NOW 23:58, RUNNING 4 M/S, 2.9 STEPS/S) and tracks along it; LAST TRAIN header and the tower rings on the chime.

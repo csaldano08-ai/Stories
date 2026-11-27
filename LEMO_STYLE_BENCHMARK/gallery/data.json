@@ -717,17 +717,17 @@
    "name": "Red Paper-cut",
    "category": "Traditional Crafts",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native red paper-cut on a night-blue ground: a round paper-cut medallion in the café window, the splash cut as a spray of paper points, AKI ",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/039_papercut-red/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/039_papercut-red/preview.mp4",
+   "thumb": "styles/039_papercut-red/thumbnail.png",
+   "report": "styles/039_papercut-red/qa_report.md"
   },
   {
    "id": "040",
@@ -735,17 +735,17 @@
    "name": "Stained Glass",
    "category": "Traditional Crafts",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native stained glass: leaded panes with jewel colours, the café window and the splash in glass shards, the run seen through tall leaded wind",
    "adaptation": false,
    "engine": [
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/040_stained-glass/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/040_stained-glass/preview.mp4",
+   "thumb": "styles/040_stained-glass/thumbnail.png",
+   "report": "styles/040_stained-glass/qa_report.md"
   },
   {
    "id": "041",
@@ -846,13 +846,13 @@
    "name": "Silkscreen Travel Poster",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "wip",
-   "note": "QA review: S3 showed mostly empty backdrop (push too weak); fixed (push into the info band, track along it, pull back from there). Re-render queued.",
+   "status": "done",
+   "note": "Native silkscreen poster: flat ink layers with misregistration and paper texture; café and splash, the street of shopfronts; after the QA fi",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/046_silkscreen-poster/final.mp4",
    "native": null,
    "preview": "styles/046_silkscreen-poster/preview.mp4",
    "thumb": "styles/046_silkscreen-poster/thumbnail.png",
@@ -1123,18 +1123,18 @@
    "name": "Line-Art Cutaway",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native technical information graphics (grey 3D street, thin callouts): the puddle insert with measured splash rings, the side run with label",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/061_hardcore-info/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/061_hardcore-info/preview.mp4",
+   "thumb": "styles/061_hardcore-info/thumbnail.png",
+   "report": "styles/061_hardcore-info/qa_report.md"
   },
   {
    "id": "062",
@@ -1142,18 +1142,18 @@
    "name": "Color-Coded Mechanism",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native precise mechanism: white model world, AKI in gold, a teal path; labelled parts (PAVEMENT, WATCH); the watch opens to its gear train w",
    "adaptation": true,
    "engine": [
     "WebGL shader pass",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/062_precise-mechanism/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/062_precise-mechanism/preview.mp4",
+   "thumb": "styles/062_precise-mechanism/thumbnail.png",
+   "report": "styles/062_precise-mechanism/qa_report.md"
   },
   {
    "id": "063",
@@ -1161,17 +1161,17 @@
    "name": "Instruction Manual Art",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native instruction manual: numbered steps 1–3 on isometric line drawings, yellow highlights for the puddle and the clock, arrows for the dir",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/063_instruction-manual/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/063_instruction-manual/preview.mp4",
+   "thumb": "styles/063_instruction-manual/thumbnail.png",
+   "report": "styles/063_instruction-manual/qa_report.md"
   },
   {
    "id": "064",
