@@ -235,17 +235,17 @@
    "name": "Stick-figure Explainer",
    "category": "Sketch & Board",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: stick people on warm paper, one curve per limb, one accent (AKI), the ground line carrying a ripple from the splash, commute",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/013_stick-explainer/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/013_stick-explainer/preview.mp4",
+   "thumb": "styles/013_stick-explainer/thumbnail.png",
+   "report": "styles/013_stick-explainer/qa_report.md"
   },
   {
    "id": "014",
