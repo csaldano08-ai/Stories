@@ -326,14 +326,14 @@
    "name": "Paper-cut Lightbox",
    "category": "Traditional Crafts",
    "series": 1,
-   "status": "qa",
-   "note": " [re-rendering S3: watch-hand pivot fixed]",
+   "status": "done",
+   "note": "Native rebuild: the 10 s as a backlit paper-cut shadow box — flat cut sheets in a night ladder (pale far city, darker shopfronts, near-black",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/018_paper-lantern/final.mp4",
    "native": null,
    "preview": "styles/018_paper-lantern/preview.mp4",
    "thumb": "styles/018_paper-lantern/thumbnail.png",
