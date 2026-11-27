@@ -1,0 +1,17 @@
+{
+ "slug": "ascii-crt",
+ "recipe": {
+  "bpm": 120,
+  "key": "C",
+  "prog": "minor",
+  "lead": "chip",
+  "rain": 0.15,
+  "step": "chip",
+  "splash": "chip",
+  "watch": "chip",
+  "chime": "chip",
+  "lofi": true,
+  "wet": 0.08,
+  "family": "retro"
+ }
+}

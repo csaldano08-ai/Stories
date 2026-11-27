@@ -1,0 +1,16 @@
+{
+ "slug": "scratch-film",
+ "recipe": {
+  "bpm": 90,
+  "key": "C",
+  "prog": "tense",
+  "lead": null,
+  "rain": 0,
+  "crackle": 0.06,
+  "step": "none",
+  "splash": "chip",
+  "chime": "bell",
+  "room": 0.8,
+  "family": "film"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "slug": "microgame",
+ "recipe": {
+  "bpm": 140,
+  "key": "C",
+  "prog": "bright",
+  "lead": "chip",
+  "rain": 0.15,
+  "step": "chip",
+  "splash": "chip",
+  "watch": "chip",
+  "chime": "chip",
+  "lofi": true,
+  "wet": 0.08,
+  "family": "retro"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "slug": "precise-mechanism",
+ "recipe": {
+  "bpm": 100,
+  "key": "D",
+  "prog": "bright",
+  "lead": "glock",
+  "rain": 0.15,
+  "step": "tap",
+  "chime": "glock",
+  "drums": 0.45,
+  "pad": 0.7,
+  "family": "explainer"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "slug": "silent-film",
+ "recipe": {
+  "bpm": 90,
+  "key": "C",
+  "prog": "minor",
+  "lead": "pluck",
+  "rain": 0,
+  "crackle": 0.03,
+  "step": "none",
+  "splash": "chip",
+  "chime": "bell",
+  "room": 0.8,
+  "family": "film"
+ }
+}
