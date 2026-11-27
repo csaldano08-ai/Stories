@@ -10,19 +10,30 @@ def run(c, **k): return subprocess.run(c, capture_output=True, text=True, **k)
 def ff(*a): r = run(['ffmpeg', '-y', '-loglevel', 'error', *a]); assert r.returncode == 0, r.stderr; return r
 ap = argparse.ArgumentParser(); ap.add_argument('dir'); ap.add_argument('--strip', default='5.8:7.2'); ap.add_argument('--native'); ap.add_argument('--note', default='')
 ap.add_argument('--manual', default=''); ap.add_argument('--status', default='qa'); ap.add_argument('--grain', default='0')
+ap.add_argument('--meta-only', action='store_true', help='keep final/preview/sheets as they are; re-measure and rewrite qa_report.md + status.json only')
 a = ap.parse_args(); D = os.path.abspath(a.dir); sid = os.path.basename(D)
 inv = {r['folder'].split('/')[-1]: r for r in json.load(open(f'{B}/STYLE_INVENTORY.json'))['styles']}[sid]
 os.makedirs(f'{D}/qa', exist_ok=True)
 V = f'{D}/build/video.mp4'
 common = f'{B}/reference/original_audio_48k.wav'
 mux = lambda aud, out: run(['sh', f'{LIB}/core/render/mux.sh', V, aud, out, '30', a.grain])
-r = mux(common, f'{D}/final.mp4'); assert os.path.exists(f'{D}/final.mp4'), r.stderr[-800:]
-if a.native: r = mux(a.native, f'{D}/final_native.mp4'); assert os.path.exists(f'{D}/final_native.mp4'), r.stderr[-800:]
-ff('-i', f'{D}/final.mp4', '-vf', 'scale=960:540', '-c:v', 'libx264', '-crf', '26', '-preset', 'medium', '-c:a', 'aac', '-b:a', '128k', f'{D}/preview.mp4')
-ff('-ss', '4.4', '-i', f'{D}/final.mp4', '-frames:v', '1', '-vf', 'scale=640:360', f'{D}/thumbnail.png')
-ff('-i', f'{D}/final.mp4', '-vf', "fps=2,scale=384:-1,drawtext=text='%{pts\\:hms}':x=6:y=6:fontsize=18:fontcolor=white:box=1:boxcolor=black@0.6,tile=5x4:padding=3", '-frames:v', '1', f'{D}/qa/contact_sheet.png')
-s0, s1 = map(float, a.strip.split(':'))
-ff('-ss', str(s0), '-to', str(s1), '-i', f'{D}/final.mp4', '-vf', 'fps=5,scale=384:-1,tile=7x1:padding=3', '-frames:v', '1', f'{D}/qa/strip.png')
+if not a.meta_only:
+    r = mux(common, f'{D}/final.mp4'); assert os.path.exists(f'{D}/final.mp4'), r.stderr[-800:]
+    if a.native: r = mux(a.native, f'{D}/final_native.mp4'); assert os.path.exists(f'{D}/final_native.mp4'), r.stderr[-800:]
+    # GitHub refuses files over 100 MB: a texture-heavy style (crayon tooth boiling every drawing) can pass that at CRF 19, so cap the
+    # video bitrate (audio copied untouched) when the muxed file is over 90 MB. The cap is recorded in the report.
+    CAPPED = []
+    for f in [f'{D}/final.mp4', f'{D}/final_native.mp4']:
+        if os.path.exists(f) and os.path.getsize(f) > 90e6:
+            tmp = f + '.cap.mp4'; ff('-i', f, '-map', '0', '-c:v', 'libx264', '-preset', 'slow', '-crf', '19', '-maxrate', '55M', '-bufsize', '110M', '-c:a', 'copy', '-movflags', '+faststart', tmp)
+            os.replace(tmp, f); CAPPED.append(os.path.basename(f))
+    ff('-i', f'{D}/final.mp4', '-vf', 'scale=960:540', '-c:v', 'libx264', '-crf', '26', '-preset', 'medium', '-c:a', 'aac', '-b:a', '128k', f'{D}/preview.mp4')
+    ff('-ss', '4.4', '-i', f'{D}/final.mp4', '-frames:v', '1', '-vf', 'scale=640:360', f'{D}/thumbnail.png')
+    ff('-i', f'{D}/final.mp4', '-vf', "fps=2,scale=384:-1,drawtext=text='%{pts\\:hms}':x=6:y=6:fontsize=18:fontcolor=white:box=1:boxcolor=black@0.6,tile=5x4:padding=3", '-frames:v', '1', f'{D}/qa/contact_sheet.png')
+    s0, s1 = map(float, a.strip.split(':'))
+    ff('-ss', str(s0), '-to', str(s1), '-i', f'{D}/final.mp4', '-vf', 'fps=5,scale=384:-1,tile=7x1:padding=3', '-frames:v', '1', f'{D}/qa/strip.png')
+else:
+    CAPPED = [n for n in ['final.mp4'] if 'bitrate capped' in (open(f'{D}/qa_report.md').read() if os.path.exists(f'{D}/qa_report.md') else '')]
 # measurements
 p = json.loads(run(['ffprobe', '-v', 'error', '-count_frames', '-show_streams', '-show_format', '-of', 'json', f'{D}/final.mp4']).stdout)
 v = next(s for s in p['streams'] if s['codec_type'] == 'video'); au = next(s for s in p['streams'] if s['codec_type'] == 'audio')
@@ -46,6 +57,7 @@ rep = [f"# {sid} — {inv['name']} ({inv['category']}) — QA report", '',
 if rig: rep += ['## Rig QA (all 300 frames, `shared/qa/rig_check.mjs`)', '```', json.dumps({k: rig[k] for k in ['bone', 'kneeBackward', 'slideMaxU', 'slideFrames', 'belowGround', 'adjustments', 'lifted', 'pass']}, indent=1), '```',
                'bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.']
 rep += ['## Visual review (done by the agent on stills / strips — not full-speed playback)', a.manual or '(none recorded)', '',
+        *([f'Encoding note: {", ".join(CAPPED)} re-encoded with the video bitrate capped at 55 Mb/s (CRF 19 otherwise; the muxed file was over 90 MB).', ''] if CAPPED else []),
         '## Needs a human', '- full-speed viewing; listening to the mix', '', f"**Automated result:** {'PASS' if not fails else 'FAIL — ' + '; '.join(fails)}", '', a.note]
 open(f'{D}/qa_report.md', 'w').write('\n'.join(rep) + '\n')
 json.dump({'status': 'done' if (not fails and a.status == 'done') else ('qa' if not fails else 'wip'), 'note': a.note[:140], 'measured': M, 'fails': fails}, open(f'{D}/status.json', 'w'), indent=1)
