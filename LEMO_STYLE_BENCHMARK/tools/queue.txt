@@ -14,3 +14,4 @@ LEMO_STYLE_BENCHMARK/styles/040_stained-glass
 LEMO_STYLE_BENCHMARK/styles/041_gilded-illumination
 LEMO_STYLE_BENCHMARK/styles/042_risograph
 LEMO_STYLE_BENCHMARK/styles/043_halftone-dossier
+LEMO_STYLE_BENCHMARK/styles/044_woodcut
