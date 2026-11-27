@@ -31,6 +31,11 @@ def soft(x):
     if fi > 1: w[:fi] = np.linspace(0, 1, fi)
     if fo > 1: w[-fo:] = np.cos(np.linspace(0, np.pi / 2, fo)) ** 2
     return x * w
+def mixs(*xs):
+    """sum signals of different lengths (padded with silence to the longest)"""
+    n = max(len(x) for x in xs); y = np.zeros(n)
+    for x in xs: y[:len(x)] += x
+    return y
 def place(buf, x, t, pan=0., gain=1.):
     x = soft(x)
     i = int(t * SR);
@@ -156,7 +161,7 @@ def build(slug, R):
         x = {'wet': lambda: I_thud(80, seed) + place1(hp(noise(int(SR * .05), seed + 1), 2500) * env(int(SR * .05), .001, .015) * .3, 0, int(SR * .2)), 'tap': lambda: I_tick(1800, seed) * .7, 'wood': lambda: I_marimba(36, .1) * .6,
              'chip': lambda: I_chip(40, .05, 'pulse') * 1.2, 'soft': lambda: lp(I_thud(60, seed), 400), 'none': lambda: np.zeros(10)}[step]()
         place(buf, x, s['t'], pan, R.get('stepg', .5))
-    place(buf, {'chip': lambda: I_slide(900, 200, .3) * 1.3, 'cartoon': lambda: I_boing(260) + I_splash(seed, .6) * .5}.get(R.get('splash'), lambda: I_splash(seed, R.get('splashb', 1.)))(), EV['splash'], 0, R.get('splashg', .9))
+    place(buf, {'chip': lambda: I_slide(900, 200, .3) * 1.3, 'cartoon': lambda: mixs(I_boing(260), I_splash(seed, .6) * .5)}.get(R.get('splash'), lambda: I_splash(seed, R.get('splashb', 1.)))(), EV['splash'], 0, R.get('splashg', .9))
     # the watch: a small tick sequence at its glance, or the style's own signal
     w = R.get('watch', 'tick')
     for k in range(int((EV['watchDown'] - EV['watchUp']) / .5) + 1):
@@ -165,8 +170,8 @@ def build(slug, R):
     # the station clock's second (one clear tick, a little reverb) and the chime
     place(buf, place1(I_tick(2600, seed + 50) * 1.4, 0, int(SR * .2)) + I_thud(160, seed) * .3, EV['clockTick'], 0, .7)
     ch = R.get('chime', 'bell'); root = KEYS[R.get('key', 'C')]
-    chx = {'bell': lambda: I_bell(root + 12) + I_bell(root + 19) * .6, 'glock': lambda: I_glock(root + 24) + I_glock(root + 31) * .7, 'chip': lambda: I_chip(root + 24, .3) + I_chip(root + 31, .4),
-           'ping': lambda: I_ping(1320) + I_ping(1980) * .3, 'beep': lambda: I_beep(1047, .4) + I_beep(1568, .4) * .6, 'gong': lambda: lp(I_bell(root - 12, 2.5), 2500) * 1.3}[ch]()
+    chx = {'bell': lambda: mixs(I_bell(root + 12), I_bell(root + 19) * .6), 'glock': lambda: mixs(I_glock(root + 24), I_glock(root + 31) * .7), 'chip': lambda: mixs(I_chip(root + 24, .3), I_chip(root + 31, .4)),
+           'ping': lambda: mixs(I_ping(1320), I_ping(1980) * .3), 'beep': lambda: mixs(I_beep(1047, .4), I_beep(1568, .4) * .6), 'gong': lambda: lp(I_bell(root - 12, 2.5), 2500) * 1.3}[ch]()
     place(buf, chx, EV['chime'], 0, R.get('chimeg', .8))
     buf = reverb(buf, R.get('room', 1.1), R.get('wet', .22), seed)
     buf = hp(buf, 35)

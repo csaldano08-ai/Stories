@@ -1,0 +1,15 @@
+{
+ "slug": "blueprint",
+ "recipe": {
+  "bpm": 100,
+  "key": "D",
+  "prog": "bright",
+  "lead": "pluck",
+  "rain": 0.1,
+  "step": "tap",
+  "chime": "glock",
+  "drums": 0.3,
+  "pad": 0.7,
+  "family": "explainer"
+ }
+}

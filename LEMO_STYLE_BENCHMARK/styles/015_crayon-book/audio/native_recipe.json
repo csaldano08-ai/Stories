@@ -1,0 +1,15 @@
+{
+ "slug": "crayon-book",
+ "recipe": {
+  "bpm": 100,
+  "key": "F",
+  "prog": "bright",
+  "lead": "glock",
+  "rain": 0.25,
+  "step": "tap",
+  "splash": "cartoon",
+  "chime": "glock",
+  "wet": 0.15,
+  "family": "cartoon"
+ }
+}

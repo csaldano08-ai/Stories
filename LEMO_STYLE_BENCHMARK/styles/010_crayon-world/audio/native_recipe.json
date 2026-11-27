@@ -1,0 +1,15 @@
+{
+ "slug": "crayon-world",
+ "recipe": {
+  "bpm": 124,
+  "key": "F",
+  "prog": "bright",
+  "lead": "marimba",
+  "rain": 0.25,
+  "step": "tap",
+  "splash": "cartoon",
+  "chime": "glock",
+  "wet": 0.15,
+  "family": "cartoon"
+ }
+}

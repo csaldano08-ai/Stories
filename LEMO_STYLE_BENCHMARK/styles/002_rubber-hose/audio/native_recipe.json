@@ -1,0 +1,16 @@
+{
+ "slug": "rubber-hose",
+ "recipe": {
+  "bpm": 132,
+  "key": "F",
+  "prog": "bright",
+  "lead": "pluck",
+  "rain": 0.25,
+  "step": "tap",
+  "splash": "cartoon",
+  "chime": "glock",
+  "wet": 0.15,
+  "crackle": 0.02,
+  "family": "cartoon"
+ }
+}
