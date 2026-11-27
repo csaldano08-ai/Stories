@@ -550,17 +550,17 @@
    "name": "Urban Sketch · Pen & Wash",
    "category": "Painting & Illustration",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild as an urban sketch: ink lines over loose watercolour washes, the street drawn on location with its shop names hand-lettered, ",
    "adaptation": false,
    "engine": [
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/030_urban-sketch/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/030_urban-sketch/preview.mp4",
+   "thumb": "styles/030_urban-sketch/thumbnail.png",
+   "report": "styles/030_urban-sketch/qa_report.md"
   },
   {
    "id": "031",
