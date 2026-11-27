@@ -1,0 +1,14 @@
+{
+ "slug": "neon-tubes",
+ "recipe": {
+  "bpm": 112,
+  "key": "A",
+  "prog": "minor",
+  "lead": null,
+  "rain": 0.6,
+  "step": "tap",
+  "chime": "bell",
+  "wet": 0.28,
+  "family": "neon"
+ }
+}
