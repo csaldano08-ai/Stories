@@ -4,7 +4,8 @@ Status legend: ✅ delivered · 🟡 in production · ⏳ queued · ⛔ blocked 
 
 ## Resume point
 
-- **Now:** MASTER 08 *Last Train Home* — first full render v1 → QA → fix round → final (see `films/MASTER_08/NOTES.md`).
+- **Done:** MASTER 08 *Last Train Home* delivered (74.4 s). Next-round ideas in `films/MASTER_08/NOTES.md`.
+- **Now:** MASTER 13 — treatment written (`films/MASTER_13/TREATMENT.md`); next step = measure three.js frame cost on CPU (SwiftShader), then bible + rig tests.
 - **Next (brief §21 order):** MASTER 13 *The Little Repair Robot* (Brick Toy, 3D — no GPU here: see `research/limitations/`), MASTER 03, MASTER 10, then MASTER 01, 02, 04, 05, 06, 07, 09, 11, 12, 14, 15; showreel + comparative report; then the 84 concepts.
 
 ## Order of execution
@@ -16,8 +17,8 @@ Status legend: ✅ delivered · 🟡 in production · ⏳ queued · ⛔ blocked 
 | 3 | Dependency tests (Node 22, Python 3.11/3.12, ffmpeg 9 via imageio-ffmpeg, Chromium headless) | ✅ |
 | 4 | Style inventory (99 styles) | ✅ `STYLE_CATALOG.md` |
 | 5 | Lab scaffolding | ✅ |
-| 6 | MASTER 08 | 🟡 |
-| 7 | MASTER 13 | ⏳ |
+| 6 | MASTER 08 | ✅ |
+| 7 | MASTER 13 | 🟡 treatment |
 | 8 | MASTER 03 | ⏳ |
 | 9 | MASTER 10 | ⏳ |
 | 10 | other 11 MASTERs | ⏳ |
@@ -117,7 +118,7 @@ Status legend: ✅ delivered · 🟡 in production · ⏳ queued · ⛔ blocked 
 
 | ID | style | title | status | notes |
 |---|---|---|---|---|
-| MASTER_08 | 80s Cel Anime (`cel-anime-80s`) | *Last Train Home* | 🟡 in production |  |
+| MASTER_08 | 80s Cel Anime (`cel-anime-80s`) | *Last Train Home* | ✅ delivered (automated QA PASS; human viewing/listening pending) | `delivery/master_films/MASTER_08_last-train-home.mp4` · scores in `films/MASTER_08/QA_REPORT.md` |
 | STYLE_060 | 1930s Rubber Hose Cartoon (`rubber-hose`) | *The Runaway Pancake* | ⏳ |  |
 | STYLE_061 | Sci-Fi Sitcom Toon (`scifi-toon`) | *Alien Roommate* | ⏳ |  |
 | STYLE_062 | Mid-century Cartoon (`midcentury-toon`) | *The Lazy Robot* | ⏳ |  |
@@ -168,7 +169,7 @@ Status legend: ✅ delivered · 🟡 in production · ⏳ queued · ⛔ blocked 
 
 | ID | style | title | status | notes |
 |---|---|---|---|---|
-| MASTER_13 | Brick Toy (`brick-toy`) | *The Little Repair Robot* | ⏳ |  |
+| MASTER_13 | Brick Toy (`brick-toy`) | *The Little Repair Robot* | 🟡 treatment written | next: CPU 3D benchmark, bible, rig tests |
 | STYLE_081 | Paper Pop-up Book (`paper-popup`) | *The Island Between Pages* | ⏳ |  |
 | STYLE_082 | Tilt-Shift Miniature (`tilt-shift`) | *The Town's First Snow* | ⏳ |  |
 | STYLE_083 | Low-poly Isometric Island (`lowpoly-island`) | *The Floating Village* | ⏳ |  |

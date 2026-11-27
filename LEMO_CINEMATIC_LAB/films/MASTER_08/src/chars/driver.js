@@ -28,8 +28,8 @@ export function drawDriver(g, P, d, L) {
     if (h > .8) {
       const EP = new Path2D(); EP.ellipse(ex, ey, w / 2, h, 0, 0, TAU);
       g.fillStyle = '#f6f2ec'; g.fill(EP); g.save(); g.clip(EP);
-      g.fillStyle = '#3a2a22'; g.beginPath(); g.arc(ex + lk[0] * 2.5, ey + lk[1] * 1.5, 3.4, 0, TAU); g.fill();
-      g.fillStyle = '#fff'; g.beginPath(); g.arc(ex + lk[0] * 2.5 + 1, ey - 1.2, 1, 0, TAU); g.fill(); g.restore();
+      g.fillStyle = '#3a2a22'; g.beginPath(); g.arc(ex + lk[0] * 3.6, ey + lk[1] * 1.5, 3.4, 0, TAU); g.fill();
+      g.fillStyle = '#fff'; g.beginPath(); g.arc(ex + lk[0] * 3.6 + 1, ey - 1.2, 1, 0, TAU); g.fill(); g.restore();
     }
     iline(g, path([[ex - w / 2 - 1, ey - 1], [ex, ey - h - 1.4], [ex + w / 2 + 1, ey - .5]], false), P.dskin.l, 1.6);
   }

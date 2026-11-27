@@ -53,7 +53,6 @@ def main():
         r = run([FF, '-hide_banner', '-nostats', '-i', a.film, '-af', 'ebur128=peak=true', '-f', 'null', '-'])
         I = float(re.findall(r'I:\s+(-?[\d.]+) LUFS', r.stderr)[-1]); LRA = float(re.findall(r'LRA:\s+([\d.]+) LU', r.stderr)[-1])
         TP = float(re.findall(r'Peak:\s+(-?[\d.]+) dBFS', r.stderr)[-1])
-        pcm = run([FF, '-loglevel', 'error', '-i', a.film, '-ac', '2', '-ar', '48000', '-f', 'f32le', '-']).stdout
         x = np.frombuffer(subprocess.run([FF, '-loglevel', 'error', '-i', a.film, '-ac', '2', '-ar', '48000', '-f', 'f32le', '-'], capture_output=True).stdout, dtype=np.float32).reshape(-1, 2)
         m = x.mean(1); S = np.abs(np.fft.rfft(m[: len(m) // 2 * 2])) ** 2; f = np.fft.rfftfreq(len(m) // 2 * 2, 1 / 48000)
         A = R['checks']['audio'] = {'integrated_lufs': I, 'lra_lu': LRA, 'true_peak_dbtp': TP, 'clipped_samples': int(np.sum(np.abs(x) >= .9999)),

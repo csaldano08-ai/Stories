@@ -129,7 +129,7 @@ function vgrad2(g, x, y, w, h, a, b2) { const gr = g.createLinearGradient(0, y, 
 const S9 = (() => {
   const [t0, t1] = shot('S9_crouch');
   // local frame faces +x (rendered mirrored: she walks right→left on screen). Bench kitten at local x ≈ 1100.
-  const v = 420, cad = 1.8, tw1 = t0 + 1.55;   // walk until tw1
+  const v = 505, cad = 1.95, tw1 = t0 + 1.55;   // walk until tw1 (ends close enough to reach the kitten)
   const X = t => t < tw1 ? v * (t - t0) : v * (tw1 - t0) + v * .35 * (1 - Math.exp(-(t - tw1) * 3)) / 1.05;
   const xs = X(t1 + 2);
   const walk = planGait({ t0, t1: tw1 - .2, x0: 0, v, cadence: cad, duty: 1.26, lead: .02, first: 'f', L: 312, strike: -.15, toeoff: .5, flatTo: .55 });
@@ -243,7 +243,8 @@ export function S11_hands({ t, lt, g, e, A }) {
       const hx = side * lerp(760, 205, reach), hy = 120 + 20 * under;
       g.save(); g.translate(...X(hx, hy)); g.scale(5.2 * sc, 5.2 * sc);
       // sweater cuff first (behind the hand)
-      celGroup(g, [path([[side * 30, -22], [side * 70, -26], [side * 74, 24], [side * 30, 24]])], P.wet('sweater', .8), L, { lw: 1.6 });
+      celGroup(g, [path([[side * 30, -21], [side * 120, -30], [side * 240, -34], [side * 240, 36], [side * 120, 32], [side * 30, 23]])], P.wet('sweater', .8), L, { lw: 1.6 });
+      iline(g, path([[side * 38, -20], [side * 40, 22]], false), P.sweater.l, 1.1);
       handTop(g, P, LH, 0, 0, { side: side > 0 ? -1 : 1, ang: side > 0 ? Math.PI : 0, curl: under, spread: .35, thumb: .2 + .5 * lift, lw: 1.5 });
       g.restore();
     }

@@ -11,3 +11,10 @@
 - MASTER 08 *Last Train Home*: treatment, bibles, original 2D rig (IK, foot locking, deterministic secondary motion), union-cel renderer, 20 shots, original score, synthesised sound design, mix.
   Engine base adapted from the Lemo-Opuscar 80s Cel Anime demo (MIT): `cel.js` (+ path bounding boxes), `post.js` (unchanged CRT/tape pass), synth voices (`audio/music/synth80.py`).
   Canvases switched to CPU raster (`willReadFrequently`) and all mask work bounded to each group's box: 24 s → ~1 s per character frame.
+
+## 2026-11-27
+- MASTER 08 delivered: render v1 (preview) → QA (contact sheets, 0.2 s strips, loudness, Whisper on the final mix) → fix round v2
+  (hands insert rebuilt with a fingered top-view hand rig, reach distance, street depth, doorway, seat, audio low end and rain level) →
+  S15 patched frame-exact (`tools/rendering/patch_range.mjs`, new: re-render a time range and splice it, the lab's checkpoint mechanism).
+- Delivery: `delivery/master_films/MASTER_08_last-train-home.mp4` (+ burned-in subtitles .srt), poster, 24-bit FLAC stems + 48 kHz/24-bit WAV master, reports.
+- MASTER 13 treatment written (ending changed after reading the demo notes to stay clear of its scale-reveal ending).

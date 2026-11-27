@@ -63,7 +63,8 @@ export function S15_driver({ t, lt, g, e, A }) {
   const tq = onN(t, 30, 3), P = PAL.platform;
   const vis = visemeAt('D1', t), smile = ss(seg(tq, LINES[2].t + 1.9, LINES[2].t + 2.4));
   const wave = lt > .4 && lt < 2.7 ? (tq - b(76)) * 1.7 : null, lean = ss(seg(tq, b(76), b(76) + .5));
-  g.save(); g.translate(1040 - lean * 60, 470); g.scale(-2.8, 2.8);
+  g.save(); g.beginPath(); g.rect(0, 0, W, wy1 + 2); g.clip();             // nothing of him below the sill (he is inside the cab)
+  g.translate(1330 - lean * 50, 470); g.scale(-2.8, 2.8);   // inside the window opening: the sill crosses his chest
   drawDriver(g, P, { mouth: vis || (smile > .3 ? 'smile' : 'X'), eyes: 1, smile, look: [.7, .15], brow: [-1, -1], wave }, { sh: [5, 2], hi: [2, 1], rim: { c: '#ffd9a0', d: [-1.6, 0] } });
   g.restore();
   // the wall below the sill hides his body below the window; the sill line crosses under his arm

@@ -49,7 +49,7 @@ def rain_bed(d, heavy=1.0, under=0.0, seed=1):
     """textured rain: soft low body + thousands of tiny drop transients + gutter trickle; 'under' = heard under a roof/glass"""
     r = np.random.default_rng(seed); n = int(d * SR)
     body = lp(np.cumsum(r.standard_normal(n)) * .02, 1800) * .25
-    body = hp(body, 90)
+    body = hp(body, 150, 3)
     drops = np.zeros(n)
     k = int(d * 900 * heavy)
     pos = r.integers(0, n - 400, k); amp = r.uniform(.05, 1, k) ** 2
@@ -73,7 +73,7 @@ def train_run(d, v_of_t):
     steps = 1 + np.floor(v / 4) * .0                  # smooth whine (period-true VVVF sound kept subtle)
     ph = 2 * np.pi * np.cumsum(f0) / SR
     whine = (np.sin(ph) + .5 * np.sin(2 * ph + .3) + .25 * np.sin(3 * ph)) * np.clip(v / 6, 0, 1) * np.clip(1.4 - v / 25, .25, 1)
-    rumble = (lp(noise(n), 160) * (1 - np.clip(v / 14, 0, 1)) + lp(noise(n), 420) * np.clip(v / 14, 0, 1)) * np.clip(v / 10, 0, 1) * 1.2
+    rumble = hp(lp(noise(n), 160) * (1 - np.clip(v / 14, 0, 1)) + lp(noise(n), 420) * np.clip(v / 14, 0, 1), 55) * np.clip(v / 10, 0, 1) * 1.2
     clack = np.zeros(n); dist = np.cumsum(v) / SR; joint = 25.0
     last = 0
     for i in range(1, n, 240):
@@ -155,10 +155,10 @@ def bed(sig, t0, t1, g, fi=.4, fo=.6):
     ramp = np.ones(L); a, z = int(fi * SR), int(fo * SR); ramp[:a] = np.linspace(0, 1, a); ramp[L - z:] = np.linspace(1, 0, z)
     put('ambience', s * ramp[:, None], t0, g)
 heavy = rain_bed(b(66) + 2, 1.2, 0, 1)
-bed(heavy, 0, b(66) + 1.5, .55, .02, .6)                                    # S1–S13 exterior rain
-bed(rain_bed(10, .8, .55, 2), b(70) - .5, b(90) + .3, .4)                  # platform: rain on the canopy roof (muffled)
+bed(heavy, 0, b(66) + 1.5, .36, .02, .6)                                    # S1–S13 exterior rain
+bed(rain_bed(10, .8, .55, 2), b(70) - .5, b(90) + .3, .28)                  # platform: rain on the canopy roof (muffled)
 bed(rain_bed(13, .7, .85, 3), b(90), b(102) + .3, .32)                     # inside: rain on the glass, muffled
-put('ambience', st(lp(noise(int((b(110) - b(90)) * SR)), 180) * .3, 0, .3), b(90), .5)   # car interior rumble
+put('ambience', st(hp(lp(noise(int((b(110) - b(90)) * SR)), 220), 60, 2) * .3, 0, .3), b(90), .35)   # car interior rumble
 cityd = b(119) + 1 - b(110)
 put('ambience', st(bp(noise(int(cityd * SR)), 200, 1200) * .06 * np.clip(ts(int(cityd * SR)) / 1.5, 0, 1), 0, .8), b(110), .6)   # distant city
 # train: idle from the hum (first sound after silence #2) to departure; running from departure to the end
