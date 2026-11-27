@@ -17,3 +17,4 @@ LEMO_STYLE_BENCHMARK/styles/043_halftone-dossier
 LEMO_STYLE_BENCHMARK/styles/044_woodcut
 LEMO_STYLE_BENCHMARK/styles/045_engraving
 LEMO_STYLE_BENCHMARK/styles/046_silkscreen-poster
+LEMO_STYLE_BENCHMARK/styles/047_printed-long-take
