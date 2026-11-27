@@ -1,0 +1,3 @@
+- **Done:** lab created; reference 10 s extracted and analysed (`reference/`); inventory generated (`STYLE_INVENTORY.json`).
+- **Now:** improved protagonist concept + character sheet → run rig v2 + rig QA → style 001 (80s Cel Anime, improved).
+- **Then:** gallery (`gallery/`), styles 002–020 in the first-series order, then 021–099; interaction tests; showreels; final report.

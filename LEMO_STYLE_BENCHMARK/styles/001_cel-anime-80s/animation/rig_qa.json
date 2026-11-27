@@ -1,0 +1,30 @@
+{
+ "frames": 300,
+ "bone": {
+  "thigh": [
+   150,
+   150
+  ],
+  "shin": [
+   144,
+   144
+  ],
+  "upper": [
+   108,
+   108
+  ],
+  "fore": [
+   92,
+   92
+  ]
+ },
+ "kneeBackward": 0,
+ "elbowForward": 0,
+ "slideMaxU": 4.973799150320701e-14,
+ "slideFrames": 0,
+ "belowGround": 0,
+ "adjustments": 31,
+ "lifted": 0,
+ "worst": [],
+ "pass": true
+}

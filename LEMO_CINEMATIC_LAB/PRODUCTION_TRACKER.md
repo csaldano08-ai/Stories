@@ -4,6 +4,8 @@ Status legend: ✅ delivered · 🟡 in production · ⏳ queued · ⛔ blocked 
 
 ## Resume point
 
+- **PAUSED (2026-11-27, user request):** MASTER production is suspended while `LEMO_STYLE_BENCHMARK/` explores all 99 styles on the first 10 s of MASTER 08. Nothing here was deleted or modified; resume from the lines below when the benchmark is done.
+
 - **Done:** MASTER 08 *Last Train Home* delivered (74.4 s). Next-round ideas in `films/MASTER_08/NOTES.md`.
 - **Now:** MASTER 13 — treatment written (`films/MASTER_13/TREATMENT.md`); next step = measure three.js frame cost on CPU (SwiftShader), then bible + rig tests.
 - **Next (brief §21 order):** MASTER 13 *The Little Repair Robot* (Brick Toy, 3D — no GPU here: see `research/limitations/`), MASTER 03, MASTER 10, then MASTER 01, 02, 04, 05, 06, 07, 09, 11, 12, 14, 15; showreel + comparative report; then the 84 concepts.

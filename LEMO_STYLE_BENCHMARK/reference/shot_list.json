@@ -1,0 +1,153 @@
+{
+ "source": "LEMO_CINEMATIC_LAB/films/MASTER_08/last-train-home.mp4 (delivered master), frames 0\u2013299",
+ "fps": 30,
+ "frames": 300,
+ "duration_s": 10.0,
+ "cuts_detected_s": [
+  2.5,
+  7.5,
+  9.4
+ ],
+ "cuts_timeline_s": [
+  2.5,
+  7.5,
+  9.375
+ ],
+ "bpm": 96,
+ "beat_s": 0.625,
+ "shots": [
+  {
+   "id": "S1_puddle",
+   "t0": 0.0,
+   "t1": 2.5,
+   "framing": "INSERT, ground level",
+   "camera": "locked, slow lateral drift (22 px/s), focus on the puddle; background bokeh of shop neon",
+   "action": "rain on a puddle reflecting the 24H / CAFE signs (upside down, rippling); her lower legs enter from screen-left at ~0.5 s running left\u2192right; the boot lands IN the puddle at 0.9375 s (crown splash, droplets, ripples, reflection disturbed); second step 1.28 s off the puddle; legs leave frame ~1.5 s; puddle settles",
+   "environment": "wet asphalt, puddle, out-of-focus shopfronts (bokeh), rain at 3 depths",
+   "palette": [
+    "#201229",
+    "#0a0711",
+    "#0e0918",
+    "#150c1d",
+    "#af8da4",
+    "#472339"
+   ]
+  },
+  {
+   "id": "S2_run",
+   "t0": 2.5,
+   "t1": 7.5,
+   "framing": "MEDIUM-FULL, side view (profile, facing right)",
+   "camera": "tracking on ones at the runner's speed (\u22481300 px/s at the figure plane); 4 parallax layers: far skyline .32, shopfronts .82, ground reflections .82, foreground posts 1.6",
+   "action": "steady run at 2.9 steps/s (\u2248 4 m/s), torso lean ~0.15 rad, arms opposite to legs, hair & jacket hem streaming; 6.05\u20137.15 s she raises the near (left) wrist and glances down at the watch while running",
+   "environment": "shopping street at night: shop windows (warm), neon/lightbox signs (CAFE, 24H, BAKERY, BAR, BOOKS, PHARMACY, NOODLES, LAUNDRY, RECORDS, HOTEL, FLOWERS), vertical sign boxes, balconies, wet pavement with reflections, splashes at each footfall",
+   "palette": [
+    "#0c0717",
+    "#150b20",
+    "#1e1528",
+    "#d0a888",
+    "#3b212c",
+    "#774946"
+   ]
+  },
+  {
+   "id": "S3_watch",
+   "t0": 7.5,
+   "t1": 9.375,
+   "framing": "INSERT, wrist/watch",
+   "camera": "handheld-feel bob at the run cadence (\u00b110 px), slow drift",
+   "action": "forearm (red sleeve) across the frame, gold watch 23:58, second hand ticking once a second, raindrops on the crystal; background = streaking street lights",
+   "environment": "abstract streaks of the street lights (motion)",
+   "palette": [
+    "#110b1d",
+    "#180c20",
+    "#7c3c5c",
+    "#0d0817",
+    "#451d2e",
+    "#bb9288"
+   ]
+  },
+  {
+   "id": "S4_wide",
+   "t0": 9.375,
+   "t1": 10.0,
+   "framing": "WIDE, start of a crane down",
+   "camera": "crane (tilt-down) begins: rainy night sky with lit clouds, city tops",
+   "action": "none yet (the station appears later in the original)",
+   "environment": "sky, clouds lit by city glow, skyline windows, rain",
+   "palette": [
+    "#160c2c",
+    "#0d091e",
+    "#26163d",
+    "#18102f",
+    "#201237",
+    "#392648"
+   ]
+  }
+ ],
+ "footfalls_s": [
+  0.248,
+  0.593,
+  0.938,
+  1.282,
+  1.627,
+  1.972,
+  2.317,
+  2.662,
+  3.006,
+  3.351,
+  3.696,
+  4.041,
+  4.386,
+  4.731,
+  5.075,
+  5.42,
+  5.765,
+  6.11,
+  6.455,
+  6.8,
+  7.144,
+  7.489,
+  7.834,
+  8.179,
+  8.524,
+  8.869,
+  9.213,
+  9.558,
+  9.903
+ ],
+ "run": {
+  "cadence_steps_per_s": 2.9,
+  "speed_u_per_s": 1450,
+  "character_height_u": 600,
+  "stance_duty": 0.62,
+  "lean_rad": 0.15
+ },
+ "hit_points_s": {
+  "splash_in_puddle": 0.9375,
+  "watch_look": [
+   6.05,
+   7.15
+  ],
+  "watch_insert_brass_hit": 7.5,
+  "departure_chime": 9.575
+ },
+ "sound_events": [
+  {
+   "type": "splash_big",
+   "t": 0.938,
+   "v": 1
+  },
+  {
+   "type": "chime",
+   "t": 9.575,
+   "v": 0.8
+  }
+ ],
+ "music": "original score \u00a7A: pad + hat ticks + riser \u2192 brass stab on the splash (0.94) \u2192 tom fill \u2192 city-pop groove from 2.5 s (F minor, 96 BPM); brass hit at 7.5 s; departure chime (diegetic) 9.575 s",
+ "assets": {
+  "code": "LEMO_CINEMATIC_LAB/films/MASTER_08/src (shots_a.js S1\u2013S4, bg/plates1.js, chars/*)",
+  "audio_mix_10s": "reference/original_audio_48k.wav",
+  "stems_10s": "reference/stems/*.wav"
+ }
+}
