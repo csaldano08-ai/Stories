@@ -69,17 +69,17 @@
    "name": "Sci-Fi Sitcom Toon",
    "category": "Cartoons",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: constant 7 px boiling outlines, flat fills + hard shadow shapes, big white eyes with tiny pupils, ultraviolet+gold world, a ",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/004_scifi-toon/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/004_scifi-toon/preview.mp4",
+   "thumb": "styles/004_scifi-toon/thumbnail.png",
+   "report": "styles/004_scifi-toon/qa_report.md"
   },
   {
    "id": "005",

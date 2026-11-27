@@ -1,3 +1,3 @@
 - **Done:** lab created; reference 10 s extracted and analysed (`reference/`); inventory generated (`STYLE_INVENTORY.json`).
-- **Now:** first series (001–020) in order. Done: 001, 002, 003. Blocked (image generator ✦, `BLOCKED.md` in each folder): 005, 056, 066. Next: 004 Sci-Fi Sitcom Toon, then 006 HD-2D.
+- **Now:** first series (001–020) in order. Done: 001, 002, 003, 004. Blocked (image generator ✦, `BLOCKED.md` in each folder): 005, 056, 066. Next: 006 HD-2D (2.5D pixel), then 007 Pixel RPG.
 - **Then:** gallery (`gallery/`), styles 002–020 in the first-series order, then 021–099; interaction tests; showreels; final report.
