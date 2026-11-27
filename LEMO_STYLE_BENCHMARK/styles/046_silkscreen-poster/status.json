@@ -1,6 +1,6 @@
 {
- "status": "qa",
- "note": "",
+ "status": "wip",
+ "note": "QA review: S3 showed mostly empty backdrop (push too weak); fixed (push into the info band, track along it, pull back from there). Re-render queued.",
  "measured": {
   "frames": 300,
   "fps": "30/1",

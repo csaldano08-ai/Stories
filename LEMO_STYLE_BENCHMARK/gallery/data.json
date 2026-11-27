@@ -606,8 +606,8 @@
    "name": "Whiteboard Explainer",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native whiteboard: markers draw the café, the puddle and the splash; the street in hand-drawn panels with stroboscopic figures; the watch cl",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
@@ -624,8 +624,8 @@
    "name": "Chalkboard",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native chalkboard: chalk street, the splash in chalk dust, the run along a long chalk frieze, the watch dial 23:58 written in chalk; pull ba",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -644,8 +644,8 @@
    "name": "Sketchnote",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native sketchnote: numbered frames, the splash with flick marks, a strip of shop panels, the watch 23:58 underlined; the final page layout o",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
@@ -680,8 +680,8 @@
    "name": "Marker on Paper",
    "category": "Sketch & Board",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native marker on paper: line figures in the rain, the puddle splash, shop signs written on, the watch 11:58 with the second hand; the skylin",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
@@ -698,8 +698,8 @@
    "name": "Shadow Puppetry",
    "category": "Traditional Crafts",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native shadow puppet: lit cut-paper screen, jointed puppet AKI, the splash in paper drops, the watch as a large puppet prop; the stage with ",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -771,8 +771,8 @@
    "name": "Risograph Print",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native risograph: two-ink overprint with grain and misregistration; café splash, the street in ink layers, the watch close-up; the tower sky",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -790,8 +790,8 @@
    "name": "Halftone Dossier",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native halftone dossier: Exhibit 01 the puddle, 02 the run, 03 the watch 23:58; the verdict card LAST TRAIN with the tower on the chime.",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
@@ -808,8 +808,8 @@
    "name": "Woodcut Print",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native woodcut: carved black block, white gouge marks, chapter captions I–IV; the watch cut in red on the second block; the tower radiating ",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -827,8 +827,8 @@
    "name": "Copperplate Engraving",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native engraving plate: Fig. 1 the runner, one figure at each footfall; the watch dial engraved and tinted; the finished plate with captions",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -846,13 +846,13 @@
    "name": "Silkscreen Travel Poster",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "wip",
+   "note": "QA review: S3 showed mostly empty backdrop (push too weak); fixed (push into the info band, track along it, pull back from there). Re-render queued.",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": "styles/046_silkscreen-poster/final.mp4",
+   "video": null,
    "native": null,
    "preview": "styles/046_silkscreen-poster/preview.mp4",
    "thumb": "styles/046_silkscreen-poster/thumbnail.png",
@@ -884,8 +884,8 @@
    "name": "Pop Art",
    "category": "Print & Printmaking",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native pop art: Ben-Day dots, bold outlines, the café splash, the shop street, the watch 23:58 with speed lines; the clock tower with rings ",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -921,8 +921,8 @@
    "name": "Swiss Motion Graphics",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native Swiss motion: grid, Helvetica-style type, red AKI on the street grid, 23:58 set large with the watch; the tower column on the chime.",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
@@ -939,8 +939,8 @@
    "name": "60s Spy Title Sequence",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native title-sequence graphics: ink-black café and puddle splash on rain-streaked paper; S2 runs AKI as a silhouette through giant stencil s",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
@@ -957,8 +957,8 @@
    "name": "Art Deco",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native Art Deco: gold-line café arch and sunbursts, the splash in gold sparks, the street of deco shopfronts and marquee letters, the octago",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
@@ -993,17 +993,17 @@
    "name": "Bauhaus Shapes",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native Bauhaus: primary blue band, yellow squares and red figure built of bars and circles; a step counter (11…24); the watch as circle and ",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/054_bauhaus-shapes/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/054_bauhaus-shapes/preview.mp4",
+   "thumb": "styles/054_bauhaus-shapes/thumbnail.png",
+   "report": "styles/054_bauhaus-shapes/qa_report.md"
   },
   {
    "id": "055",
@@ -1011,18 +1011,18 @@
    "name": "Scale Zoom Explainer",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native flat explainer with a scale readout: the puddle 2.2 m, the run labelled four metres a second, shop signs, the watch 23:58 at 6.0 cm; ",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/055_flat-space-explainer/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/055_flat-space-explainer/preview.mp4",
+   "thumb": "styles/055_flat-space-explainer/thumbnail.png",
+   "report": "styles/055_flat-space-explainer/qa_report.md"
   },
   {
    "id": "056",
@@ -1049,7 +1049,7 @@
    "name": "Silhouette Rhythm",
    "category": "Graphic & Type",
    "series": 2,
-   "status": "queued",
+   "status": "wip",
    "note": "",
    "adaptation": false,
    "engine": [
@@ -1057,11 +1057,11 @@
     "real data / imagery",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/057_silhouette-rhythm/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/057_silhouette-rhythm/preview.mp4",
+   "thumb": "styles/057_silhouette-rhythm/thumbnail.png",
+   "report": "styles/057_silhouette-rhythm/qa_report.md"
   },
   {
    "id": "058",
@@ -1069,17 +1069,17 @@
    "name": "Blueprint",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native blueprint: Fig. 1 the foot strike in section with the splash, the runner as a line figure with 4.1 m/s, the title block LAST TRAIN HO",
    "adaptation": true,
    "engine": [
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/058_blueprint/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/058_blueprint/preview.mp4",
+   "thumb": "styles/058_blueprint/thumbnail.png",
+   "report": "styles/058_blueprint/qa_report.md"
   },
   {
    "id": "059",
@@ -1087,17 +1087,17 @@
    "name": "Isometric Infographic",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native isometric infographic: the puddle 1.4 m across with a step counter, the iso street with shop blocks and lamp posts, the clock callout",
    "adaptation": true,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/059_iso-infographic/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/059_iso-infographic/preview.mp4",
+   "thumb": "styles/059_iso-infographic/thumbnail.png",
+   "report": "styles/059_iso-infographic/qa_report.md"
   },
   {
    "id": "060",

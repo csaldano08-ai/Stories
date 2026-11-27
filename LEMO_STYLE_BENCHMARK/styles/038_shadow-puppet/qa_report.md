@@ -51,11 +51,11 @@ Style construction: Canvas 2D, WebGL shader pass. Narrative adaptation: no.
 ```
 bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.
 ## Visual review (done by the agent on stills / strips — not full-speed playback)
-(none recorded)
+QA review 2026-11-27: final.mp4 contact sheet checked (events at 0.94 / 6.05 / 8.4 / 9.58 s present; framing and legibility OK)
 
 ## Needs a human
 - full-speed viewing; listening to the mix
 
 **Automated result:** PASS
 
-
+Native shadow puppet: lit cut-paper screen, jointed puppet AKI, the splash in paper drops, the watch as a large puppet prop; the stage with the clock tower on the chime.

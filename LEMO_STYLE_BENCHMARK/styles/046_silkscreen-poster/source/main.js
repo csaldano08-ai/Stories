@@ -17,7 +17,7 @@ import { makeTextures, paperSheet, ink, wipeRegion, wipeFront, squeegee, inkFini
 import { solveProfile } from './shared/aki2/aki_profile.js';
 import { runner } from './shared/aki2/motion.js';
 import { DUR, shotAt, T as EV, CADENCE, FIRST_STEP, STEP } from './shared/clip10.js';
-import { clamp, lerp, seg, back, ss, eo, ei, hash, mulberry, TAU } from './shared/lib/util.js';
+import { clamp, lerp, seg, back, ss, eo, ei, eio, hash, mulberry, TAU } from './shared/lib/util.js';
 
 const RUN = runner({ t0: FIRST_STEP + STEP, t1: 12, x0: -1400, v: 1450, cadence: CADENCE, duty: .42, lean: .15 });
 const SPL = RUN.contacts.find(c => Math.abs(c.t0 - EV.splash) < .02);
@@ -169,7 +169,7 @@ function band(t, CM) {
   txt('2.9', 1500, 930, 120, P.paper, 800, 4, 7.62 + BEAT * 2.5); txt('STEPS / S', 1504, 800 + 20, 30, P.sky1, 600, 10, 7.62 + BEAT * 2.5);
 }
 function shot3(t) {
-  const u = eo(seg(t, 7.5, 7.9)), z = lerp(1.04, 1.2, u), CM = [z, 0, 0, z, 960 - 960 * z, 1080 - 1080 * z];      // push to the band, anchored on the foot of the print
+  const u = eo(seg(t, 7.5, 7.9)), z = lerp(1.04, 2.55, u), cx = lerp(lerp(960, 600, u), 1340, eio(seg(t, 8.3, 9.3))), cy = lerp(540, 905, u), CM = [z, 0, 0, z, 960 - cx * z, 540 - cy * z];   // REVIEW FIX: push right into the band (dial + 23:58), then track along it as the run's numbers print
   g.setTransform(1, 0, 0, 1, 0, 0); paperSheet(g, T, 0, 0, 1920, 1080);
   g.setTransform(...CM); ink(g, { path: rectPath(0, -400, 1920, 1200) }, { color: P.sky1, sheen: .5 }); ink(g, { path: bandSteps(0, 1920, 300, 700, 5) }, { color: P.sky2, reg: [2, -1] });
   ink(g, { path: S1.farP }, { color: P.far, reg: [-2, 1], sheen: 1 });
@@ -177,7 +177,7 @@ function shot3(t) {
   g.setTransform(1, 0, 0, 1, 0, 0); inkFinish(g, T, 0, 0, 1920, 1080);
 }
 function shot4(t) {
-  const u = eo(seg(t, 9.375, 9.8)), z = lerp(1.2, 1, u), CM = [z, 0, 0, z, 960 - 960 * z, 1080 - 1080 * z];        // pull back to the whole print
+  const u = eo(seg(t, 9.375, 9.8)), z = lerp(2.55, 1, u), cx = lerp(1340, 960, u), cy = lerp(905, 540, u), CM = [z, 0, 0, z, 960 - cx * z, 540 - cy * z];        // pull back to the whole print
   g.setTransform(1, 0, 0, 1, 0, 0); paperSheet(g, T, 0, 0, 1920, 1080);
   g.setTransform(...CM); ink(g, { path: rectPath(0, -400, 1920, 1200) }, { color: P.sky1, sheen: .5 }); ink(g, { path: bandSteps(0, 1920, 300, 700, 5) }, { color: P.sky2, reg: [2, -1] });
   ink(g, { path: S1.farP }, { color: P.far, reg: [-2, 1], sheen: 1 });

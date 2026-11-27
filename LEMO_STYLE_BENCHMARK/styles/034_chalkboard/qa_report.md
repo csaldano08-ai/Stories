@@ -51,11 +51,11 @@ Style construction: Canvas 2D, WebGL shader pass, SVG. Narrative adaptation: no.
 ```
 bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.
 ## Visual review (done by the agent on stills / strips — not full-speed playback)
-(none recorded)
+QA review 2026-11-27: final.mp4 contact sheet checked (events at 0.94 / 6.05 / 8.4 / 9.58 s present; framing and legibility OK)
 
 ## Needs a human
 - full-speed viewing; listening to the mix
 
 **Automated result:** PASS
 
-
+Native chalkboard: chalk street, the splash in chalk dust, the run along a long chalk frieze, the watch dial 23:58 written in chalk; pull back to the whole board on the chime.

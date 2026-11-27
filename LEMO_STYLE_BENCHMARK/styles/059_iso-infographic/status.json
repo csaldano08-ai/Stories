@@ -1,6 +1,6 @@
 {
- "status": "qa",
- "note": "",
+ "status": "done",
+ "note": "Native isometric infographic: the puddle 1.4 m across with a step counter, the iso street with shop blocks and lamp posts, the clock callout",
  "measured": {
   "frames": 300,
   "fps": "30/1",

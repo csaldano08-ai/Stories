@@ -51,11 +51,11 @@ Style construction: Canvas 2D. Narrative adaptation: no.
 ```
 bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.
 ## Visual review (done by the agent on stills / strips — not full-speed playback)
-(none recorded)
+QA review 2026-11-27: final.mp4 contact sheet checked (events at 0.94 / 6.05 / 8.4 / 9.58 s present; framing and legibility OK)
 
 ## Needs a human
 - full-speed viewing; listening to the mix
 
 **Automated result:** PASS
 
-
+Native Art Deco: gold-line café arch and sunbursts, the splash in gold sparks, the street of deco shopfronts and marquee letters, the octagonal watch over a sunburst 23:58; the tower with bulbs on the chime.

@@ -51,11 +51,11 @@ Style construction: Canvas 2D. Narrative adaptation: no.
 ```
 bone = [min, max] measured length in u over all frames (constant ⇒ no stretching); slide = planted-foot drift between frames.
 ## Visual review (done by the agent on stills / strips — not full-speed playback)
-(none recorded)
+QA review 2026-11-27: final.mp4 contact sheet checked (events at 0.94 / 6.05 / 8.4 / 9.58 s present; framing and legibility OK)
 
 ## Needs a human
 - full-speed viewing; listening to the mix
 
 **Automated result:** PASS
 
-
+Native whiteboard: markers draw the café, the puddle and the splash; the street in hand-drawn panels with stroboscopic figures; the watch close-up 23:58 with the red marker pin; the clock tower on the chime.
