@@ -1199,8 +1199,8 @@
    "name": "Assembly-Line Diagram",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "qa",
-   "note": "",
+   "status": "done",
+   "note": "Native assembly-line diagram: AKI as a cut-away machine with labelled parts (shock absorber, water, steps, pistons, pump, time), the splash ",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
