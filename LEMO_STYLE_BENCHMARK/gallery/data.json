@@ -51,17 +51,17 @@
    "name": "Mid-century Cartoon",
    "category": "Cartoons",
    "series": 1,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native rebuild: off-register colour cels re-rolled on twos, broken breathing ink, flat colour-plane street, geometric AKI on the shared rig,",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
+   "video": "styles/003_midcentury-toon/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/003_midcentury-toon/preview.mp4",
+   "thumb": "styles/003_midcentury-toon/thumbnail.png",
+   "report": "styles/003_midcentury-toon/qa_report.md"
   },
   {
    "id": "004",
@@ -88,7 +88,7 @@
    "category": "Cartoons",
    "series": 1,
    "status": "blocked",
-   "note": "",
+   "note": "BLOCKED: this style requires an external image generator (STYLE.md §9: every character and panel drawing is generated, and stand-in characters drawn in code are forbidden). `core/image/gen_image.py --check` returned exit 4 (Codex CLI not installed, no other image tool provided). Not substituted with a generic version.",
    "adaptation": false,
    "engine": [
     "image generator (external)"
@@ -1031,7 +1031,7 @@
    "category": "Graphic & Type",
    "series": 2,
    "status": "blocked",
-   "note": "",
+   "note": "BLOCKED: this style requires an external image generator (STYLE.md §9: every character and panel drawing is generated, and stand-in characters drawn in code are forbidden). `core/image/gen_image.py --check` returned exit 4 (Codex CLI not installed, no other image tool provided). Not substituted with a generic version.",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
@@ -1219,7 +1219,7 @@
    "category": "Cartoons",
    "series": 2,
    "status": "blocked",
-   "note": "",
+   "note": "BLOCKED: this style requires an external image generator (STYLE.md §9: every character and panel drawing is generated, and stand-in characters drawn in code are forbidden). `core/image/gen_image.py --check` returned exit 4 (Codex CLI not installed, no other image tool provided). Not substituted with a generic version.",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
