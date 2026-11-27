@@ -1,0 +1,13 @@
+{
+ "slug": "lowpoly-island",
+ "recipe": {
+  "bpm": 96,
+  "key": "G",
+  "prog": "bright",
+  "lead": "pluck",
+  "rain": 0.4,
+  "step": "wood",
+  "chime": "glock",
+  "family": "craft"
+ }
+}

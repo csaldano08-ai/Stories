@@ -1,0 +1,16 @@
+{
+ "slug": "backrooms",
+ "recipe": {
+  "bpm": 60,
+  "key": "D",
+  "prog": "tense",
+  "lead": null,
+  "rain": 0,
+  "drone": 0.45,
+  "step": "soft",
+  "chime": "gong",
+  "room": 2.8,
+  "wet": 0.3,
+  "family": "dark"
+ }
+}

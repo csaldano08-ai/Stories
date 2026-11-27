@@ -1,0 +1,14 @@
+{
+ "slug": "scifi-toon",
+ "recipe": {
+  "bpm": 118,
+  "key": "A",
+  "prog": "minor",
+  "lead": "lead",
+  "rain": 0.6,
+  "step": "wet",
+  "chime": "bell",
+  "wet": 0.28,
+  "family": "neon"
+ }
+}

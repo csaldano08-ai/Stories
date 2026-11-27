@@ -1,0 +1,14 @@
+{
+ "slug": "cel-anime-80s",
+ "recipe": {
+  "bpm": 104,
+  "key": "Eb",
+  "prog": "pop",
+  "lead": "lead",
+  "rain": 0.5,
+  "step": "wet",
+  "chime": "bell",
+  "drums": 0.8,
+  "family": "anime"
+ }
+}

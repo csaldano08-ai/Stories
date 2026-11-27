@@ -1,0 +1,15 @@
+{
+ "slug": "paper-lantern",
+ "recipe": {
+  "bpm": 72,
+  "key": "D",
+  "prog": "modal",
+  "lead": "flute",
+  "rain": 0.7,
+  "step": "wet",
+  "chime": "glock",
+  "pad": 0.8,
+  "room": 1.6,
+  "family": "painterly"
+ }
+}

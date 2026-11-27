@@ -1,0 +1,17 @@
+{
+ "slug": "hd-2d",
+ "recipe": {
+  "bpm": 120,
+  "key": "C",
+  "prog": "modal",
+  "lead": "flute",
+  "rain": 0.4,
+  "step": "wet",
+  "splash": "chip",
+  "watch": "chip",
+  "chime": "bell",
+  "lofi": false,
+  "wet": 0.08,
+  "family": "retro"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "slug": "tilt-shift",
+ "recipe": {
+  "bpm": 96,
+  "key": "G",
+  "prog": "bright",
+  "lead": "glock",
+  "rain": 0.45,
+  "step": "wet",
+  "chime": "glock",
+  "family": "craft"
+ }
+}

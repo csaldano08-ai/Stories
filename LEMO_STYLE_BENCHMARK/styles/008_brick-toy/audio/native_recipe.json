@@ -1,0 +1,13 @@
+{
+ "slug": "brick-toy",
+ "recipe": {
+  "bpm": 96,
+  "key": "G",
+  "prog": "bright",
+  "lead": "marimba",
+  "rain": 0.3,
+  "step": "tap",
+  "chime": "glock",
+  "family": "craft"
+ }
+}
