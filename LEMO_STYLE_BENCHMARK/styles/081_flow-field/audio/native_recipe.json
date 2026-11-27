@@ -1,0 +1,15 @@
+{
+ "slug": "flow-field",
+ "recipe": {
+  "bpm": 72,
+  "key": "D",
+  "prog": "modal",
+  "lead": "flute",
+  "rain": 0.4,
+  "step": "wet",
+  "chime": "bell",
+  "pad": 0.8,
+  "room": 1.6,
+  "family": "painterly"
+ }
+}

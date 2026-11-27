@@ -1,0 +1,16 @@
+{
+ "slug": "oscilloscope-math",
+ "recipe": {
+  "bpm": 112,
+  "key": "A",
+  "prog": "minor",
+  "lead": null,
+  "rain": 0.6,
+  "step": "wet",
+  "chime": "beep",
+  "wet": 0.28,
+  "watch": "beep",
+  "drone": 0.1,
+  "family": "neon"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "slug": "dataviz",
+ "recipe": {
+  "bpm": 100,
+  "key": "D",
+  "prog": "bright",
+  "lead": null,
+  "rain": 0.08,
+  "step": "wood",
+  "chime": "glock",
+  "drums": 0,
+  "pad": 0.7,
+  "family": "explainer"
+ }
+}
