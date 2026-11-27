@@ -22,7 +22,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/001_cel-anime-80s/final.mp4",
-   "native": null,
+   "native": "styles/001_cel-anime-80s/final_native.mp4",
    "preview": "styles/001_cel-anime-80s/preview.mp4",
    "thumb": "styles/001_cel-anime-80s/thumbnail.png",
    "report": "styles/001_cel-anime-80s/qa_report.md"
@@ -76,7 +76,7 @@
     "Canvas 2D"
    ],
    "video": "styles/004_scifi-toon/final.mp4",
-   "native": null,
+   "native": "styles/004_scifi-toon/final_native.mp4",
    "preview": "styles/004_scifi-toon/preview.mp4",
    "thumb": "styles/004_scifi-toon/thumbnail.png",
    "report": "styles/004_scifi-toon/qa_report.md"
@@ -114,7 +114,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/006_hd-2d/final.mp4",
-   "native": null,
+   "native": "styles/006_hd-2d/final_native.mp4",
    "preview": "styles/006_hd-2d/preview.mp4",
    "thumb": "styles/006_hd-2d/thumbnail.png",
    "report": "styles/006_hd-2d/qa_report.md"
@@ -150,7 +150,7 @@
     "three.js 3D (WebGL)"
    ],
    "video": "styles/008_brick-toy/final.mp4",
-   "native": null,
+   "native": "styles/008_brick-toy/final_native.mp4",
    "preview": "styles/008_brick-toy/preview.mp4",
    "thumb": "styles/008_brick-toy/thumbnail.png",
    "report": "styles/008_brick-toy/qa_report.md"
@@ -169,7 +169,7 @@
     "real data / imagery"
    ],
    "video": "styles/009_lowpoly-island/final.mp4",
-   "native": null,
+   "native": "styles/009_lowpoly-island/final_native.mp4",
    "preview": "styles/009_lowpoly-island/preview.mp4",
    "thumb": "styles/009_lowpoly-island/thumbnail.png",
    "report": "styles/009_lowpoly-island/qa_report.md"
@@ -206,7 +206,7 @@
     "Canvas 2D"
    ],
    "video": "styles/011_isometric-picture-book/final.mp4",
-   "native": null,
+   "native": "styles/011_isometric-picture-book/final_native.mp4",
    "preview": "styles/011_isometric-picture-book/preview.mp4",
    "thumb": "styles/011_isometric-picture-book/thumbnail.png",
    "report": "styles/011_isometric-picture-book/qa_report.md"
@@ -224,7 +224,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/012_tilt-shift/final.mp4",
-   "native": null,
+   "native": "styles/012_tilt-shift/final_native.mp4",
    "preview": "styles/012_tilt-shift/preview.mp4",
    "thumb": "styles/012_tilt-shift/thumbnail.png",
    "report": "styles/012_tilt-shift/qa_report.md"
@@ -242,7 +242,7 @@
     "Canvas 2D"
    ],
    "video": "styles/013_stick-explainer/final.mp4",
-   "native": null,
+   "native": "styles/013_stick-explainer/final_native.mp4",
    "preview": "styles/013_stick-explainer/preview.mp4",
    "thumb": "styles/013_stick-explainer/thumbnail.png",
    "report": "styles/013_stick-explainer/qa_report.md"
@@ -260,7 +260,7 @@
     "Canvas 2D"
    ],
    "video": "styles/014_watercolor/final.mp4",
-   "native": null,
+   "native": "styles/014_watercolor/final_native.mp4",
    "preview": "styles/014_watercolor/preview.mp4",
    "thumb": "styles/014_watercolor/thumbnail.png",
    "report": "styles/014_watercolor/qa_report.md"
@@ -297,7 +297,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/016_ink-wash/final.mp4",
-   "native": null,
+   "native": "styles/016_ink-wash/final_native.mp4",
    "preview": "styles/016_ink-wash/preview.mp4",
    "thumb": "styles/016_ink-wash/thumbnail.png",
    "report": "styles/016_ink-wash/qa_report.md"
@@ -315,7 +315,7 @@
     "Canvas 2D"
    ],
    "video": "styles/017_ukiyoe/final.mp4",
-   "native": null,
+   "native": "styles/017_ukiyoe/final_native.mp4",
    "preview": "styles/017_ukiyoe/preview.mp4",
    "thumb": "styles/017_ukiyoe/thumbnail.png",
    "report": "styles/017_ukiyoe/qa_report.md"
@@ -334,7 +334,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/018_paper-lantern/final.mp4",
-   "native": null,
+   "native": "styles/018_paper-lantern/final_native.mp4",
    "preview": "styles/018_paper-lantern/preview.mp4",
    "thumb": "styles/018_paper-lantern/thumbnail.png",
    "report": "styles/018_paper-lantern/qa_report.md"
@@ -353,7 +353,7 @@
     "three.js 3D (WebGL)"
    ],
    "video": "styles/019_backrooms/final.mp4",
-   "native": null,
+   "native": "styles/019_backrooms/final_native.mp4",
    "preview": "styles/019_backrooms/preview.mp4",
    "thumb": "styles/019_backrooms/thumbnail.png",
    "report": "styles/019_backrooms/qa_report.md"
@@ -372,7 +372,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/020_neon-tubes/final.mp4",
-   "native": null,
+   "native": "styles/020_neon-tubes/final_native.mp4",
    "preview": "styles/020_neon-tubes/preview.mp4",
    "thumb": "styles/020_neon-tubes/thumbnail.png",
    "report": "styles/020_neon-tubes/qa_report.md"
@@ -539,7 +539,7 @@
     "Canvas 2D"
    ],
    "video": "styles/029_impasto/final.mp4",
-   "native": null,
+   "native": "styles/029_impasto/final_native.mp4",
    "preview": "styles/029_impasto/preview.mp4",
    "thumb": "styles/029_impasto/thumbnail.png",
    "report": "styles/029_impasto/qa_report.md"
@@ -557,7 +557,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/030_urban-sketch/final.mp4",
-   "native": null,
+   "native": "styles/030_urban-sketch/final_native.mp4",
    "preview": "styles/030_urban-sketch/preview.mp4",
    "thumb": "styles/030_urban-sketch/thumbnail.png",
    "report": "styles/030_urban-sketch/qa_report.md"
@@ -576,7 +576,7 @@
     "three.js 3D (WebGL)"
    ],
    "video": "styles/031_colored-pencil/final.mp4",
-   "native": null,
+   "native": "styles/031_colored-pencil/final_native.mp4",
    "preview": "styles/031_colored-pencil/preview.mp4",
    "thumb": "styles/031_colored-pencil/thumbnail.png",
    "report": "styles/031_colored-pencil/qa_report.md"
@@ -595,7 +595,7 @@
     "SVG"
    ],
    "video": "styles/032_one-line/final.mp4",
-   "native": null,
+   "native": "styles/032_one-line/final_native.mp4",
    "preview": "styles/032_one-line/preview.mp4",
    "thumb": "styles/032_one-line/thumbnail.png",
    "report": "styles/032_one-line/qa_report.md"
@@ -613,7 +613,7 @@
     "Canvas 2D"
    ],
    "video": "styles/033_whiteboard/final.mp4",
-   "native": null,
+   "native": "styles/033_whiteboard/final_native.mp4",
    "preview": "styles/033_whiteboard/preview.mp4",
    "thumb": "styles/033_whiteboard/thumbnail.png",
    "report": "styles/033_whiteboard/qa_report.md"
@@ -633,7 +633,7 @@
     "SVG"
    ],
    "video": "styles/034_chalkboard/final.mp4",
-   "native": null,
+   "native": "styles/034_chalkboard/final_native.mp4",
    "preview": "styles/034_chalkboard/preview.mp4",
    "thumb": "styles/034_chalkboard/thumbnail.png",
    "report": "styles/034_chalkboard/qa_report.md"
@@ -651,7 +651,7 @@
     "Canvas 2D"
    ],
    "video": "styles/035_sketchnote/final.mp4",
-   "native": null,
+   "native": "styles/035_sketchnote/final_native.mp4",
    "preview": "styles/035_sketchnote/preview.mp4",
    "thumb": "styles/035_sketchnote/thumbnail.png",
    "report": "styles/035_sketchnote/qa_report.md"
@@ -669,7 +669,7 @@
     "Canvas 2D"
    ],
    "video": "styles/036_ipad-sketch/final.mp4",
-   "native": null,
+   "native": "styles/036_ipad-sketch/final_native.mp4",
    "preview": "styles/036_ipad-sketch/preview.mp4",
    "thumb": "styles/036_ipad-sketch/thumbnail.png",
    "report": "styles/036_ipad-sketch/qa_report.md"
@@ -687,7 +687,7 @@
     "Canvas 2D"
    ],
    "video": "styles/037_marker-paper/final.mp4",
-   "native": null,
+   "native": "styles/037_marker-paper/final_native.mp4",
    "preview": "styles/037_marker-paper/preview.mp4",
    "thumb": "styles/037_marker-paper/thumbnail.png",
    "report": "styles/037_marker-paper/qa_report.md"
@@ -706,7 +706,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/038_shadow-puppet/final.mp4",
-   "native": null,
+   "native": "styles/038_shadow-puppet/final_native.mp4",
    "preview": "styles/038_shadow-puppet/preview.mp4",
    "thumb": "styles/038_shadow-puppet/thumbnail.png",
    "report": "styles/038_shadow-puppet/qa_report.md"
@@ -724,7 +724,7 @@
     "Canvas 2D"
    ],
    "video": "styles/039_papercut-red/final.mp4",
-   "native": null,
+   "native": "styles/039_papercut-red/final_native.mp4",
    "preview": "styles/039_papercut-red/preview.mp4",
    "thumb": "styles/039_papercut-red/thumbnail.png",
    "report": "styles/039_papercut-red/qa_report.md"
@@ -742,7 +742,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/040_stained-glass/final.mp4",
-   "native": null,
+   "native": "styles/040_stained-glass/final_native.mp4",
    "preview": "styles/040_stained-glass/preview.mp4",
    "thumb": "styles/040_stained-glass/thumbnail.png",
    "report": "styles/040_stained-glass/qa_report.md"
@@ -760,7 +760,7 @@
     "Canvas 2D"
    ],
    "video": "styles/041_gilded-illumination/final.mp4",
-   "native": null,
+   "native": "styles/041_gilded-illumination/final_native.mp4",
    "preview": "styles/041_gilded-illumination/preview.mp4",
    "thumb": "styles/041_gilded-illumination/thumbnail.png",
    "report": "styles/041_gilded-illumination/qa_report.md"
@@ -779,7 +779,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/042_risograph/final.mp4",
-   "native": null,
+   "native": "styles/042_risograph/final_native.mp4",
    "preview": "styles/042_risograph/preview.mp4",
    "thumb": "styles/042_risograph/thumbnail.png",
    "report": "styles/042_risograph/qa_report.md"
@@ -797,7 +797,7 @@
     "Canvas 2D"
    ],
    "video": "styles/043_halftone-dossier/final.mp4",
-   "native": null,
+   "native": "styles/043_halftone-dossier/final_native.mp4",
    "preview": "styles/043_halftone-dossier/preview.mp4",
    "thumb": "styles/043_halftone-dossier/thumbnail.png",
    "report": "styles/043_halftone-dossier/qa_report.md"
@@ -816,7 +816,7 @@
     "WebGL shader pass"
    ],
    "video": "styles/044_woodcut/final.mp4",
-   "native": null,
+   "native": "styles/044_woodcut/final_native.mp4",
    "preview": "styles/044_woodcut/preview.mp4",
    "thumb": "styles/044_woodcut/thumbnail.png",
    "report": "styles/044_woodcut/qa_report.md"
@@ -835,7 +835,7 @@
     "SVG"
    ],
    "video": "styles/045_engraving/final.mp4",
-   "native": null,
+   "native": "styles/045_engraving/final_native.mp4",
    "preview": "styles/045_engraving/preview.mp4",
    "thumb": "styles/045_engraving/thumbnail.png",
    "report": "styles/045_engraving/qa_report.md"
@@ -1179,19 +1179,19 @@
    "name": "Pen Plotter",
    "category": "Line Diagrams",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native pen plotter: a physical plotter pen draws AKI stroke by stroke on warm paper with a casting shadow (the splash as a ticked burst), th",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
     "real data / imagery",
     "SVG"
    ],
-   "video": null,
+   "video": "styles/064_pen-plotter/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/064_pen-plotter/preview.mp4",
+   "thumb": "styles/064_pen-plotter/thumbnail.png",
+   "report": "styles/064_pen-plotter/qa_report.md"
   },
   {
    "id": "065",
@@ -1274,18 +1274,18 @@
    "name": "CRT ASCII Terminal",
    "category": "Film & Tape",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native ASCII on a CRT: AKI and the street built from amber characters, a terminal log (TRACK AKI 4.06 m/s, CONTACT: PUDDLE, ARM RAISED: WATC",
    "adaptation": false,
    "engine": [
     "real data / imagery",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/069_ascii-crt/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/069_ascii-crt/preview.mp4",
+   "thumb": "styles/069_ascii-crt/thumbnail.png",
+   "report": "styles/069_ascii-crt/qa_report.md"
   },
   {
    "id": "070",
@@ -1293,19 +1293,19 @@
    "name": "1920s Silent Film",
    "category": "Film & Tape",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Native silent film: grainy blue-grey stock with a frame mask, AKI in a stage-set street, the splash in white specks, an intertitle card (Alm",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "real footage / archive (licensed)",
     "WebGL shader pass"
    ],
-   "video": null,
+   "video": "styles/070_silent-film/final.mp4",
    "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "preview": "styles/070_silent-film/preview.mp4",
+   "thumb": "styles/070_silent-film/thumbnail.png",
+   "report": "styles/070_silent-film/qa_report.md"
   },
   {
    "id": "071",

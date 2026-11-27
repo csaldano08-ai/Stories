@@ -1,0 +1,19 @@
+{
+ "status": "done",
+ "note": "Native silent film: grainy blue-grey stock with a frame mask, AKI in a stage-set street, the splash in white specks, an intertitle card (Alm",
+ "measured": {
+  "frames": 300,
+  "fps": "30/1",
+  "size": "1920x1080",
+  "codec": "h264",
+  "pix_fmt": "yuvj420p",
+  "duration_s": 10.0,
+  "audio": "aac 48000 Hz 2 ch",
+  "black": [],
+  "frozen_ge_0.7s": [],
+  "lufs": -14.2,
+  "true_peak_dbtp": -1.0,
+  "size_mb": 20.6
+ },
+ "fails": []
+}
