@@ -1,3 +1,5 @@
 LEMO_STYLE_BENCHMARK/styles/019_backrooms
 LEMO_STYLE_BENCHMARK/styles/029_impasto
 LEMO_STYLE_BENCHMARK/styles/030_urban-sketch
+LEMO_STYLE_BENCHMARK/styles/031_colored-pencil
+LEMO_STYLE_BENCHMARK/styles/032_one-line
