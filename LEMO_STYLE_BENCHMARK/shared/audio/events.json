@@ -1,0 +1,161 @@
+{
+ "duration": 10,
+ "steps": [
+  {
+   "t": 0.2478,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 0.5927,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 0.9375,
+   "foot": "f",
+   "puddle": true
+  },
+  {
+   "t": 1.2823,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 1.6272,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 1.972,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 2.3168,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 2.6616,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 3.0065,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 3.3513,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 3.6961,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 4.0409,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 4.3858,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 4.7306,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 5.0754,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 5.4203,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 5.7651,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 6.1099,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 6.4547,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 6.7996,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 7.1444,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 7.4892,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 7.8341,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 8.1789,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 8.5237,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 8.8685,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 9.2134,
+   "foot": "f",
+   "puddle": false
+  },
+  {
+   "t": 9.5582,
+   "foot": "n",
+   "puddle": false
+  },
+  {
+   "t": 9.903,
+   "foot": "f",
+   "puddle": false
+  }
+ ],
+ "splash": 0.9375,
+ "watchUp": 6.05,
+ "watchDown": 7.15,
+ "clockTick": 8.4,
+ "chime": 9.575,
+ "cuts": [
+  2.5,
+  7.5,
+  9.375
+ ],
+ "firstStep": 0.24784482758620685
+}
