@@ -39,3 +39,4 @@ LEMO_STYLE_BENCHMARK/styles/069_ascii-crt
 LEMO_STYLE_BENCHMARK/styles/070_silent-film
 LEMO_STYLE_BENCHMARK/styles/071_scratch-film
 LEMO_STYLE_BENCHMARK/styles/073_dark-keynote
+LEMO_STYLE_BENCHMARK/styles/074_living-screencast
