@@ -56,3 +56,4 @@ LEMO_STYLE_BENCHMARK/styles/092_dark-documentary
 LEMO_STYLE_BENCHMARK/styles/093_thermal-camera
 LEMO_STYLE_BENCHMARK/styles/094_dataviz
 LEMO_STYLE_BENCHMARK/styles/096_data-physical
+LEMO_STYLE_BENCHMARK/styles/099_pip-simulation
