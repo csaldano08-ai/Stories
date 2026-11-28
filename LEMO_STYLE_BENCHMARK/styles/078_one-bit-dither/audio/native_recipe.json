@@ -1,0 +1,18 @@
+{
+ "slug": "one-bit-dither",
+ "recipe": {
+  "bpm": 120,
+  "key": "C",
+  "prog": "tense",
+  "lead": null,
+  "rain": 0.15,
+  "step": "chip",
+  "splash": "chip",
+  "watch": "chip",
+  "chime": "chip",
+  "lofi": true,
+  "wet": 0.08,
+  "drone": 0.15,
+  "family": "retro"
+ }
+}
