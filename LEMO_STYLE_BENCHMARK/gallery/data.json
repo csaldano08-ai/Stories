@@ -1403,18 +1403,18 @@
    "name": "Tabletop App Flythrough",
    "category": "Screens & Interfaces",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Pixel AKI walks over a desktop of paper, phone and watch card; S4 ends on the station card. Contact sheet reviewed.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
     "three.js 3D (WebGL)"
    ],
-   "video": null,
-   "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "video": "styles/076_desktop-flythrough/final.mp4",
+   "native": "styles/076_desktop-flythrough/final_native.mp4",
+   "preview": "styles/076_desktop-flythrough/preview.mp4",
+   "thumb": "styles/076_desktop-flythrough/thumbnail.png",
+   "report": "styles/076_desktop-flythrough/qa_report.md"
   },
   {
    "id": "077",
@@ -1440,18 +1440,18 @@
    "name": "1-bit Dither",
    "category": "Screens & Interfaces",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Two-colour dither; S1 is a tight street crop. Contact sheet reviewed.",
    "adaptation": true,
    "engine": [
     "Canvas 2D",
     "WebGL shader pass"
    ],
-   "video": null,
-   "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "video": "styles/078_one-bit-dither/final.mp4",
+   "native": "styles/078_one-bit-dither/final_native.mp4",
+   "preview": "styles/078_one-bit-dither/preview.mp4",
+   "thumb": "styles/078_one-bit-dither/thumbnail.png",
+   "report": "styles/078_one-bit-dither/qa_report.md"
   },
   {
    "id": "079",
@@ -1477,17 +1477,17 @@
    "name": "Firefly Pointillism",
    "category": "Light & Lines",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Fireflies form AKI, clock 11:58:47 to 48, tower on chime. Contact sheet reviewed.",
    "adaptation": false,
    "engine": [
     "Canvas 2D"
    ],
-   "video": null,
-   "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "video": "styles/080_firefly-pointillism/final.mp4",
+   "native": "styles/080_firefly-pointillism/final_native.mp4",
+   "preview": "styles/080_firefly-pointillism/preview.mp4",
+   "thumb": "styles/080_firefly-pointillism/thumbnail.png",
+   "report": "styles/080_firefly-pointillism/qa_report.md"
   },
   {
    "id": "081",
@@ -1533,18 +1533,18 @@
    "name": "Paper Pop-up Book",
    "category": "3D & Miniature",
    "series": 2,
-   "status": "queued",
-   "note": "",
+   "status": "done",
+   "note": "Pop-up paper street, splash, speech bubble, watch, DING. Contact sheet reviewed.",
    "adaptation": false,
    "engine": [
     "Canvas 2D",
     "three.js 3D (WebGL)"
    ],
-   "video": null,
-   "native": null,
-   "preview": null,
-   "thumb": null,
-   "report": null
+   "video": "styles/083_paper-popup/final.mp4",
+   "native": "styles/083_paper-popup/final_native.mp4",
+   "preview": "styles/083_paper-popup/preview.mp4",
+   "thumb": "styles/083_paper-popup/thumbnail.png",
+   "report": "styles/083_paper-popup/qa_report.md"
   },
   {
    "id": "084",

@@ -1,0 +1,15 @@
+{
+ "slug": "firefly-pointillism",
+ "recipe": {
+  "bpm": 72,
+  "key": "D",
+  "prog": "modal",
+  "lead": "glock",
+  "rain": 0.2,
+  "step": "wet",
+  "chime": "glock",
+  "pad": 0.8,
+  "room": 1.6,
+  "family": "painterly"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "slug": "paper-popup",
+ "recipe": {
+  "bpm": 96,
+  "key": "G",
+  "prog": "bright",
+  "lead": "glock",
+  "rain": 0.3,
+  "step": "wood",
+  "chime": "glock",
+  "family": "craft"
+ }
+}
