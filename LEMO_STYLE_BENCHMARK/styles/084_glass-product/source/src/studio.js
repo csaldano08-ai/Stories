@@ -82,7 +82,7 @@ export function makeStudio(renderer, scene) {
         refl /= sum;
         float fade = exp(-r0 * r0 / (uFade * uFade));
         vec3 col = refl * uRefl * fade;
-        col += vec3(.02, .02, .021) * exp(-r0 * r0 / 9000.) * (1. + uSpot * 10.);   // a tiny pool of light under the deck
+        col += vec3(.02, .023, .028) * exp(-r0 * r0 / 16000.) * (1. + uSpot * 26.);   // a tiny pool of light under the deck
         // caustics
         for (int k = 0; k < 3; k++) { vec4 C = uC[k]; if (C.w <= 0.) continue;
           vec2 d = (xz - C.xy); float r = length(d) / C.z; float m = exp(-r * r * 1.6);

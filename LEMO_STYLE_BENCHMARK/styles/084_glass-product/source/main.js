@@ -130,7 +130,7 @@ function frame(t) {
     // floor: a ring from every footfall, a caustic burst at the splash
     let wi = 0; for (const c of STEPS) { const a = t - c.t0; if (a < 0 || a > 1.4 || wi >= 12) continue; const p = P3([c.x + 44, 0], c.foot === 'n' ? 5 : -5); U.uWave.value[wi++].set(p.x, p.z, 8 + a * 70, 1.4 * Math.exp(-a / .45)); }
     const sa = t - SPL.t0; if (sa > 0 && sa < 2) { const p = P3([SPL.x + 44, 0], -5); U.uC.value[0].set(p.x, p.z, 26 + sa * 30, 2.2 * Math.exp(-sa / .5)); for (let k = 0; k < 2 && wi < 12; k++) U.uWave.value[wi++].set(p.x, p.z, 6 + (sa - k * .12) * 120, 3 * Math.exp(-sa / .6)); }
-    U.uCenter.value.set(hx, 0); envO = { left: 1, right: 1, top: .8, front: .5, back: 1, key: .25 }; spot = .08;
+    U.uCenter.value.set(hx, 0); const kk = lerp(1, 2.6, u); envO = { left: 1 * kk, right: 1 * kk, top: .8 * kk, front: .5 * kk, back: 1 * kk, key: .25 * lerp(1, 3, u) }; spot = lerp(.08, .22, u); bg = lerp(.35, .7, u);
   } else if (shot === 'watch') {
     // exploded view: drift apart (ease-out), hover, snap shut on the tick at 8.4 s (short ease-in)
     const e = eo(seg(t, 7.55, 8.05)) * (1 - ei(seg(t, 8.28, 8.4)));
@@ -160,6 +160,10 @@ function frame(t) {
   studio.reflect(camera); post.composer.render();
   // the number, ultra-thin, with a glint that follows the sweep (S4)
   const o = document.getElementById('ov').getContext('2d'); o.setTransform(1, 0, 0, 1, 0, 0); o.clearRect(0, 0, W, H);
+  if (shot === 'aki' && t > 2.5) { // a lit studio sweep behind the walk (screen-blended, so black lifts to steel blue and the chrome is untouched)
+    const k = eio(seg(t, 2.5, 3.6)); o.save(); o.globalAlpha = k;
+    const g = o.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#16222f'); g.addColorStop(.55, '#22344a'); g.addColorStop(.62, '#2b4159'); g.addColorStop(1, '#101a26'); o.fillStyle = g; o.fillRect(0, 0, W, H);
+    const r = o.createRadialGradient(W * .5, H * .62, 20, W * .5, H * .62, W * .5); r.addColorStop(0, 'rgba(70,110,150,.35)'); r.addColorStop(1, 'rgba(70,110,150,0)'); o.fillStyle = r; o.fillRect(0, 0, W, H); o.restore(); }
   if (shot === 'tower') { const a = clamp((t - 9.42) / .2), c = t - EV.chime; o.globalAlpha = a; o.font = '200 132px "Inter Tight"'; o.letterSpacing = '26px'; o.textAlign = 'center'; o.textBaseline = 'middle'; o.fillStyle = '#f4f6f8';
     o.fillText('11:58:49', W / 2 + 13, 150); if (c > 0 && c < .55) { const gx = lerp(W * .25, W * .75, seg(c, 0, .55)); o.globalCompositeOperation = 'source-atop'; const gr = o.createLinearGradient(gx - 120, 0, gx + 120, 0); gr.addColorStop(0, 'rgba(160,220,255,0)'); gr.addColorStop(.5, 'rgba(200,235,255,.95)'); gr.addColorStop(1, 'rgba(169,139,255,0)'); o.fillStyle = gr; o.fillRect(0, 60, W, 180); o.globalCompositeOperation = 'source-over'; }
     o.font = '400 19px "Inter Tight"'; o.letterSpacing = '9px'; o.fillStyle = 'rgba(230,236,242,.8)'; o.fillText('THE STATION CLOCK', W / 2 + 4, 250); o.globalAlpha = 1; o.letterSpacing = '0px'; }

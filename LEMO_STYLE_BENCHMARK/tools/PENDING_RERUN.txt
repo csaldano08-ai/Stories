@@ -1,0 +1,1 @@
+84 rerun needed after queue: lit studio sweep added (black frames 4.5-7.5 s failed blackdetect)
